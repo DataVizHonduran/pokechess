@@ -6,9 +6,9 @@
         "plw": 382,
         "uscf": 966,
         "group": "King 11",
-        "pokemonId": 123,
-        "element": "psychic",
-        "delta": 1
+        "pokemonId": 149,
+        "element": "legendary",
+        "delta": 5
     },
     {
         "id": "drew-murphy",
@@ -17,9 +17,9 @@
         "plw": 358,
         "uscf": 773,
         "group": "King 19",
-        "pokemonId": 30,
-        "element": "psychic",
-        "delta": 1
+        "pokemonId": 142,
+        "element": "legendary",
+        "delta": 2
     },
     {
         "id": "anastassi-xenos",
@@ -28,9 +28,9 @@
         "plw": 282,
         "uscf": 0,
         "group": "Queen 5",
-        "pokemonId": 143,
+        "pokemonId": 103,
         "element": "psychic",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "alejandro-sheikh",
@@ -39,9 +39,9 @@
         "plw": 280,
         "uscf": 570,
         "group": "King 15",
-        "pokemonId": 49,
+        "pokemonId": 65,
         "element": "psychic",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "andrew-li",
@@ -50,9 +50,9 @@
         "plw": 174,
         "uscf": 1303,
         "group": "King 55",
-        "pokemonId": 73,
+        "pokemonId": 59,
         "element": "psychic",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "weston-hu",
@@ -61,7 +61,7 @@
         "plw": 162,
         "uscf": 502,
         "group": "King 16",
-        "pokemonId": 112,
+        "pokemonId": 94,
         "element": "psychic",
         "delta": 4
     },
@@ -72,9 +72,9 @@
         "plw": 150,
         "uscf": 585,
         "group": "King 11",
-        "pokemonId": 11,
+        "pokemonId": 135,
         "element": "psychic",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "caroline-jeffreys",
@@ -83,9 +83,9 @@
         "plw": 43,
         "uscf": 103,
         "group": "Knight 1",
-        "pokemonId": 26,
+        "pokemonId": 92,
         "element": "fire",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "isha-varma",
@@ -94,9 +94,9 @@
         "plw": 126,
         "uscf": 1029,
         "group": "King 20",
-        "pokemonId": 25,
-        "element": "psychic",
-        "delta": 5
+        "pokemonId": 24,
+        "element": "electric",
+        "delta": 1
     },
     {
         "id": "liliah-fettner",
@@ -105,9 +105,9 @@
         "plw": 94,
         "uscf": 431,
         "group": "King 15",
-        "pokemonId": 104,
-        "element": "psychic",
-        "delta": 0
+        "pokemonId": 36,
+        "element": "electric",
+        "delta": 1
     },
     {
         "id": "sebastian-polizzi",
@@ -116,9 +116,9 @@
         "plw": 42,
         "uscf": 0,
         "group": "King 1",
-        "pokemonId": 58,
+        "pokemonId": 66,
         "element": "fire",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "jeremy-chow",
@@ -127,9 +127,9 @@
         "plw": 78,
         "uscf": 299,
         "group": "King 1",
-        "pokemonId": 4,
-        "element": "psychic",
-        "delta": 3
+        "pokemonId": 64,
+        "element": "electric",
+        "delta": 4
     },
     {
         "id": "sloane-murphy",
@@ -138,9 +138,9 @@
         "plw": 74,
         "uscf": 1355,
         "group": "King 68",
-        "pokemonId": 88,
+        "pokemonId": 27,
         "element": "fire",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "maya-magen",
@@ -149,9 +149,9 @@
         "plw": 72,
         "uscf": 211,
         "group": "King 7",
-        "pokemonId": 13,
+        "pokemonId": 147,
         "element": "fire",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "parker-downing",
@@ -160,9 +160,9 @@
         "plw": 72,
         "uscf": 150,
         "group": "King 12",
-        "pokemonId": 120,
+        "pokemonId": 39,
         "element": "fire",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "elise-labarbera",
@@ -171,7 +171,7 @@
         "plw": 40,
         "uscf": 0,
         "group": "Rook 1",
-        "pokemonId": 41,
+        "pokemonId": 29,
         "element": "fire",
         "delta": 3
     },
@@ -182,9 +182,9 @@
         "plw": 60,
         "uscf": 0,
         "group": "King 4",
-        "pokemonId": 104,
+        "pokemonId": 63,
         "element": "fire",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -193,9 +193,9 @@
         "plw": 68,
         "uscf": 792,
         "group": "King 9",
-        "pokemonId": 134,
+        "pokemonId": 63,
         "element": "fire",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "chase-grant",
@@ -204,9 +204,9 @@
         "plw": 37,
         "uscf": 215,
         "group": "Bishop 3",
-        "pokemonId": 7,
+        "pokemonId": 1,
         "element": "fire",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "theodore-lewis",
@@ -215,9 +215,9 @@
         "plw": 88,
         "uscf": 1438,
         "group": "King 42",
-        "pokemonId": 25,
-        "element": "psychic",
-        "delta": 1
+        "pokemonId": 24,
+        "element": "electric",
+        "delta": 0
     },
     {
         "id": "walter-gooch-raushenbush",
@@ -226,9 +226,9 @@
         "plw": 52,
         "uscf": 1119,
         "group": "Super King 2",
-        "pokemonId": 107,
+        "pokemonId": 133,
         "element": "fire",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "jakob-latour",
@@ -237,9 +237,9 @@
         "plw": 24,
         "uscf": 126,
         "group": "Pawn 1",
-        "pokemonId": 101,
+        "pokemonId": 81,
         "element": "fire",
-        "delta": 3
+        "delta": 2
     },
     {
         "id": "brian-silverman",
@@ -248,9 +248,9 @@
         "plw": 46,
         "uscf": 904,
         "group": "Super King 47",
-        "pokemonId": 120,
+        "pokemonId": 66,
         "element": "fire",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "adam-atwa",
@@ -259,9 +259,9 @@
         "plw": 48,
         "uscf": 775,
         "group": "King 39",
-        "pokemonId": 51,
+        "pokemonId": 7,
         "element": "fire",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "myla-walavalkar",
@@ -270,9 +270,9 @@
         "plw": 18,
         "uscf": 0,
         "group": "Rook 1",
-        "pokemonId": 116,
+        "pokemonId": 88,
         "element": "fire",
-        "delta": 2
+        "delta": 1
     },
     {
         "id": "lysander-williams",
@@ -281,7 +281,7 @@
         "plw": 32,
         "uscf": 129,
         "group": "King 21",
-        "pokemonId": 51,
+        "pokemonId": 4,
         "element": "fire",
         "delta": 0
     },
@@ -292,9 +292,9 @@
         "plw": 22,
         "uscf": 929,
         "group": "King 43",
-        "pokemonId": 110,
+        "pokemonId": 108,
         "element": "fire",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "george-parker",
@@ -303,9 +303,9 @@
         "plw": 20,
         "uscf": 0,
         "group": "Queen 5",
-        "pokemonId": 47,
+        "pokemonId": 138,
         "element": "fire",
-        "delta": 0
+        "delta": 3
     },
     {
         "id": "matilda-buckmaster",
@@ -314,9 +314,9 @@
         "plw": 15,
         "uscf": 133,
         "group": "King 6",
-        "pokemonId": 124,
+        "pokemonId": 79,
         "element": "fire",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "sammy-fialkovskiy",
@@ -325,9 +325,9 @@
         "plw": 20,
         "uscf": 602,
         "group": "King 41",
-        "pokemonId": 66,
+        "pokemonId": 140,
         "element": "fire",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "sofia-gambardella",
@@ -336,7 +336,7 @@
         "plw": 19,
         "uscf": 496,
         "group": "Queen 9",
-        "pokemonId": 131,
+        "pokemonId": 116,
         "element": "fire",
         "delta": 3
     },
@@ -347,9 +347,9 @@
         "plw": 28,
         "uscf": 767,
         "group": "King 4",
-        "pokemonId": 148,
+        "pokemonId": 66,
         "element": "fire",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "jadeyn-murphy",
@@ -358,9 +358,9 @@
         "plw": 10,
         "uscf": 519,
         "group": "King 11",
-        "pokemonId": 81,
+        "pokemonId": 118,
         "element": "fire",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "jax-kim",
@@ -369,9 +369,9 @@
         "plw": 18,
         "uscf": 666,
         "group": "King 40",
-        "pokemonId": 13,
+        "pokemonId": 104,
         "element": "fire",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "chloe-yip",
@@ -380,9 +380,9 @@
         "plw": 6,
         "uscf": 738,
         "group": "King 8",
-        "pokemonId": 80,
+        "pokemonId": 50,
         "element": "fire",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "dylan-yip",
@@ -391,9 +391,9 @@
         "plw": 33,
         "uscf": 0,
         "group": "Rook 2",
-        "pokemonId": 93,
+        "pokemonId": 92,
         "element": "fire",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "rafael-boquin",
@@ -402,9 +402,9 @@
         "plw": 4,
         "uscf": 430,
         "group": "King 18",
-        "pokemonId": 42,
+        "pokemonId": 118,
         "element": "fire",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "james-labarbera",
@@ -413,9 +413,9 @@
         "plw": 21,
         "uscf": 563,
         "group": "King 8",
-        "pokemonId": 39,
+        "pokemonId": 90,
         "element": "fire",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "theodore-meng",
@@ -424,9 +424,9 @@
         "plw": 3,
         "uscf": 1429,
         "group": "Super King 28",
-        "pokemonId": 50,
+        "pokemonId": 13,
         "element": "fire",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "abby-noy",
@@ -435,9 +435,9 @@
         "plw": 0,
         "uscf": 751,
         "group": "Queen 8",
-        "pokemonId": 125,
+        "pokemonId": 88,
         "element": "fire",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "alexander-(alex)-kao",
@@ -446,7 +446,7 @@
         "plw": 0,
         "uscf": 150,
         "group": "Queen 5",
-        "pokemonId": 89,
+        "pokemonId": 88,
         "element": "fire",
         "delta": 3
     },
@@ -457,7 +457,7 @@
         "plw": 10,
         "uscf": 382,
         "group": "King 4",
-        "pokemonId": 28,
+        "pokemonId": 10,
         "element": "fire",
         "delta": 0
     },
@@ -468,7 +468,7 @@
         "plw": 0,
         "uscf": 738,
         "group": "Bishop 3",
-        "pokemonId": 137,
+        "pokemonId": 108,
         "element": "fire",
         "delta": 5
     },
@@ -479,7 +479,7 @@
         "plw": 0,
         "uscf": 347,
         "group": "Pawn 5",
-        "pokemonId": 121,
+        "pokemonId": 41,
         "element": "fire",
         "delta": 3
     },
@@ -490,9 +490,9 @@
         "plw": 0,
         "uscf": 108,
         "group": "Bishop 1",
-        "pokemonId": 132,
+        "pokemonId": 100,
         "element": "fire",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "jacob-saleh",
@@ -501,9 +501,9 @@
         "plw": 0,
         "uscf": 425,
         "group": "Queen 9",
-        "pokemonId": 105,
+        "pokemonId": 109,
         "element": "fire",
-        "delta": 0
+        "delta": 3
     },
     {
         "id": "jai-singh",
@@ -512,9 +512,9 @@
         "plw": 0,
         "uscf": 333,
         "group": "King 70",
-        "pokemonId": 64,
+        "pokemonId": 120,
         "element": "fire",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "jayden-duke",
@@ -523,9 +523,9 @@
         "plw": 0,
         "uscf": 424,
         "group": "Pawn 1",
-        "pokemonId": 129,
+        "pokemonId": 60,
         "element": "fire",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "kirin-kolosine",
@@ -534,9 +534,9 @@
         "plw": 0,
         "uscf": 0,
         "group": "Queen 4",
-        "pokemonId": 28,
+        "pokemonId": 54,
         "element": "fire",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "lara-grandinetti",
@@ -545,9 +545,9 @@
         "plw": 80,
         "uscf": 0,
         "group": "Knight 2",
-        "pokemonId": 62,
-        "element": "psychic",
-        "delta": 4
+        "pokemonId": 8,
+        "element": "electric",
+        "delta": 0
     },
     {
         "id": "lucille-brathwaite",
@@ -556,9 +556,9 @@
         "plw": 0,
         "uscf": 124,
         "group": "Queen 5",
-        "pokemonId": 132,
+        "pokemonId": 100,
         "element": "fire",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "lyra-mattis",
@@ -567,9 +567,9 @@
         "plw": 15,
         "uscf": 364,
         "group": "Queen 5",
-        "pokemonId": 17,
+        "pokemonId": 56,
         "element": "fire",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "nicephore-suter",
@@ -578,9 +578,9 @@
         "plw": 0,
         "uscf": 0,
         "group": "Pawn 4",
-        "pokemonId": 139,
+        "pokemonId": 41,
         "element": "fire",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "nicholas-leung",
@@ -589,9 +589,9 @@
         "plw": 0,
         "uscf": 1076,
         "group": "King 12",
-        "pokemonId": 7,
+        "pokemonId": 114,
         "element": "fire",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "oliver-lee",
@@ -600,9 +600,9 @@
         "plw": 0,
         "uscf": 423,
         "group": "King 1",
-        "pokemonId": 36,
+        "pokemonId": 140,
         "element": "fire",
-        "delta": 0
+        "delta": 4
     },
     {
         "id": "oona-muro",
@@ -611,9 +611,9 @@
         "plw": 0,
         "uscf": 0,
         "group": "Pawn 1",
-        "pokemonId": 99,
+        "pokemonId": 109,
         "element": "fire",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "rishiv-doshi",
@@ -622,9 +622,9 @@
         "plw": 80,
         "uscf": 0,
         "group": "Knight 2",
-        "pokemonId": 115,
-        "element": "psychic",
-        "delta": 5
+        "pokemonId": 24,
+        "element": "electric",
+        "delta": 2
     },
     {
         "id": "rohan-rao",
@@ -633,7 +633,7 @@
         "plw": 0,
         "uscf": 672,
         "group": "Pawn 6",
-        "pokemonId": 77,
+        "pokemonId": 43,
         "element": "fire",
         "delta": 2
     },
@@ -644,9 +644,9 @@
         "plw": 0,
         "uscf": 103,
         "group": "Knight 2",
-        "pokemonId": 52,
+        "pokemonId": 19,
         "element": "fire",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "tj-clarke",
@@ -655,8 +655,8 @@
         "plw": 0,
         "uscf": 0,
         "group": "Pawn 3",
-        "pokemonId": 35,
+        "pokemonId": 21,
         "element": "fire",
-        "delta": 0
+        "delta": 1
     }
 ]
