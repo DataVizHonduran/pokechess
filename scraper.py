@@ -80,9 +80,11 @@ def scrape_ps11_stats():
                         continue
 
                     player = extract_player_data(cols, name)
-                    if player:
+                    if player and player["plw"] >= 20:
                         player_data.append(player)
-                        print(f"  Found player: {name}")
+                        print(f"  Found player: {name} (PLW: {player['plw']})")
+                    elif player:
+                        print(f"  Skipped player: {name} (PLW: {player['plw']} < 20)")
 
         if player_data:
             with open('public/players.json', 'w') as f:

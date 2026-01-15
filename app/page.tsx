@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, X } from "lucide-react";
 import { Player } from "./types";
 import PowerMap from "./components/PowerMap";
 import PlayerCard from "./components/PlayerCard";
@@ -9,9 +10,21 @@ import PlayerCard from "./components/PlayerCard";
 export default function Home() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const [status, setStatus] = useState<"loading" | "connected" | "error">(
     "loading"
   );
+
+  // Filter players based on search query
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const query = searchQuery.toLowerCase();
+    return players.filter(
+      (p) =>
+        p.name.toLowerCase().includes(query) ||
+        p.pokemonName.toLowerCase().includes(query)
+    );
+  }, [players, searchQuery]);
 
   useEffect(() => {
     async function loadData() {
@@ -89,6 +102,72 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </motion.header>
+
+      {/* Search bar */}
+      <motion.div
+        className="max-w-5xl mx-auto mb-6 relative"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <div className="relative">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 w-5 h-5" />
+          <input
+            type="text"
+            placeholder="Search players or Pokemon..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 pl-12 pr-12 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          )}
+        </div>
+
+        {/* Search results dropdown */}
+        <AnimatePresence>
+          {searchResults.length > 0 && (
+            <motion.div
+              className="absolute top-full left-0 right-0 mt-2 bg-slate-900 border border-slate-700 rounded-xl overflow-hidden z-40 shadow-xl"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+            >
+              {searchResults.slice(0, 5).map((player) => (
+                <button
+                  key={player.id}
+                  onClick={() => {
+                    setSelectedPlayer(player);
+                    setSearchQuery("");
+                  }}
+                  className="w-full px-4 py-3 flex items-center justify-between hover:bg-slate-800 transition-colors text-left"
+                >
+                  <div>
+                    <span className="font-medium text-white">{player.name}</span>
+                    <span className="ml-2 text-sm text-yellow-400">
+                      {player.pokemonName}
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-sm text-slate-400">PLW: {player.plw}</span>
+                    <span className="ml-3 text-sm text-slate-500">USCF: {player.uscf}</span>
+                  </div>
+                </button>
+              ))}
+              {searchResults.length > 5 && (
+                <div className="px-4 py-2 text-sm text-slate-500 text-center border-t border-slate-800">
+                  +{searchResults.length - 5} more results
+                </div>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
 
       {/* Main content */}
       <main className="max-w-5xl mx-auto">

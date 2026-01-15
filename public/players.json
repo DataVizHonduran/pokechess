@@ -33,7 +33,7 @@
         "pokemonId": 80,
         "pokemonName": "Slowbro",
         "element": "psychic",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "alejandro-sheikh",
@@ -45,7 +45,7 @@
         "pokemonId": 122,
         "pokemonName": "Mr. Mime",
         "element": "psychic",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "andrew-li",
@@ -57,7 +57,7 @@
         "pokemonId": 71,
         "pokemonName": "Victreebel",
         "element": "psychic",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "weston-hu",
@@ -69,7 +69,7 @@
         "pokemonId": 73,
         "pokemonName": "Tentacruel",
         "element": "psychic",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "jaxson-vanderpoole",
@@ -81,7 +81,7 @@
         "pokemonId": 125,
         "pokemonName": "Electabuzz",
         "element": "psychic",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "caroline-jeffreys",
@@ -93,7 +93,7 @@
         "pokemonId": 69,
         "pokemonName": "Bellsprout",
         "element": "fire",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "isha-varma",
@@ -105,7 +105,7 @@
         "pokemonId": 5,
         "pokemonName": "Charmeleon",
         "element": "electric",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "liliah-fettner",
@@ -117,7 +117,7 @@
         "pokemonId": 44,
         "pokemonName": "Gloom",
         "element": "electric",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "sebastian-polizzi",
@@ -129,7 +129,7 @@
         "pokemonId": 35,
         "pokemonName": "Clefairy",
         "element": "fire",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "jeremy-chow",
@@ -153,7 +153,7 @@
         "pokemonId": 120,
         "pokemonName": "Staryu",
         "element": "fire",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "maya-magen",
@@ -165,7 +165,7 @@
         "pokemonId": 27,
         "pokemonName": "Sandshrew",
         "element": "fire",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "parker-downing",
@@ -177,7 +177,7 @@
         "pokemonId": 147,
         "pokemonName": "Dratini",
         "element": "fire",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "elise-labarbera",
@@ -189,7 +189,7 @@
         "pokemonId": 81,
         "pokemonName": "Magnemite",
         "element": "fire",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "kai-tang",
@@ -201,7 +201,7 @@
         "pokemonId": 69,
         "pokemonName": "Bellsprout",
         "element": "fire",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -213,7 +213,7 @@
         "pokemonId": 7,
         "pokemonName": "Squirtle",
         "element": "fire",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "chase-grant",
@@ -225,7 +225,7 @@
         "pokemonId": 27,
         "pokemonName": "Sandshrew",
         "element": "fire",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "theodore-lewis",
@@ -237,7 +237,7 @@
         "pokemonId": 70,
         "pokemonName": "Weepinbell",
         "element": "electric",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "walter-gooch-raushenbush",
@@ -249,7 +249,7 @@
         "pokemonId": 39,
         "pokemonName": "Jigglypuff",
         "element": "fire",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "jakob-latour",
@@ -261,7 +261,7 @@
         "pokemonId": 13,
         "pokemonName": "Weedle",
         "element": "fire",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "brian-silverman",
@@ -273,7 +273,7 @@
         "pokemonId": 23,
         "pokemonName": "Ekans",
         "element": "fire",
-        "delta": 1
+        "delta": 2
     },
     {
         "id": "adam-atwa",
@@ -284,18 +284,6 @@
         "group": "King 39",
         "pokemonId": 74,
         "pokemonName": "Geodude",
-        "element": "fire",
-        "delta": 5
-    },
-    {
-        "id": "myla-walavalkar",
-        "name": "Myla Walavalkar",
-        "puzzles": 18,
-        "plw": 18,
-        "uscf": 0,
-        "group": "Rook 1",
-        "pokemonId": 84,
-        "pokemonName": "Doduo",
         "element": "fire",
         "delta": 1
     },
@@ -309,7 +297,7 @@
         "pokemonId": 74,
         "pokemonName": "Geodude",
         "element": "fire",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "ethan-metzer",
@@ -321,7 +309,7 @@
         "pokemonId": 88,
         "pokemonName": "Grimer",
         "element": "fire",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "george-parker",
@@ -333,19 +321,7 @@
         "pokemonId": 98,
         "pokemonName": "Krabby",
         "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "matilda-buckmaster",
-        "name": "Matilda Buckmaster",
-        "puzzles": 10,
-        "plw": 15,
-        "uscf": 133,
-        "group": "King 6",
-        "pokemonId": 84,
-        "pokemonName": "Doduo",
-        "element": "fire",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "sammy-fialkovskiy",
@@ -357,19 +333,7 @@
         "pokemonId": 50,
         "pokemonName": "Diglett",
         "element": "fire",
-        "delta": 5
-    },
-    {
-        "id": "sofia-gambardella",
-        "name": "Sofia Gambardella",
-        "puzzles": 9,
-        "plw": 19,
-        "uscf": 496,
-        "group": "Queen 9",
-        "pokemonId": 48,
-        "pokemonName": "Venonat",
-        "element": "fire",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "wyatt-lawson",
@@ -384,42 +348,6 @@
         "delta": 2
     },
     {
-        "id": "jadeyn-murphy",
-        "name": "Jadeyn Murphy",
-        "puzzles": 5,
-        "plw": 10,
-        "uscf": 519,
-        "group": "King 11",
-        "pokemonId": 129,
-        "pokemonName": "Magikarp",
-        "element": "fire",
-        "delta": 2
-    },
-    {
-        "id": "jax-kim",
-        "name": "Jax Kim",
-        "puzzles": 4,
-        "plw": 18,
-        "uscf": 666,
-        "group": "King 40",
-        "pokemonId": 132,
-        "pokemonName": "Ditto",
-        "element": "fire",
-        "delta": 5
-    },
-    {
-        "id": "chloe-yip",
-        "name": "Chloe Yip",
-        "puzzles": 3,
-        "plw": 6,
-        "uscf": 738,
-        "group": "King 8",
-        "pokemonId": 109,
-        "pokemonName": "Koffing",
-        "element": "fire",
-        "delta": 1
-    },
-    {
         "id": "dylan-yip",
         "name": "Dylan Yip",
         "puzzles": 3,
@@ -430,18 +358,6 @@
         "pokemonName": "Nidoran M",
         "element": "fire",
         "delta": 1
-    },
-    {
-        "id": "rafael-boquin",
-        "name": "Rafael Boquin",
-        "puzzles": 2,
-        "plw": 4,
-        "uscf": 430,
-        "group": "King 18",
-        "pokemonId": 84,
-        "pokemonName": "Doduo",
-        "element": "fire",
-        "delta": 2
     },
     {
         "id": "james-labarbera",
@@ -456,138 +372,6 @@
         "delta": 1
     },
     {
-        "id": "theodore-meng",
-        "name": "Theodore Meng",
-        "puzzles": 1,
-        "plw": 3,
-        "uscf": 1429,
-        "group": "Super King 28",
-        "pokemonId": 109,
-        "pokemonName": "Koffing",
-        "element": "fire",
-        "delta": 5
-    },
-    {
-        "id": "abby-noy",
-        "name": "Abby Noy",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 751,
-        "group": "Queen 8",
-        "pokemonId": 132,
-        "pokemonName": "Ditto",
-        "element": "fire",
-        "delta": 3
-    },
-    {
-        "id": "alexander-(alex)-kao",
-        "name": "Alexander (Alex) Kao",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 150,
-        "group": "Queen 5",
-        "pokemonId": 13,
-        "pokemonName": "Weedle",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "babis-theodoratos",
-        "name": "Babis Theodoratos",
-        "puzzles": 0,
-        "plw": 10,
-        "uscf": 382,
-        "group": "King 4",
-        "pokemonId": 83,
-        "pokemonName": "Farfetch'd",
-        "element": "fire",
-        "delta": 4
-    },
-    {
-        "id": "danica-lee",
-        "name": "Danica Lee",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 738,
-        "group": "Bishop 3",
-        "pokemonId": 114,
-        "pokemonName": "Tangela",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "eleanor-lee",
-        "name": "Eleanor Lee",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 347,
-        "group": "Pawn 5",
-        "pokemonId": 90,
-        "pokemonName": "Shellder",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "eliana-steinhauser",
-        "name": "Eliana Steinhauser",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 108,
-        "group": "Bishop 1",
-        "pokemonId": 109,
-        "pokemonName": "Koffing",
-        "element": "fire",
-        "delta": 0
-    },
-    {
-        "id": "jacob-saleh",
-        "name": "Jacob Saleh",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 425,
-        "group": "Queen 9",
-        "pokemonId": 132,
-        "pokemonName": "Ditto",
-        "element": "fire",
-        "delta": 3
-    },
-    {
-        "id": "jai-singh",
-        "name": "Jai Singh",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 333,
-        "group": "King 70",
-        "pokemonId": 11,
-        "pokemonName": "Metapod",
-        "element": "fire",
-        "delta": 4
-    },
-    {
-        "id": "jayden-duke",
-        "name": "Jayden Duke",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 424,
-        "group": "Pawn 1",
-        "pokemonId": 129,
-        "pokemonName": "Magikarp",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "kirin-kolosine",
-        "name": "Kirin Kolosine",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 0,
-        "group": "Queen 4",
-        "pokemonId": 46,
-        "pokemonName": "Paras",
-        "element": "fire",
-        "delta": 2
-    },
-    {
         "id": "lara-grandinetti",
         "name": "Lara Grandinetti",
         "puzzles": 0,
@@ -597,78 +381,6 @@
         "pokemonId": 34,
         "pokemonName": "Nidoking",
         "element": "electric",
-        "delta": 4
-    },
-    {
-        "id": "lucille-brathwaite",
-        "name": "Lucille Brathwaite",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 124,
-        "group": "Queen 5",
-        "pokemonId": 109,
-        "pokemonName": "Koffing",
-        "element": "fire",
-        "delta": 2
-    },
-    {
-        "id": "lyra-mattis",
-        "name": "Lyra Mattis",
-        "puzzles": 0,
-        "plw": 15,
-        "uscf": 364,
-        "group": "Queen 5",
-        "pokemonId": 13,
-        "pokemonName": "Weedle",
-        "element": "fire",
-        "delta": 0
-    },
-    {
-        "id": "nicephore-suter",
-        "name": "Nicephore Suter",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 0,
-        "group": "Pawn 4",
-        "pokemonId": 41,
-        "pokemonName": "Zubat",
-        "element": "fire",
-        "delta": 3
-    },
-    {
-        "id": "nicholas-leung",
-        "name": "Nicholas Leung",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 1076,
-        "group": "King 12",
-        "pokemonId": 90,
-        "pokemonName": "Shellder",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "oliver-lee",
-        "name": "Oliver Lee",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 423,
-        "group": "King 1",
-        "pokemonId": 88,
-        "pokemonName": "Grimer",
-        "element": "fire",
-        "delta": 0
-    },
-    {
-        "id": "oona-muro",
-        "name": "Oona Muro",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 0,
-        "group": "Pawn 1",
-        "pokemonId": 72,
-        "pokemonName": "Tentacool",
-        "element": "fire",
         "delta": 3
     },
     {
@@ -681,42 +393,6 @@
         "pokemonId": 31,
         "pokemonName": "Nidoqueen",
         "element": "electric",
-        "delta": 5
-    },
-    {
-        "id": "rohan-rao",
-        "name": "Rohan Rao",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 672,
-        "group": "Pawn 6",
-        "pokemonId": 98,
-        "pokemonName": "Krabby",
-        "element": "fire",
-        "delta": 1
-    },
-    {
-        "id": "shivaan-singh",
-        "name": "Shivaan Singh",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 103,
-        "group": "Knight 2",
-        "pokemonId": 118,
-        "pokemonName": "Goldeen",
-        "element": "fire",
-        "delta": 0
-    },
-    {
-        "id": "tj-clarke",
-        "name": "TJ Clarke",
-        "puzzles": 0,
-        "plw": 0,
-        "uscf": 0,
-        "group": "Pawn 3",
-        "pokemonId": 10,
-        "pokemonName": "Caterpie",
-        "element": "fire",
-        "delta": 3
+        "delta": 4
     }
 ]
