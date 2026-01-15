@@ -1,0 +1,112 @@
+[
+  {
+    "id": "alex-chen",
+    "name": "Alex Chen",
+    "puzzles": 245,
+    "plw": 178,
+    "uscf": 1450,
+    "group": "A",
+    "pokemonId": 6,
+    "element": "psychic",
+    "delta": 3
+  },
+  {
+    "id": "maria-santos",
+    "name": "Maria Santos",
+    "puzzles": 189,
+    "plw": 156,
+    "uscf": 1380,
+    "group": "A",
+    "pokemonId": 25,
+    "element": "psychic",
+    "delta": 2
+  },
+  {
+    "id": "james-wilson",
+    "name": "James Wilson",
+    "puzzles": 312,
+    "plw": 142,
+    "uscf": 1520,
+    "group": "B",
+    "pokemonId": 150,
+    "element": "fire",
+    "delta": 0
+  },
+  {
+    "id": "sophia-lee",
+    "name": "Sophia Lee",
+    "puzzles": 98,
+    "plw": 95,
+    "uscf": 1120,
+    "group": "C",
+    "pokemonId": 133,
+    "element": "fire",
+    "delta": 5
+  },
+  {
+    "id": "marcus-johnson",
+    "name": "Marcus Johnson",
+    "puzzles": 156,
+    "plw": 118,
+    "uscf": 1290,
+    "group": "B",
+    "pokemonId": 94,
+    "element": "fire",
+    "delta": 1
+  },
+  {
+    "id": "emma-davis",
+    "name": "Emma Davis",
+    "puzzles": 278,
+    "plw": 165,
+    "uscf": 1410,
+    "group": "A",
+    "pokemonId": 149,
+    "element": "psychic",
+    "delta": 4
+  },
+  {
+    "id": "daniel-kim",
+    "name": "Daniel Kim",
+    "puzzles": 67,
+    "plw": 52,
+    "uscf": 980,
+    "group": "C",
+    "pokemonId": 39,
+    "element": "fire",
+    "delta": 0
+  },
+  {
+    "id": "olivia-brown",
+    "name": "Olivia Brown",
+    "puzzles": 134,
+    "plw": 88,
+    "uscf": 1180,
+    "group": "B",
+    "pokemonId": 143,
+    "element": "fire",
+    "delta": 2
+  },
+  {
+    "id": "lucas-garcia",
+    "name": "Lucas Garcia",
+    "puzzles": 201,
+    "plw": 135,
+    "uscf": 1350,
+    "group": "B",
+    "pokemonId": 130,
+    "element": "fire",
+    "delta": 0
+  },
+  {
+    "id": "ava-martinez",
+    "name": "Ava Martinez",
+    "puzzles": 89,
+    "plw": 72,
+    "uscf": 1050,
+    "group": "C",
+    "pokemonId": 35,
+    "element": "fire",
+    "delta": 1
+  }
+]

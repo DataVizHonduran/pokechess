@@ -1,65 +1,173 @@
-import Image from "next/image";
+"use client";
+
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Player } from "./types";
+import PowerMap from "./components/PowerMap";
+import PlayerCard from "./components/PlayerCard";
 
 export default function Home() {
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  const [status, setStatus] = useState<"loading" | "connected" | "error">(
+    "loading"
+  );
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const res = await fetch("./players.json");
+        if (!res.ok) throw new Error("Failed to load");
+        const data = await res.json();
+        setPlayers(data);
+        setStatus("connected");
+      } catch {
+        console.error("No players.json found yet. Run the scraper!");
+        setStatus("error");
+      }
+    }
+    loadData();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="bg-slate-950 text-slate-200 font-sans min-h-screen p-8">
+      {/* Header */}
+      <motion.header
+        className="max-w-5xl mx-auto mb-8 flex justify-between items-end"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div>
+          <motion.h1
+            className="text-4xl font-black tracking-tight text-white mb-2"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <span className="text-indigo-500">POKE</span>CHESS{" "}
+            <span className="text-sm font-mono text-slate-500">v2.0</span>
+          </motion.h1>
+          <motion.p
+            className="text-slate-400"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            PS11 Chess Team Performance Ecosystem
+          </motion.p>
+        </div>
+        <motion.div
+          className="text-right"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          <div className="text-xs uppercase tracking-widest text-slate-500">
+            Live Data Status
+          </div>
+          <motion.div
+            className={`font-mono text-xl ${
+              status === "connected"
+                ? "text-green-500"
+                : status === "error"
+                ? "text-red-500"
+                : "text-yellow-500"
+            }`}
+            animate={
+              status === "loading" ? { opacity: [1, 0.5, 1] } : { opacity: 1 }
+            }
+            transition={
+              status === "loading" ? { duration: 1, repeat: Infinity } : {}
+            }
+          >
+            {status === "connected"
+              ? "CONNECTED"
+              : status === "error"
+              ? "OFFLINE"
+              : "LOADING..."}
+          </motion.div>
+        </motion.div>
+      </motion.header>
+
+      {/* Main content */}
+      <main className="max-w-5xl mx-auto">
+        <PowerMap
+          players={players}
+          onPlayerClick={(player) => setSelectedPlayer(player)}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Stats summary */}
+        {players.length > 0 && (
+          <motion.section
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <StatCard
+              label="Total Players"
+              value={players.length}
+              delay={0.7}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+            <StatCard
+              label="Elite Players"
+              value={players.filter((p) => p.plw >= 150).length}
+              delay={0.8}
+            />
+            <StatCard
+              label="Avg USCF"
+              value={Math.round(
+                players.reduce((sum, p) => sum + p.uscf, 0) / players.length
+              )}
+              delay={0.9}
+            />
+            <StatCard
+              label="Total Puzzles"
+              value={players.reduce((sum, p) => sum + p.puzzles, 0)}
+              delay={1.0}
+            />
+          </motion.section>
+        )}
       </main>
+
+      {/* Player card modal */}
+      <PlayerCard
+        player={selectedPlayer}
+        onClose={() => setSelectedPlayer(null)}
+      />
     </div>
+  );
+}
+
+function StatCard({
+  label,
+  value,
+  delay,
+}: {
+  label: string;
+  value: number;
+  delay: number;
+}) {
+  return (
+    <motion.div
+      className="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay }}
+      whileHover={{ scale: 1.05, borderColor: "rgb(99 102 241)" }}
+    >
+      <motion.div
+        className="text-2xl font-bold text-white"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: delay + 0.1, type: "spring" }}
+      >
+        {value}
+      </motion.div>
+      <div className="text-xs text-slate-500 uppercase tracking-wider">
+        {label}
+      </div>
+    </motion.div>
   );
 }
