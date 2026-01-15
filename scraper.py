@@ -72,20 +72,68 @@ def get_pokemon_by_plw(plw, name):
     # Use name hash to pick consistently within each tier
     name_hash = sum(ord(c) for c in name)
 
-    # Tier 5: Legendaries (300+ PLW)
-    legendaries = [150, 151, 149, 144, 145, 146, 143, 130, 131, 142]  # Mewtwo, Mew, Dragonite, Articuno, Zapdos, Moltres, Snorlax, Gyarados, Lapras, Aerodactyl
+    # Tier 5: Legendaries & Pseudo-Legendaries (300+ PLW) - 20 Pokemon
+    legendaries = [
+        150, 151, 149,  # Mewtwo, Mew, Dragonite
+        144, 145, 146,  # Articuno, Zapdos, Moltres
+        143, 130, 131, 142,  # Snorlax, Gyarados, Lapras, Aerodactyl
+        148, 139, 141,  # Dragonair, Omastar, Kabutops
+        6, 9, 3,  # Charizard, Blastoise, Venusaur (starters are legendary tier too)
+        59, 38, 94, 65  # Arcanine, Ninetales, Gengar, Alakazam
+    ]
 
-    # Tier 4: Final evolutions (150-299 PLW)
-    final_evos = [6, 9, 3, 65, 68, 76, 94, 103, 112, 134, 135, 136, 59, 38, 45]  # Charizard, Blastoise, Venusaur, Alakazam, Machamp, Golem, Gengar, Exeggutor, Rhydon, Vaporeon, Jolteon, Flareon, Arcanine, Ninetales, Vileplume
+    # Tier 4: Final evolutions (150-299 PLW) - 35 Pokemon
+    final_evos = [
+        68, 76, 103, 112,  # Machamp, Golem, Exeggutor, Rhydon
+        134, 135, 136,  # Vaporeon, Jolteon, Flareon
+        45, 71, 62, 73,  # Vileplume, Victreebel, Poliwrath, Tentacruel
+        78, 80, 82, 83,  # Rapidash, Slowbro, Magneton, Farfetch'd
+        85, 87, 89, 91,  # Dodrio, Dewgong, Muk, Cloyster
+        97, 99, 101, 105,  # Hypno, Kingler, Electrode, Marowak
+        106, 107, 110, 113,  # Hitmonlee, Hitmonchan, Weezing, Chansey
+        115, 117, 119, 121,  # Kangaskhan, Seadra, Seaking, Starmie
+        122, 123, 124, 125, 126, 128  # Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Tauros
+    ]
 
-    # Tier 3: Stage 1 evolutions (75-149 PLW)
-    stage1_evos = [5, 8, 2, 64, 67, 75, 93, 102, 111, 24, 28, 31, 34, 36, 40]  # Charmeleon, Wartortle, Ivysaur, Kadabra, Machoke, Graveler, Haunter, Exeggcute, Rhyhorn, Arbok, Sandslash, Nidoqueen, Nidoking, Clefable, Wigglytuff
+    # Tier 3: Stage 1 evolutions (75-149 PLW) - 35 Pokemon
+    stage1_evos = [
+        5, 8, 2,  # Charmeleon, Wartortle, Ivysaur
+        64, 67, 75, 93,  # Kadabra, Machoke, Graveler, Haunter
+        24, 28, 31, 34,  # Arbok, Sandslash, Nidoqueen, Nidoking
+        36, 40, 44, 47,  # Clefable, Wigglytuff, Gloom, Parasect
+        49, 51, 53, 55,  # Venomoth, Dugtrio, Persian, Golduck
+        57, 61, 70, 102,  # Primeape, Poliwhirl, Weepinbell, Exeggcute
+        111, 30, 33, 20,  # Rhyhorn, Nidorina, Nidorino, Raticate
+        22, 17, 42, 15,  # Fearow, Pidgeotto, Golbat, Beedrill
+        12, 26  # Butterfree, Raichu
+    ]
 
-    # Tier 2: Basic Pokemon (25-74 PLW)
-    basic = [4, 7, 1, 25, 37, 58, 63, 66, 74, 92, 133, 147, 27, 29, 32, 35, 39]  # Charmander, Squirtle, Bulbasaur, Pikachu, Vulpix, Growlithe, Abra, Machop, Geodude, Gastly, Eevee, Dratini, Sandshrew, Nidoran, Clefairy, Jigglypuff
+    # Tier 2: Basic Pokemon (25-74 PLW) - 35 Pokemon
+    basic = [
+        4, 7, 1, 25,  # Charmander, Squirtle, Bulbasaur, Pikachu
+        37, 58, 63, 66, 74,  # Vulpix, Growlithe, Abra, Machop, Geodude
+        92, 133, 147,  # Gastly, Eevee, Dratini
+        27, 29, 32, 35, 39,  # Sandshrew, Nidoran F, Nidoran M, Clefairy, Jigglypuff
+        43, 60, 69, 79,  # Oddish, Poliwag, Bellsprout, Slowpoke
+        77, 81, 95, 104,  # Ponyta, Magnemite, Onix, Cubone
+        111, 116, 120, 127,  # Rhyhorn, Horsea, Staryu, Pinsir
+        23, 19, 16, 21,  # Ekans, Rattata, Pidgey, Spearow
+        56, 54, 52  # Mankey, Psyduck, Meowth
+    ]
 
-    # Tier 1: Starter/Cute Pokemon (0-24 PLW)
-    starters = [10, 13, 16, 19, 21, 23, 41, 43, 46, 48, 50, 52, 54, 56, 60, 69, 72, 77, 79, 81, 84, 86, 88, 90, 96, 98, 100, 104, 108, 109, 114, 116, 118, 120, 127, 129, 137, 138, 140]  # Caterpie, Weedle, Pidgey, Rattata, Spearow, Ekans, Zubat, Oddish, Paras, Venonat, Diglett, Meowth, Psyduck, Mankey, Poliwag, Bellsprout, Tentacool, Ponyta, Slowpoke, Magnemite, Doduo, Seel, Grimer, Shellder, Drowzee, Krabby, Voltorb, Cubone, Lickitung, Koffing, Tangela, Horsea, Goldeen, Staryu, Pinsir, Magikarp, Porygon, Omanyte, Kabuto
+    # Tier 1: Starter/Common Pokemon (0-24 PLW) - 30 Pokemon
+    starters = [
+        10, 11, 13, 14,  # Caterpie, Metapod, Weedle, Kakuna
+        41, 46, 48, 50,  # Zubat, Paras, Venonat, Diglett
+        72, 84, 86, 88, 90,  # Tentacool, Doduo, Seel, Grimer, Shellder
+        96, 98, 100,  # Drowzee, Krabby, Voltorb
+        108, 109, 114,  # Lickitung, Koffing, Tangela
+        118, 129,  # Goldeen, Magikarp
+        137, 138, 140,  # Porygon, Omanyte, Kabuto
+        132,  # Ditto
+        83,  # Farfetch'd
+        106, 107  # Hitmonlee, Hitmonchan (rare but low evolution)
+    ]
 
     if plw >= 300:
         pokemon_list = legendaries
