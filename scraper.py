@@ -104,86 +104,109 @@ def scrape_ps11_stats():
         driver.quit()
 
 def get_pokemon_by_plw(plw, name):
-    """Assign Pokemon based on PLW tier - higher PLW = more evolved/legendary Pokemon"""
+    """
+    Assign Pokemon based on PLW with real evolution chains.
+    - 20-49 PLW: Base form
+    - 50-74 PLW: First evolution
+    - 75-99 PLW: Final evolution
+    - 100+ PLW: Legendary
+    """
 
-    # Use name hash to pick consistently within each tier
+    # Use name hash to pick consistently
     name_hash = sum(ord(c) for c in name)
 
-    # Tier 5: Legendaries & Pseudo-Legendaries (300+ PLW) - 20 Pokemon
-    legendaries = [
-        150, 151, 149,  # Mewtwo, Mew, Dragonite
-        144, 145, 146,  # Articuno, Zapdos, Moltres
-        143, 130, 131, 142,  # Snorlax, Gyarados, Lapras, Aerodactyl
-        148, 139, 141,  # Dragonair, Omastar, Kabutops
-        6, 9, 3,  # Charizard, Blastoise, Venusaur (starters are legendary tier too)
-        59, 38, 94, 65  # Arcanine, Ninetales, Gengar, Alakazam
+    # Evolution chains: (base, evolution1, evolution2 or None for 2-stage)
+    EVOLUTION_CHAINS = [
+        (1, 2, 3),       # Bulbasaur → Ivysaur → Venusaur
+        (4, 5, 6),       # Charmander → Charmeleon → Charizard
+        (7, 8, 9),       # Squirtle → Wartortle → Blastoise
+        (10, 11, 12),    # Caterpie → Metapod → Butterfree
+        (13, 14, 15),    # Weedle → Kakuna → Beedrill
+        (16, 17, 18),    # Pidgey → Pidgeotto → Pidgeot
+        (19, 20, 20),    # Rattata → Raticate → Raticate
+        (21, 22, 22),    # Spearow → Fearow → Fearow
+        (23, 24, 24),    # Ekans → Arbok → Arbok
+        (25, 26, 26),    # Pikachu → Raichu → Raichu
+        (27, 28, 28),    # Sandshrew → Sandslash → Sandslash
+        (29, 30, 31),    # Nidoran♀ → Nidorina → Nidoqueen
+        (32, 33, 34),    # Nidoran♂ → Nidorino → Nidoking
+        (35, 36, 36),    # Clefairy → Clefable → Clefable
+        (37, 38, 38),    # Vulpix → Ninetales → Ninetales
+        (39, 40, 40),    # Jigglypuff → Wigglytuff → Wigglytuff
+        (41, 42, 42),    # Zubat → Golbat → Golbat
+        (43, 44, 45),    # Oddish → Gloom → Vileplume
+        (46, 47, 47),    # Paras → Parasect → Parasect
+        (48, 49, 49),    # Venonat → Venomoth → Venomoth
+        (50, 51, 51),    # Diglett → Dugtrio → Dugtrio
+        (52, 53, 53),    # Meowth → Persian → Persian
+        (54, 55, 55),    # Psyduck → Golduck → Golduck
+        (56, 57, 57),    # Mankey → Primeape → Primeape
+        (58, 59, 59),    # Growlithe → Arcanine → Arcanine
+        (60, 61, 62),    # Poliwag → Poliwhirl → Poliwrath
+        (63, 64, 65),    # Abra → Kadabra → Alakazam
+        (66, 67, 68),    # Machop → Machoke → Machamp
+        (69, 70, 71),    # Bellsprout → Weepinbell → Victreebel
+        (72, 73, 73),    # Tentacool → Tentacruel → Tentacruel
+        (74, 75, 76),    # Geodude → Graveler → Golem
+        (77, 78, 78),    # Ponyta → Rapidash → Rapidash
+        (79, 80, 80),    # Slowpoke → Slowbro → Slowbro
+        (81, 82, 82),    # Magnemite → Magneton → Magneton
+        (84, 85, 85),    # Doduo → Dodrio → Dodrio
+        (86, 87, 87),    # Seel → Dewgong → Dewgong
+        (88, 89, 89),    # Grimer → Muk → Muk
+        (90, 91, 91),    # Shellder → Cloyster → Cloyster
+        (92, 93, 94),    # Gastly → Haunter → Gengar
+        (96, 97, 97),    # Drowzee → Hypno → Hypno
+        (98, 99, 99),    # Krabby → Kingler → Kingler
+        (100, 101, 101), # Voltorb → Electrode → Electrode
+        (104, 105, 105), # Cubone → Marowak → Marowak
+        (109, 110, 110), # Koffing → Weezing → Weezing
+        (111, 112, 112), # Rhyhorn → Rhydon → Rhydon
+        (116, 117, 117), # Horsea → Seadra → Seadra
+        (118, 119, 119), # Goldeen → Seaking → Seaking
+        (120, 121, 121), # Staryu → Starmie → Starmie
+        (129, 130, 130), # Magikarp → Gyarados → Gyarados
+        (133, 134, 134), # Eevee → Vaporeon → Vaporeon
+        (133, 135, 135), # Eevee → Jolteon → Jolteon
+        (133, 136, 136), # Eevee → Flareon → Flareon
+        (138, 139, 139), # Omanyte → Omastar → Omastar
+        (140, 141, 141), # Kabuto → Kabutops → Kabutops
+        (147, 148, 149), # Dratini → Dragonair → Dragonite
     ]
 
-    # Tier 4: Final evolutions (150-299 PLW) - 35 Pokemon
-    final_evos = [
-        68, 76, 103, 112,  # Machamp, Golem, Exeggutor, Rhydon
-        134, 135, 136,  # Vaporeon, Jolteon, Flareon
-        45, 71, 62, 73,  # Vileplume, Victreebel, Poliwrath, Tentacruel
-        78, 80, 82, 83,  # Rapidash, Slowbro, Magneton, Farfetch'd
-        85, 87, 89, 91,  # Dodrio, Dewgong, Muk, Cloyster
-        97, 99, 101, 105,  # Hypno, Kingler, Electrode, Marowak
-        106, 107, 110, 113,  # Hitmonlee, Hitmonchan, Weezing, Chansey
-        115, 117, 119, 121,  # Kangaskhan, Seadra, Seaking, Starmie
-        122, 123, 124, 125, 126, 128  # Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Tauros
+    # Legendaries for 100+ PLW
+    LEGENDARIES = [
+        150,  # Mewtwo
+        151,  # Mew
+        144,  # Articuno
+        145,  # Zapdos
+        146,  # Moltres
+        143,  # Snorlax
+        131,  # Lapras
+        142,  # Aerodactyl
+        149,  # Dragonite
+        130,  # Gyarados
+        6,    # Charizard
+        9,    # Blastoise
+        3,    # Venusaur
+        65,   # Alakazam
+        94,   # Gengar
+        59,   # Arcanine
     ]
 
-    # Tier 3: Stage 1 evolutions (75-149 PLW) - 35 Pokemon
-    stage1_evos = [
-        5, 8, 2,  # Charmeleon, Wartortle, Ivysaur
-        64, 67, 75, 93,  # Kadabra, Machoke, Graveler, Haunter
-        24, 28, 31, 34,  # Arbok, Sandslash, Nidoqueen, Nidoking
-        36, 40, 44, 47,  # Clefable, Wigglytuff, Gloom, Parasect
-        49, 51, 53, 55,  # Venomoth, Dugtrio, Persian, Golduck
-        57, 61, 70, 102,  # Primeape, Poliwhirl, Weepinbell, Exeggcute
-        111, 30, 33, 20,  # Rhyhorn, Nidorina, Nidorino, Raticate
-        22, 17, 42, 15,  # Fearow, Pidgeotto, Golbat, Beedrill
-        12, 26  # Butterfree, Raichu
-    ]
+    # At 100+ PLW, get a legendary
+    if plw >= 100:
+        return LEGENDARIES[name_hash % len(LEGENDARIES)]
 
-    # Tier 2: Basic Pokemon (25-74 PLW) - 35 Pokemon
-    basic = [
-        4, 7, 1, 25,  # Charmander, Squirtle, Bulbasaur, Pikachu
-        37, 58, 63, 66, 74,  # Vulpix, Growlithe, Abra, Machop, Geodude
-        92, 133, 147,  # Gastly, Eevee, Dratini
-        27, 29, 32, 35, 39,  # Sandshrew, Nidoran F, Nidoran M, Clefairy, Jigglypuff
-        43, 60, 69, 79,  # Oddish, Poliwag, Bellsprout, Slowpoke
-        77, 81, 95, 104,  # Ponyta, Magnemite, Onix, Cubone
-        111, 116, 120, 127,  # Rhyhorn, Horsea, Staryu, Pinsir
-        23, 19, 16, 21,  # Ekans, Rattata, Pidgey, Spearow
-        56, 54, 52  # Mankey, Psyduck, Meowth
-    ]
+    # Otherwise, pick an evolution chain and get the right stage
+    chain = EVOLUTION_CHAINS[name_hash % len(EVOLUTION_CHAINS)]
 
-    # Tier 1: Starter/Common Pokemon (0-24 PLW) - 30 Pokemon
-    starters = [
-        10, 11, 13, 14,  # Caterpie, Metapod, Weedle, Kakuna
-        41, 46, 48, 50,  # Zubat, Paras, Venonat, Diglett
-        72, 84, 86, 88, 90,  # Tentacool, Doduo, Seel, Grimer, Shellder
-        96, 98, 100,  # Drowzee, Krabby, Voltorb
-        108, 109, 114,  # Lickitung, Koffing, Tangela
-        118, 129,  # Goldeen, Magikarp
-        137, 138, 140,  # Porygon, Omanyte, Kabuto
-        132,  # Ditto
-        83,  # Farfetch'd
-        106, 107  # Hitmonlee, Hitmonchan (rare but low evolution)
-    ]
-
-    if plw >= 300:
-        pokemon_list = legendaries
-    elif plw >= 150:
-        pokemon_list = final_evos
-    elif plw >= 75:
-        pokemon_list = stage1_evos
-    elif plw >= 25:
-        pokemon_list = basic
+    if plw >= 75:
+        return chain[2]  # Final evolution
+    elif plw >= 50:
+        return chain[1]  # First evolution
     else:
-        pokemon_list = starters
-
-    return pokemon_list[name_hash % len(pokemon_list)]
+        return chain[0]  # Base form
 
 
 def extract_player_data(cols, name):
@@ -202,15 +225,15 @@ def extract_player_data(cols, name):
 
     pokemon_id = get_pokemon_by_plw(plw, name)
 
-    # Determine element based on PLW tier
-    if plw >= 300:
-        element = "legendary"
-    elif plw >= 150:
-        element = "psychic"
+    # Determine tier based on PLW
+    if plw >= 100:
+        tier = "legendary"
     elif plw >= 75:
-        element = "electric"
+        tier = "final"
+    elif plw >= 50:
+        tier = "evolved"
     else:
-        element = "fire"
+        tier = "basic"
 
     return {
         "id": name.lower().replace(" ", "-").replace(".", ""),
@@ -221,7 +244,7 @@ def extract_player_data(cols, name):
         "group": group,
         "pokemonId": pokemon_id,
         "pokemonName": POKEMON_NAMES.get(pokemon_id, "Unknown"),
-        "element": element,
+        "tier": tier,
         "delta": random.randint(0, 5)
     }
 

@@ -11,7 +11,7 @@ interface PlayerCardProps {
 }
 
 export default function PlayerCard({ player, onClose }: PlayerCardProps) {
-  const isElite = player && player.plw >= 150;
+  const isElite = player && player.tier === "legendary";
 
   return (
     <AnimatePresence>

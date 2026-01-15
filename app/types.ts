@@ -7,6 +7,6 @@ export interface Player {
   group: string;
   pokemonId: number;
   pokemonName: string;
-  element: string;
+  tier: string;
   delta: number;
 }

@@ -9,7 +9,7 @@ interface PlayerDotProps {
 }
 
 export default function PlayerDot({ player, onClick }: PlayerDotProps) {
-  const isElite = player.plw >= 150;
+  const isElite = player.tier === "legendary";
   const xPos = Math.min((player.uscf / 2000) * 100, 98);
   const yPos = Math.min((player.plw / 400) * 100, 98);
 

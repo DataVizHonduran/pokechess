@@ -190,8 +190,8 @@ export default function Home() {
               delay={0.7}
             />
             <StatCard
-              label="Elite Players"
-              value={players.filter((p) => p.plw >= 150).length}
+              label="Legendary"
+              value={players.filter((p) => p.tier === "legendary").length}
               delay={0.8}
             />
             <StatCard

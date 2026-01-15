@@ -6,10 +6,10 @@
         "plw": 382,
         "uscf": 966,
         "group": "King 11",
-        "pokemonId": 149,
-        "pokemonName": "Dragonite",
-        "element": "legendary",
-        "delta": 3
+        "pokemonId": 144,
+        "pokemonName": "Articuno",
+        "tier": "legendary",
+        "delta": 4
     },
     {
         "id": "drew-murphy",
@@ -18,10 +18,10 @@
         "plw": 358,
         "uscf": 773,
         "group": "King 19",
-        "pokemonId": 65,
-        "pokemonName": "Alakazam",
-        "element": "legendary",
-        "delta": 2
+        "pokemonId": 142,
+        "pokemonName": "Aerodactyl",
+        "tier": "legendary",
+        "delta": 3
     },
     {
         "id": "anastassi-xenos",
@@ -30,9 +30,9 @@
         "plw": 282,
         "uscf": 0,
         "group": "Queen 5",
-        "pokemonId": 80,
-        "pokemonName": "Slowbro",
-        "element": "psychic",
+        "pokemonId": 146,
+        "pokemonName": "Moltres",
+        "tier": "legendary",
         "delta": 4
     },
     {
@@ -42,10 +42,10 @@
         "plw": 280,
         "uscf": 570,
         "group": "King 15",
-        "pokemonId": 122,
-        "pokemonName": "Mr. Mime",
-        "element": "psychic",
-        "delta": 5
+        "pokemonId": 3,
+        "pokemonName": "Venusaur",
+        "tier": "legendary",
+        "delta": 2
     },
     {
         "id": "andrew-li",
@@ -54,10 +54,10 @@
         "plw": 174,
         "uscf": 1303,
         "group": "King 55",
-        "pokemonId": 71,
-        "pokemonName": "Victreebel",
-        "element": "psychic",
-        "delta": 0
+        "pokemonId": 131,
+        "pokemonName": "Lapras",
+        "tier": "legendary",
+        "delta": 4
     },
     {
         "id": "weston-hu",
@@ -66,10 +66,10 @@
         "plw": 162,
         "uscf": 502,
         "group": "King 16",
-        "pokemonId": 73,
-        "pokemonName": "Tentacruel",
-        "element": "psychic",
-        "delta": 4
+        "pokemonId": 65,
+        "pokemonName": "Alakazam",
+        "tier": "legendary",
+        "delta": 1
     },
     {
         "id": "jaxson-vanderpoole",
@@ -78,10 +78,10 @@
         "plw": 150,
         "uscf": 585,
         "group": "King 11",
-        "pokemonId": 125,
-        "pokemonName": "Electabuzz",
-        "element": "psychic",
-        "delta": 4
+        "pokemonId": 144,
+        "pokemonName": "Articuno",
+        "tier": "legendary",
+        "delta": 3
     },
     {
         "id": "caroline-jeffreys",
@@ -90,10 +90,10 @@
         "plw": 43,
         "uscf": 103,
         "group": "Knight 1",
-        "pokemonId": 69,
-        "pokemonName": "Bellsprout",
-        "element": "fire",
-        "delta": 4
+        "pokemonId": 60,
+        "pokemonName": "Poliwag",
+        "tier": "basic",
+        "delta": 3
     },
     {
         "id": "isha-varma",
@@ -102,10 +102,10 @@
         "plw": 126,
         "uscf": 1029,
         "group": "King 20",
-        "pokemonId": 5,
-        "pokemonName": "Charmeleon",
-        "element": "electric",
-        "delta": 3
+        "pokemonId": 3,
+        "pokemonName": "Venusaur",
+        "tier": "legendary",
+        "delta": 1
     },
     {
         "id": "liliah-fettner",
@@ -114,10 +114,10 @@
         "plw": 94,
         "uscf": 431,
         "group": "King 15",
-        "pokemonId": 44,
-        "pokemonName": "Gloom",
-        "element": "electric",
-        "delta": 4
+        "pokemonId": 36,
+        "pokemonName": "Clefable",
+        "tier": "final",
+        "delta": 5
     },
     {
         "id": "sebastian-polizzi",
@@ -126,10 +126,10 @@
         "plw": 42,
         "uscf": 0,
         "group": "King 1",
-        "pokemonId": 35,
-        "pokemonName": "Clefairy",
-        "element": "fire",
-        "delta": 3
+        "pokemonId": 7,
+        "pokemonName": "Squirtle",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "jeremy-chow",
@@ -138,10 +138,10 @@
         "plw": 78,
         "uscf": 299,
         "group": "King 1",
-        "pokemonId": 15,
-        "pokemonName": "Beedrill",
-        "element": "electric",
-        "delta": 5
+        "pokemonId": 24,
+        "pokemonName": "Arbok",
+        "tier": "final",
+        "delta": 3
     },
     {
         "id": "sloane-murphy",
@@ -150,9 +150,9 @@
         "plw": 74,
         "uscf": 1355,
         "group": "King 68",
-        "pokemonId": 120,
-        "pokemonName": "Staryu",
-        "element": "fire",
+        "pokemonId": 55,
+        "pokemonName": "Golduck",
+        "tier": "evolved",
         "delta": 3
     },
     {
@@ -162,10 +162,10 @@
         "plw": 72,
         "uscf": 211,
         "group": "King 7",
-        "pokemonId": 27,
-        "pokemonName": "Sandshrew",
-        "element": "fire",
-        "delta": 4
+        "pokemonId": 80,
+        "pokemonName": "Slowbro",
+        "tier": "evolved",
+        "delta": 3
     },
     {
         "id": "parker-downing",
@@ -174,9 +174,9 @@
         "plw": 72,
         "uscf": 150,
         "group": "King 12",
-        "pokemonId": 147,
-        "pokemonName": "Dratini",
-        "element": "fire",
+        "pokemonId": 73,
+        "pokemonName": "Tentacruel",
+        "tier": "evolved",
         "delta": 0
     },
     {
@@ -186,10 +186,10 @@
         "plw": 40,
         "uscf": 0,
         "group": "Rook 1",
-        "pokemonId": 81,
-        "pokemonName": "Magnemite",
-        "element": "fire",
-        "delta": 5
+        "pokemonId": 39,
+        "pokemonName": "Jigglypuff",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "kai-tang",
@@ -198,10 +198,10 @@
         "plw": 60,
         "uscf": 0,
         "group": "King 4",
-        "pokemonId": 69,
-        "pokemonName": "Bellsprout",
-        "element": "fire",
-        "delta": 2
+        "pokemonId": 110,
+        "pokemonName": "Weezing",
+        "tier": "evolved",
+        "delta": 1
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -210,10 +210,10 @@
         "plw": 68,
         "uscf": 792,
         "group": "King 9",
-        "pokemonId": 7,
-        "pokemonName": "Squirtle",
-        "element": "fire",
-        "delta": 5
+        "pokemonId": 82,
+        "pokemonName": "Magneton",
+        "tier": "evolved",
+        "delta": 1
     },
     {
         "id": "chase-grant",
@@ -222,10 +222,10 @@
         "plw": 37,
         "uscf": 215,
         "group": "Bishop 3",
-        "pokemonId": 27,
-        "pokemonName": "Sandshrew",
-        "element": "fire",
-        "delta": 0
+        "pokemonId": 29,
+        "pokemonName": "Nidoran F",
+        "tier": "basic",
+        "delta": 5
     },
     {
         "id": "theodore-lewis",
@@ -234,10 +234,10 @@
         "plw": 88,
         "uscf": 1438,
         "group": "King 42",
-        "pokemonId": 70,
-        "pokemonName": "Weepinbell",
-        "element": "electric",
-        "delta": 4
+        "pokemonId": 149,
+        "pokemonName": "Dragonite",
+        "tier": "final",
+        "delta": 1
     },
     {
         "id": "walter-gooch-raushenbush",
@@ -246,10 +246,10 @@
         "plw": 52,
         "uscf": 1119,
         "group": "Super King 2",
-        "pokemonId": 39,
-        "pokemonName": "Jigglypuff",
-        "element": "fire",
-        "delta": 1
+        "pokemonId": 119,
+        "pokemonName": "Seaking",
+        "tier": "evolved",
+        "delta": 4
     },
     {
         "id": "jakob-latour",
@@ -258,10 +258,10 @@
         "plw": 24,
         "uscf": 126,
         "group": "Pawn 1",
-        "pokemonId": 13,
-        "pokemonName": "Weedle",
-        "element": "fire",
-        "delta": 3
+        "pokemonId": 133,
+        "pokemonName": "Eevee",
+        "tier": "basic",
+        "delta": 1
     },
     {
         "id": "brian-silverman",
@@ -270,10 +270,10 @@
         "plw": 46,
         "uscf": 904,
         "group": "Super King 47",
-        "pokemonId": 23,
-        "pokemonName": "Ekans",
-        "element": "fire",
-        "delta": 2
+        "pokemonId": 96,
+        "pokemonName": "Drowzee",
+        "tier": "basic",
+        "delta": 5
     },
     {
         "id": "adam-atwa",
@@ -284,8 +284,8 @@
         "group": "King 39",
         "pokemonId": 74,
         "pokemonName": "Geodude",
-        "element": "fire",
-        "delta": 1
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "lysander-williams",
@@ -294,10 +294,10 @@
         "plw": 32,
         "uscf": 129,
         "group": "King 21",
-        "pokemonId": 74,
-        "pokemonName": "Geodude",
-        "element": "fire",
-        "delta": 0
+        "pokemonId": 133,
+        "pokemonName": "Eevee",
+        "tier": "basic",
+        "delta": 3
     },
     {
         "id": "ethan-metzer",
@@ -306,10 +306,10 @@
         "plw": 22,
         "uscf": 929,
         "group": "King 43",
-        "pokemonId": 88,
-        "pokemonName": "Grimer",
-        "element": "fire",
-        "delta": 5
+        "pokemonId": 13,
+        "pokemonName": "Weedle",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "george-parker",
@@ -318,10 +318,10 @@
         "plw": 20,
         "uscf": 0,
         "group": "Queen 5",
-        "pokemonId": 98,
-        "pokemonName": "Krabby",
-        "element": "fire",
-        "delta": 3
+        "pokemonId": 88,
+        "pokemonName": "Grimer",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "sammy-fialkovskiy",
@@ -330,10 +330,10 @@
         "plw": 20,
         "uscf": 602,
         "group": "King 41",
-        "pokemonId": 50,
-        "pokemonName": "Diglett",
-        "element": "fire",
-        "delta": 3
+        "pokemonId": 27,
+        "pokemonName": "Sandshrew",
+        "tier": "basic",
+        "delta": 5
     },
     {
         "id": "wyatt-lawson",
@@ -342,9 +342,9 @@
         "plw": 28,
         "uscf": 767,
         "group": "King 4",
-        "pokemonId": 92,
-        "pokemonName": "Gastly",
-        "element": "fire",
+        "pokemonId": 104,
+        "pokemonName": "Cubone",
+        "tier": "basic",
         "delta": 2
     },
     {
@@ -354,9 +354,9 @@
         "plw": 33,
         "uscf": 0,
         "group": "Rook 2",
-        "pokemonId": 32,
-        "pokemonName": "Nidoran M",
-        "element": "fire",
+        "pokemonId": 43,
+        "pokemonName": "Oddish",
+        "tier": "basic",
         "delta": 1
     },
     {
@@ -366,10 +366,10 @@
         "plw": 21,
         "uscf": 563,
         "group": "King 8",
-        "pokemonId": 108,
-        "pokemonName": "Lickitung",
-        "element": "fire",
-        "delta": 1
+        "pokemonId": 35,
+        "pokemonName": "Clefairy",
+        "tier": "basic",
+        "delta": 0
     },
     {
         "id": "lara-grandinetti",
@@ -378,10 +378,10 @@
         "plw": 80,
         "uscf": 0,
         "group": "Knight 2",
-        "pokemonId": 34,
-        "pokemonName": "Nidoking",
-        "element": "electric",
-        "delta": 3
+        "pokemonId": 53,
+        "pokemonName": "Persian",
+        "tier": "final",
+        "delta": 2
     },
     {
         "id": "rishiv-doshi",
@@ -390,9 +390,9 @@
         "plw": 80,
         "uscf": 0,
         "group": "Knight 2",
-        "pokemonId": 31,
-        "pokemonName": "Nidoqueen",
-        "element": "electric",
-        "delta": 4
+        "pokemonId": 26,
+        "pokemonName": "Raichu",
+        "tier": "final",
+        "delta": 5
     }
 ]
