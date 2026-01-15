@@ -28,43 +28,37 @@ export default function PowerMap({ players, onPlayerClick }: PowerMapProps) {
         Live Power Map
       </h2>
 
-      <div className="w-full h-[500px] bg-slate-900 rounded-xl relative overflow-hidden shadow-inner border border-slate-800 ml-10 mr-4">
-        {/* Grid background */}
-        <div className="absolute inset-0 grid grid-cols-4 grid-rows-4 opacity-10 pointer-events-none">
-          {Array.from({ length: 16 }).map((_, i) => (
-            <div key={i} className="border border-slate-500" />
-          ))}
+      {/* Chart container with axis labels */}
+      <div className="flex">
+        {/* Y-axis label (rotated, outside) */}
+        <div className="flex items-center justify-center w-12">
+          <span className="text-sm font-bold text-white -rotate-90 whitespace-nowrap tracking-wide">
+            WEEKLY POWER (PLW)
+          </span>
         </div>
 
-        {/* X-axis numbers (USCF Rating: 0-2000) */}
-        <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 pb-1">
-          {[0, 500, 1000, 1500, 2000].map((val) => (
-            <span key={val} className="text-xs text-slate-400 font-mono">
-              {val}
-            </span>
-          ))}
-        </div>
+        <div className="flex-1">
+          {/* Y-axis numbers + Chart */}
+          <div className="flex">
+            {/* Y-axis numbers */}
+            <div className="flex flex-col justify-between items-end pr-3 py-2 w-12">
+              {[400, 300, 200, 100, 0].map((val) => (
+                <span key={val} className="text-sm text-slate-300 font-mono font-medium">
+                  {val}
+                </span>
+              ))}
+            </div>
 
-        {/* Y-axis numbers (PLW: 0-400) */}
-        <div className="absolute -left-10 top-0 bottom-8 flex flex-col justify-between items-end pr-2">
-          {[400, 300, 200, 100, 0].map((val) => (
-            <span key={val} className="text-xs text-slate-400 font-mono">
-              {val}
-            </span>
-          ))}
-        </div>
+            {/* Main chart */}
+            <div className="flex-1 h-[500px] bg-slate-900 rounded-xl relative overflow-hidden shadow-inner border border-slate-800">
+              {/* Grid background */}
+              <div className="absolute inset-0 grid grid-cols-4 grid-rows-4 opacity-10 pointer-events-none">
+                {Array.from({ length: 16 }).map((_, i) => (
+                  <div key={i} className="border border-slate-500" />
+                ))}
+              </div>
 
-        {/* X-axis label */}
-        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-500 uppercase tracking-widest">
-          USCF Rating →
-        </div>
-
-        {/* Y-axis label */}
-        <div className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-90 text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">
-          Weekly Power (PLW) →
-        </div>
-
-        {/* Player dots */}
+              {/* Player dots */}
         {players.map((player, index) => (
           <motion.div
             key={player.id}
@@ -79,19 +73,38 @@ export default function PowerMap({ players, onPlayerClick }: PowerMapProps) {
           </motion.div>
         ))}
 
-        {/* Empty state */}
-        {players.length === 0 && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.div
-              className="text-slate-500 text-center"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <p className="text-lg">Loading players...</p>
-              <p className="text-sm">Run the scraper to populate data</p>
-            </motion.div>
+              {/* Empty state */}
+              {players.length === 0 && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <motion.div
+                    className="text-slate-500 text-center"
+                    animate={{ opacity: [0.5, 1, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  >
+                    <p className="text-lg">Loading players...</p>
+                    <p className="text-sm">Run the scraper to populate data</p>
+                  </motion.div>
+                </div>
+              )}
+            </div>
           </div>
-        )}
+
+          {/* X-axis numbers */}
+          <div className="flex justify-between pl-12 pr-0 pt-2">
+            {[0, 500, 1000, 1500, 2000].map((val) => (
+              <span key={val} className="text-sm text-slate-300 font-mono font-medium">
+                {val}
+              </span>
+            ))}
+          </div>
+
+          {/* X-axis label */}
+          <div className="text-center pt-3 pl-12">
+            <span className="text-sm font-bold text-white tracking-wide">
+              USCF RATING
+            </span>
+          </div>
+        </div>
       </div>
     </motion.section>
   );
