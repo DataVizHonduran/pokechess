@@ -1,9 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import json
 import time
 import random
+import os
+
+# Try to use webdriver-manager if available (for CI), otherwise use system Chrome
+try:
+    from webdriver_manager.chrome import ChromeDriverManager
+    USE_WEBDRIVER_MANAGER = True
+except ImportError:
+    USE_WEBDRIVER_MANAGER = False
 
 # Pokemon ID to Name mapping (Gen 1)
 POKEMON_NAMES = {
@@ -50,7 +59,11 @@ def scrape_ps11_stats():
     options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
     print("Launching headless browser...")
-    driver = webdriver.Chrome(options=options)
+    if USE_WEBDRIVER_MANAGER:
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=options)
+    else:
+        driver = webdriver.Chrome(options=options)
 
     try:
         # Fetch the iframe source directly
