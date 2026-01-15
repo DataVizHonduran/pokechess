@@ -28,7 +28,7 @@ export default function PowerMap({ players, onPlayerClick }: PowerMapProps) {
         Live Power Map
       </h2>
 
-      <div className="w-full h-[500px] bg-slate-900 rounded-xl relative overflow-hidden shadow-inner border border-slate-800">
+      <div className="w-full h-[500px] bg-slate-900 rounded-xl relative overflow-hidden shadow-inner border border-slate-800 ml-10 mr-4">
         {/* Grid background */}
         <div className="absolute inset-0 grid grid-cols-4 grid-rows-4 opacity-10 pointer-events-none">
           {Array.from({ length: 16 }).map((_, i) => (
@@ -36,12 +36,32 @@ export default function PowerMap({ players, onPlayerClick }: PowerMapProps) {
           ))}
         </div>
 
-        {/* Axis labels */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs text-slate-500 uppercase tracking-widest">
+        {/* X-axis numbers (USCF Rating: 0-2000) */}
+        <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 pb-1">
+          {[0, 500, 1000, 1500, 2000].map((val) => (
+            <span key={val} className="text-xs text-slate-400 font-mono">
+              {val}
+            </span>
+          ))}
+        </div>
+
+        {/* Y-axis numbers (PLW: 0-400) */}
+        <div className="absolute -left-10 top-0 bottom-8 flex flex-col justify-between items-end pr-2">
+          {[400, 300, 200, 100, 0].map((val) => (
+            <span key={val} className="text-xs text-slate-400 font-mono">
+              {val}
+            </span>
+          ))}
+        </div>
+
+        {/* X-axis label */}
+        <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-500 uppercase tracking-widest">
           USCF Rating →
         </div>
-        <div className="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-xs text-slate-500 uppercase tracking-widest">
-          Weekly Power →
+
+        {/* Y-axis label */}
+        <div className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-90 text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">
+          Weekly Power (PLW) →
         </div>
 
         {/* Player dots */}

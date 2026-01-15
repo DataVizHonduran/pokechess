@@ -52,15 +52,17 @@ export default function PlayerCard({ player, onClose }: PlayerCardProps) {
               </motion.button>
 
               {/* Header */}
-              <div className="flex justify-between items-center">
-                <motion.span
-                  className="font-bold text-xl"
+              <div className="flex justify-between items-start">
+                <motion.div
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.1 }}
                 >
-                  {player.name}
-                </motion.span>
+                  <span className="font-bold text-xl block">{player.name}</span>
+                  <span className="text-sm text-yellow-400 font-medium">
+                    {player.pokemonName}
+                  </span>
+                </motion.div>
                 <motion.span
                   className="text-xl font-black"
                   initial={{ x: 20, opacity: 0 }}
@@ -102,7 +104,7 @@ export default function PlayerCard({ player, onClose }: PlayerCardProps) {
                 transition={{ delay: 0.3 }}
               >
                 <div className="flex justify-between mb-2">
-                  <span className="text-white/80">Tactics</span>
+                  <span className="text-white/80">Puzzles Solved</span>
                   <motion.span
                     className="font-bold"
                     initial={{ scale: 0 }}

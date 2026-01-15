@@ -10,8 +10,8 @@ interface PlayerDotProps {
 
 export default function PlayerDot({ player, onClick }: PlayerDotProps) {
   const isElite = player.plw >= 150;
-  const xPos = Math.min((player.uscf / 2000) * 100, 95);
-  const yPos = Math.min((player.plw / 200) * 100, 95);
+  const xPos = Math.min((player.uscf / 2000) * 100, 98);
+  const yPos = Math.min((player.plw / 400) * 100, 98);
 
   return (
     <motion.div

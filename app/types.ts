@@ -6,6 +6,7 @@ export interface Player {
   uscf: number;
   group: string;
   pokemonId: number;
+  pokemonName: string;
   element: string;
   delta: number;
 }
