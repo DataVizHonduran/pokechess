@@ -68,6 +68,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
           >
             PS11 Chess Team Performance Ecosystem
+            (only displays trainers with PLW > 20)
           </motion.p>
         </div>
         <motion.div
