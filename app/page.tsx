@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     async function loadData() {
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/players.json`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/players.json?v=${Date.now()}`);
         if (!res.ok) throw new Error("Failed to load");
         const data = await res.json();
         setPlayers(data);
