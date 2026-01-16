@@ -1,0 +1,67 @@
+name: Save Weekly Pokemon Collection
+
+on:
+  schedule:
+    # Every Saturday at 11:30 PM EST = Sunday 4:30 AM UTC
+    - cron: '30 4 * * 0'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  save-collection:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create collections directory
+        run: mkdir -p public/collections
+
+      - name: Save weekly snapshot
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+
+          # Copy current players.json to dated collection file
+          if [ -f public/players.json ]; then
+            # Add metadata to the snapshot
+            jq --arg date "$DATE" '{
+              date: $date,
+              players: .
+            }' public/players.json > "public/collections/${DATE}.json"
+
+            echo "Saved collection for ${DATE}"
+          else
+            echo "No players.json found, skipping"
+            exit 0
+          fi
+
+      - name: Update collection index
+        run: |
+          # Create/update an index of all collections
+          cd public/collections
+          echo "[" > index.json
+          first=true
+          for f in 20*.json; do
+            if [ -f "$f" ]; then
+              if [ "$first" = true ]; then
+                first=false
+              else
+                echo "," >> index.json
+              fi
+              echo "\"${f%.json}\"" >> index.json
+            fi
+          done
+          echo "]" >> index.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add public/collections/
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(date +'%Y-%m-%d')
+            git commit -m "Save weekly Pokemon collection: ${DATE}"
+            git push
+          fi
