@@ -68,8 +68,30 @@ export default function Home() {
             transition={{ delay: 0.3 }}
           >
             PS11 Chess Team Performance Ecosystem
-            -only displays trainers with PLW over 20-
           </motion.p>
+          <motion.div
+            className="flex flex-wrap gap-3 mt-3 text-xs"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            <span className="bg-slate-800 px-2 py-1 rounded">
+              <span className="text-slate-500">20-49 PLW:</span>{" "}
+              <span className="text-blue-400">Basic</span>
+            </span>
+            <span className="bg-slate-800 px-2 py-1 rounded">
+              <span className="text-slate-500">50-74 PLW:</span>{" "}
+              <span className="text-green-400">Evolved</span>
+            </span>
+            <span className="bg-slate-800 px-2 py-1 rounded">
+              <span className="text-slate-500">75-99 PLW:</span>{" "}
+              <span className="text-purple-400">Final</span>
+            </span>
+            <span className="bg-slate-800 px-2 py-1 rounded">
+              <span className="text-slate-500">100+ PLW:</span>{" "}
+              <span className="text-yellow-400">Legendary</span>
+            </span>
+          </motion.div>
         </div>
         <motion.div
           className="text-right"
