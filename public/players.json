@@ -9,7 +9,7 @@
         "pokemonId": 144,
         "pokemonName": "Articuno",
         "tier": "legendary",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "drew-murphy",
@@ -21,7 +21,7 @@
         "pokemonId": 142,
         "pokemonName": "Aerodactyl",
         "tier": "legendary",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "anastassi-xenos",
@@ -33,7 +33,7 @@
         "pokemonId": 146,
         "pokemonName": "Moltres",
         "tier": "legendary",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "alejandro-sheikh",
@@ -45,7 +45,7 @@
         "pokemonId": 3,
         "pokemonName": "Venusaur",
         "tier": "legendary",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "andrew-li",
@@ -57,7 +57,7 @@
         "pokemonId": 131,
         "pokemonName": "Lapras",
         "tier": "legendary",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "weston-hu",
@@ -69,7 +69,7 @@
         "pokemonId": 65,
         "pokemonName": "Alakazam",
         "tier": "legendary",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "jaxson-vanderpoole",
@@ -81,7 +81,7 @@
         "pokemonId": 144,
         "pokemonName": "Articuno",
         "tier": "legendary",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "caroline-jeffreys",
@@ -93,7 +93,7 @@
         "pokemonId": 60,
         "pokemonName": "Poliwag",
         "tier": "basic",
-        "delta": 3
+        "delta": 2
     },
     {
         "id": "isha-varma",
@@ -105,7 +105,7 @@
         "pokemonId": 3,
         "pokemonName": "Venusaur",
         "tier": "legendary",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "liliah-fettner",
@@ -117,7 +117,7 @@
         "pokemonId": 36,
         "pokemonName": "Clefable",
         "tier": "final",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "sebastian-polizzi",
@@ -129,7 +129,7 @@
         "pokemonId": 7,
         "pokemonName": "Squirtle",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "jeremy-chow",
@@ -141,7 +141,7 @@
         "pokemonId": 24,
         "pokemonName": "Arbok",
         "tier": "final",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "sloane-murphy",
@@ -153,7 +153,7 @@
         "pokemonId": 55,
         "pokemonName": "Golduck",
         "tier": "evolved",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "maya-magen",
@@ -165,7 +165,7 @@
         "pokemonId": 80,
         "pokemonName": "Slowbro",
         "tier": "evolved",
-        "delta": 3
+        "delta": 2
     },
     {
         "id": "parker-downing",
@@ -177,7 +177,7 @@
         "pokemonId": 73,
         "pokemonName": "Tentacruel",
         "tier": "evolved",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "elise-labarbera",
@@ -189,7 +189,7 @@
         "pokemonId": 39,
         "pokemonName": "Jigglypuff",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "kai-tang",
@@ -201,7 +201,7 @@
         "pokemonId": 110,
         "pokemonName": "Weezing",
         "tier": "evolved",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -213,7 +213,7 @@
         "pokemonId": 82,
         "pokemonName": "Magneton",
         "tier": "evolved",
-        "delta": 1
+        "delta": 2
     },
     {
         "id": "chase-grant",
@@ -225,7 +225,7 @@
         "pokemonId": 29,
         "pokemonName": "Nidoran F",
         "tier": "basic",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "theodore-lewis",
@@ -237,7 +237,7 @@
         "pokemonId": 149,
         "pokemonName": "Dragonite",
         "tier": "final",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "walter-gooch-raushenbush",
@@ -249,7 +249,7 @@
         "pokemonId": 119,
         "pokemonName": "Seaking",
         "tier": "evolved",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "jakob-latour",
@@ -261,7 +261,7 @@
         "pokemonId": 133,
         "pokemonName": "Eevee",
         "tier": "basic",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "brian-silverman",
@@ -273,7 +273,7 @@
         "pokemonId": 96,
         "pokemonName": "Drowzee",
         "tier": "basic",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "adam-atwa",
@@ -285,7 +285,7 @@
         "pokemonId": 74,
         "pokemonName": "Geodude",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "lysander-williams",
@@ -297,7 +297,7 @@
         "pokemonId": 133,
         "pokemonName": "Eevee",
         "tier": "basic",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "ethan-metzer",
@@ -309,7 +309,7 @@
         "pokemonId": 13,
         "pokemonName": "Weedle",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "george-parker",
@@ -333,7 +333,7 @@
         "pokemonId": 27,
         "pokemonName": "Sandshrew",
         "tier": "basic",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "wyatt-lawson",
@@ -345,7 +345,7 @@
         "pokemonId": 104,
         "pokemonName": "Cubone",
         "tier": "basic",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "dylan-yip",
@@ -357,7 +357,7 @@
         "pokemonId": 43,
         "pokemonName": "Oddish",
         "tier": "basic",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "james-labarbera",
@@ -369,7 +369,7 @@
         "pokemonId": 35,
         "pokemonName": "Clefairy",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "lara-grandinetti",
@@ -381,7 +381,7 @@
         "pokemonId": 53,
         "pokemonName": "Persian",
         "tier": "final",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "rishiv-doshi",
@@ -393,6 +393,6 @@
         "pokemonId": 26,
         "pokemonName": "Raichu",
         "tier": "final",
-        "delta": 5
+        "delta": 2
     }
 ]
