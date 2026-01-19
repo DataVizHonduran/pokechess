@@ -43,4 +43,5 @@ jobs:
           git config user.email "actions@github.com"
           git add public/players.json
           git commit -m "Daily scrape: Update player data $(date +'%Y-%m-%d')"
+          git pull --rebase origin main  # Add this line to sync before pushing
           git push
