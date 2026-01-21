@@ -24,8 +24,15 @@ with open(POKEMON_DATA_PATH, 'r') as f:
 
 # Convert string keys back to int for POKEMON_NAMES
 POKEMON_NAMES = {int(k): v for k, v in POKEMON_DATA["pokemon_names"].items()}
-EVOLUTION_CHAINS = [tuple(chain) for chain in POKEMON_DATA["evolution_chains"]]
 ELITE_POKEMON = POKEMON_DATA["elite"]  # Legendaries + Mythicals
+ELITE_SET = set(ELITE_POKEMON)  # For fast lookup
+
+# Filter out chains that contain any legendary/mythical Pokemon
+# These should only be available to players with PLW >= 100
+EVOLUTION_CHAINS = [
+    tuple(chain) for chain in POKEMON_DATA["evolution_chains"]
+    if not any(pid in ELITE_SET for pid in chain)
+]
 
 # Persistent player assignments (loaded from player-pokemon.json)
 # Structure: {"player_name": {"chain_index": int, "elite_index": int, "last_plw": int}}
