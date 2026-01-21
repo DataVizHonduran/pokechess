@@ -6,10 +6,10 @@
         "plw": 1052,
         "uscf": 662,
         "group": "Queen 8",
-        "pokemonId": 146,
-        "pokemonName": "Moltres",
+        "pokemonId": 639,
+        "pokemonName": "Terrakion",
         "tier": "legendary",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "alejandro-sheikh",
@@ -18,10 +18,10 @@
         "plw": 382,
         "uscf": 570,
         "group": "King 15",
-        "pokemonId": 3,
-        "pokemonName": "Venusaur",
+        "pokemonId": 891,
+        "pokemonName": "Kubfu",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "rami-padukone-mitter",
@@ -30,10 +30,10 @@
         "plw": 382,
         "uscf": 954,
         "group": "King 11",
-        "pokemonId": 144,
-        "pokemonName": "Articuno",
+        "pokemonId": 905,
+        "pokemonName": "Enamorus",
         "tier": "legendary",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "liliah-fettner",
@@ -42,10 +42,10 @@
         "plw": 348,
         "uscf": 455,
         "group": "King 15",
-        "pokemonId": 9,
-        "pokemonName": "Blastoise",
+        "pokemonId": 377,
+        "pokemonName": "Regirock",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "dylan-yip",
@@ -54,10 +54,10 @@
         "plw": 175,
         "uscf": 0,
         "group": "Rook 4",
-        "pokemonId": 6,
-        "pokemonName": "Charizard",
+        "pokemonId": 482,
+        "pokemonName": "Azelf",
         "tier": "legendary",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -66,8 +66,8 @@
         "plw": 260,
         "uscf": 798,
         "group": "King 9",
-        "pokemonId": 130,
-        "pokemonName": "Gyarados",
+        "pokemonId": 649,
+        "pokemonName": "Genesect",
         "tier": "legendary",
         "delta": 5
     },
@@ -78,10 +78,10 @@
         "plw": 279,
         "uscf": 1029,
         "group": "King 20",
-        "pokemonId": 3,
-        "pokemonName": "Venusaur",
+        "pokemonId": 716,
+        "pokemonName": "Xerneas",
         "tier": "legendary",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "george-parker",
@@ -90,10 +90,10 @@
         "plw": 102,
         "uscf": 0,
         "group": "Queen 6",
-        "pokemonId": 94,
-        "pokemonName": "Gengar",
+        "pokemonId": 385,
+        "pokemonName": "Jirachi",
         "tier": "legendary",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "ethan-metzer",
@@ -102,10 +102,10 @@
         "plw": 172,
         "uscf": 929,
         "group": "King 43",
-        "pokemonId": 142,
-        "pokemonName": "Aerodactyl",
+        "pokemonId": 721,
+        "pokemonName": "Volcanion",
         "tier": "legendary",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "sebastian-polizzi",
@@ -114,10 +114,10 @@
         "plw": 96,
         "uscf": 0,
         "group": "King 1",
-        "pokemonId": 9,
-        "pokemonName": "Blastoise",
+        "pokemonId": 354,
+        "pokemonName": "Banette",
         "tier": "final",
-        "delta": 1
+        "delta": 2
     },
     {
         "id": "chloe-yip",
@@ -126,10 +126,10 @@
         "plw": 184,
         "uscf": 905,
         "group": "King 9",
-        "pokemonId": 65,
-        "pokemonName": "Alakazam",
+        "pokemonId": 1008,
+        "pokemonName": "Miraidon",
         "tier": "legendary",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "drew-murphy",
@@ -138,10 +138,10 @@
         "plw": 160,
         "uscf": 773,
         "group": "King 19",
-        "pokemonId": 142,
-        "pokemonName": "Aerodactyl",
+        "pokemonId": 807,
+        "pokemonName": "Zeraora",
         "tier": "legendary",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "parker-downing",
@@ -150,10 +150,10 @@
         "plw": 128,
         "uscf": 158,
         "group": "King 12",
-        "pokemonId": 9,
-        "pokemonName": "Blastoise",
+        "pokemonId": 792,
+        "pokemonName": "Lunala",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "sammy-fialkovskiy",
@@ -162,10 +162,10 @@
         "plw": 128,
         "uscf": 602,
         "group": "King 41",
-        "pokemonId": 145,
-        "pokemonName": "Zapdos",
+        "pokemonId": 481,
+        "pokemonName": "Mesprit",
         "tier": "legendary",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "maya-magen",
@@ -174,8 +174,8 @@
         "plw": 118,
         "uscf": 211,
         "group": "King 7",
-        "pokemonId": 150,
-        "pokemonName": "Mewtwo",
+        "pokemonId": 250,
+        "pokemonName": "Ho-Oh",
         "tier": "legendary",
         "delta": 3
     },
@@ -186,10 +186,10 @@
         "plw": 114,
         "uscf": 776,
         "group": "King 11",
-        "pokemonId": 144,
-        "pokemonName": "Articuno",
+        "pokemonId": 1025,
+        "pokemonName": "Pecharunt",
         "tier": "legendary",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "chase-grant",
@@ -198,8 +198,8 @@
         "plw": 63,
         "uscf": 215,
         "group": "Bishop 3",
-        "pokemonId": 30,
-        "pokemonName": "Nidorina",
+        "pokemonId": 382,
+        "pokemonName": "Kyogre",
         "tier": "evolved",
         "delta": 3
     },
@@ -210,8 +210,8 @@
         "plw": 74,
         "uscf": 129,
         "group": "King 21",
-        "pokemonId": 135,
-        "pokemonName": "Jolteon",
+        "pokemonId": 968,
+        "pokemonName": "Orthworm",
         "tier": "evolved",
         "delta": 0
     },
@@ -222,8 +222,8 @@
         "plw": 70,
         "uscf": 299,
         "group": "King 1",
-        "pokemonId": 24,
-        "pokemonName": "Arbok",
+        "pokemonId": 115,
+        "pokemonName": "Kangaskhan",
         "tier": "evolved",
         "delta": 0
     },
@@ -234,10 +234,10 @@
         "plw": 53,
         "uscf": 441,
         "group": "Queen 6",
-        "pokemonId": 53,
-        "pokemonName": "Persian",
+        "pokemonId": 987,
+        "pokemonName": "Flutter Mane",
         "tier": "evolved",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "sloane-murphy",
@@ -246,10 +246,10 @@
         "plw": 64,
         "uscf": 1355,
         "group": "King 68",
-        "pokemonId": 55,
-        "pokemonName": "Golduck",
+        "pokemonId": 575,
+        "pokemonName": "Gothorita",
         "tier": "evolved",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "kai-tang",
@@ -258,10 +258,10 @@
         "plw": 68,
         "uscf": 0,
         "group": "King 5",
-        "pokemonId": 110,
-        "pokemonName": "Weezing",
+        "pokemonId": 317,
+        "pokemonName": "Swalot",
         "tier": "evolved",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "jakob-latour",
@@ -270,10 +270,10 @@
         "plw": 38,
         "uscf": 126,
         "group": "Pawn 1",
-        "pokemonId": 133,
-        "pokemonName": "Eevee",
+        "pokemonId": 906,
+        "pokemonName": "Sprigatito",
         "tier": "basic",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "adam-atwa",
@@ -282,10 +282,10 @@
         "plw": 58,
         "uscf": 729,
         "group": "King 39",
-        "pokemonId": 75,
-        "pokemonName": "Graveler",
+        "pokemonId": 640,
+        "pokemonName": "Virizion",
         "tier": "evolved",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "sai-mehta-saujani",
@@ -294,10 +294,10 @@
         "plw": 24,
         "uscf": 0,
         "group": "Pawn 1",
-        "pokemonId": 79,
-        "pokemonName": "Slowpoke",
+        "pokemonId": 312,
+        "pokemonName": "Minun",
         "tier": "basic",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "oliver-lee",
@@ -306,10 +306,10 @@
         "plw": 23,
         "uscf": 423,
         "group": "King 1",
-        "pokemonId": 1,
-        "pokemonName": "Bulbasaur",
+        "pokemonId": 118,
+        "pokemonName": "Goldeen",
         "tier": "basic",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "wyatt-lawson",
@@ -318,10 +318,10 @@
         "plw": 34,
         "uscf": 743,
         "group": "King 4",
-        "pokemonId": 104,
-        "pokemonName": "Cubone",
+        "pokemonId": 1014,
+        "pokemonName": "Okidogi",
         "tier": "basic",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "theodore-lewis",
@@ -330,10 +330,10 @@
         "plw": 27,
         "uscf": 1339,
         "group": "King 42",
-        "pokemonId": 147,
-        "pokemonName": "Dratini",
+        "pokemonId": 753,
+        "pokemonName": "Fomantis",
         "tier": "basic",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "rishiv-doshi",
@@ -342,10 +342,10 @@
         "plw": 54,
         "uscf": 0,
         "group": "Bishop 2",
-        "pokemonId": 26,
-        "pokemonName": "Raichu",
+        "pokemonId": 565,
+        "pokemonName": "Carracosta",
         "tier": "evolved",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "kirin-kolosine",
@@ -354,10 +354,10 @@
         "plw": 22,
         "uscf": 0,
         "group": "Queen 6",
-        "pokemonId": 7,
-        "pokemonName": "Squirtle",
+        "pokemonId": 819,
+        "pokemonName": "Skwovet",
         "tier": "basic",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "danica-lee",
@@ -366,10 +366,10 @@
         "plw": 20,
         "uscf": 0,
         "group": "Rook 1",
-        "pokemonId": 19,
-        "pokemonName": "Rattata",
+        "pokemonId": 636,
+        "pokemonName": "Larvesta",
         "tier": "basic",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "lucille-brathwaite",
@@ -378,10 +378,10 @@
         "plw": 20,
         "uscf": 124,
         "group": "Queen 6",
-        "pokemonId": 52,
-        "pokemonName": "Meowth",
+        "pokemonId": 133,
+        "pokemonName": "Eevee",
         "tier": "basic",
-        "delta": 5
+        "delta": 1
     },
     {
         "id": "rafael-boquin",
@@ -390,8 +390,8 @@
         "plw": 20,
         "uscf": 430,
         "group": "King 20",
-        "pokemonId": 77,
-        "pokemonName": "Ponyta",
+        "pokemonId": 504,
+        "pokemonName": "Patrat",
         "tier": "basic",
         "delta": 5
     }
