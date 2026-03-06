@@ -9,7 +9,7 @@
         "pokemonId": 800,
         "pokemonName": "Necrozma",
         "tier": "legendary",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "walter-gooch-raushenbush",
@@ -21,7 +21,7 @@
         "pokemonId": 801,
         "pokemonName": "Magearna",
         "tier": "legendary",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "ethan-metzer",
@@ -33,7 +33,7 @@
         "pokemonId": 380,
         "pokemonName": "Latias",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "anastassi-xenos",
@@ -57,7 +57,7 @@
         "pokemonId": 615,
         "pokemonName": "Cryogonal",
         "tier": "final",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "wyatt-lawson",
@@ -69,7 +69,7 @@
         "pokemonId": 1017,
         "pokemonName": "Ogerpon",
         "tier": "legendary",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "isha-varma",
@@ -81,7 +81,7 @@
         "pokemonId": 995,
         "pokemonName": "Iron Thorns",
         "tier": "final",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -93,7 +93,7 @@
         "pokemonId": 982,
         "pokemonName": "Dudunsparce",
         "tier": "final",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "andrew-li",
@@ -105,7 +105,7 @@
         "pokemonId": 776,
         "pokemonName": "Turtonator",
         "tier": "final",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "huxson-miller",
@@ -117,7 +117,7 @@
         "pokemonId": 963,
         "pokemonName": "Finizen",
         "tier": "basic",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "zachary-berger",
@@ -129,7 +129,7 @@
         "pokemonId": 454,
         "pokemonName": "Toxicroak",
         "tier": "evolved",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "drew-murphy",
@@ -141,7 +141,7 @@
         "pokemonId": 286,
         "pokemonName": "Breloom",
         "tier": "final",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "theodore-lewis",
@@ -153,7 +153,7 @@
         "pokemonId": 608,
         "pokemonName": "Lampent",
         "tier": "evolved",
-        "delta": 5
+        "delta": 1
     },
     {
         "id": "jules-jaindl",
@@ -165,7 +165,7 @@
         "pokemonId": 603,
         "pokemonName": "Eelektrik",
         "tier": "evolved",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "kai-tang",
@@ -177,7 +177,7 @@
         "pokemonId": 390,
         "pokemonName": "Chimchar",
         "tier": "basic",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "rami-padukone-mitter",
@@ -189,7 +189,7 @@
         "pokemonId": 764,
         "pokemonName": "Comfey",
         "tier": "evolved",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "alejandro-sheikh",
@@ -201,7 +201,7 @@
         "pokemonId": 781,
         "pokemonName": "Dhelmise",
         "tier": "basic",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "sammy-fialkovskiy",
@@ -225,7 +225,7 @@
         "pokemonId": 234,
         "pokemonName": "Stantler",
         "tier": "basic",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "adam-atwa",
@@ -237,7 +237,7 @@
         "pokemonId": 18,
         "pokemonName": "Pidgeot",
         "tier": "final",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "babis-theodoratos",
@@ -273,7 +273,7 @@
         "pokemonId": 223,
         "pokemonName": "Remoraid",
         "tier": "basic",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "sofia-gambardella",
@@ -285,7 +285,7 @@
         "pokemonId": 753,
         "pokemonName": "Fomantis",
         "tier": "basic",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "nicephore-suter",
@@ -321,7 +321,7 @@
         "pokemonId": 147,
         "pokemonName": "Dratini",
         "tier": "basic",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "aarav-mehta",
@@ -333,7 +333,7 @@
         "pokemonId": 458,
         "pokemonName": "Mantyke",
         "tier": "basic",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "dylan-wu",
