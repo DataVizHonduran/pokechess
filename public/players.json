@@ -2,8 +2,8 @@
     {
         "id": "sebastian-polizzi",
         "name": "Sebastian Polizzi",
-        "puzzles": 153,
-        "plw": 306,
+        "puzzles": 192,
+        "plw": 384,
         "uscf": 0,
         "group": "King 1",
         "pokemonId": 790,
@@ -12,22 +12,34 @@
         "delta": 4
     },
     {
-        "id": "sara-pui",
-        "name": "Sara Pui",
-        "puzzles": 106,
-        "plw": 106,
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 144,
+        "plw": 154,
         "uscf": 0,
-        "group": "Pawn 1",
-        "pokemonId": 641,
-        "pokemonName": "Tornadus",
+        "group": "Bishop 1",
+        "pokemonId": 905,
+        "pokemonName": "Enamorus",
         "tier": "legendary",
-        "delta": 0
+        "delta": 5
+    },
+    {
+        "id": "nicephore-suter",
+        "name": "Nicephore Suter",
+        "puzzles": 113,
+        "plw": 246,
+        "uscf": 0,
+        "group": "Bishop 3",
+        "pokemonId": 1017,
+        "pokemonName": "Ogerpon",
+        "tier": "legendary",
+        "delta": 2
     },
     {
         "id": "glenn-gooch-raushenbush",
         "name": "Glenn Gooch-Raushenbush",
-        "puzzles": 100,
-        "plw": 300,
+        "puzzles": 107,
+        "plw": 321,
         "uscf": 957,
         "group": "King 9",
         "pokemonId": 1003,
@@ -36,82 +48,58 @@
         "delta": 5
     },
     {
-        "id": "isha-varma",
-        "name": "Isha Varma",
-        "puzzles": 97,
-        "plw": 291,
-        "uscf": 1176,
-        "group": "King 20",
-        "pokemonId": 492,
-        "pokemonName": "Shaymin",
+        "id": "helena-belfort",
+        "name": "Helena Belfort",
+        "puzzles": 106,
+        "plw": 322,
+        "uscf": 0,
+        "group": "Bishop 2",
+        "pokemonId": 894,
+        "pokemonName": "Regieleki",
         "tier": "legendary",
         "delta": 4
     },
     {
-        "id": "nicephore-suter",
-        "name": "Nicephore Suter",
-        "puzzles": 97,
-        "plw": 214,
+        "id": "sara-pui",
+        "name": "Sara Pui",
+        "puzzles": 106,
+        "plw": 212,
         "uscf": 0,
-        "group": "Bishop 3",
-        "pokemonId": 1017,
-        "pokemonName": "Ogerpon",
+        "group": "Pawn 1",
+        "pokemonId": 641,
+        "pokemonName": "Tornadus",
+        "tier": "legendary",
+        "delta": 1
+    },
+    {
+        "id": "anastassi-xenos",
+        "name": "Anastassi Xenos",
+        "puzzles": 99,
+        "plw": 253,
+        "uscf": 735,
+        "group": "King 4",
+        "pokemonId": 379,
+        "pokemonName": "Registeel",
         "tier": "legendary",
         "delta": 5
     },
     {
         "id": "ethan-metzer",
         "name": "Ethan Metzer",
-        "puzzles": 96,
-        "plw": 288,
+        "puzzles": 97,
+        "plw": 291,
         "uscf": 916,
         "group": "King 43",
         "pokemonId": 717,
         "pokemonName": "Yveltal",
-        "tier": "legendary",
-        "delta": 2
-    },
-    {
-        "id": "helena-belfort",
-        "name": "Helena Belfort",
-        "puzzles": 95,
-        "plw": 290,
-        "uscf": 0,
-        "group": "Bishop 1",
-        "pokemonId": 894,
-        "pokemonName": "Regieleki",
-        "tier": "legendary",
-        "delta": 1
-    },
-    {
-        "id": "jaxson-vanderpoole",
-        "name": "Jaxson Vanderpoole",
-        "puzzles": 94,
-        "plw": 332,
-        "uscf": 794,
-        "group": "King 16",
-        "pokemonId": 1003,
-        "pokemonName": "Ting-Lu",
-        "tier": "legendary",
-        "delta": 0
-    },
-    {
-        "id": "anastassi-xenos",
-        "name": "Anastassi Xenos",
-        "puzzles": 87,
-        "plw": 199,
-        "uscf": 735,
-        "group": "King 1",
-        "pokemonId": 379,
-        "pokemonName": "Registeel",
         "tier": "legendary",
         "delta": 1
     },
     {
         "id": "rafael-boquin",
         "name": "Rafael Boquin",
-        "puzzles": 53,
-        "plw": 146,
+        "puzzles": 90,
+        "plw": 370,
         "uscf": 480,
         "group": "Queen 2",
         "pokemonId": 639,
@@ -120,16 +108,52 @@
         "delta": 1
     },
     {
-        "id": "walter-gooch-raushenbush",
-        "name": "Walter Gooch-Raushenbush",
-        "puzzles": 43,
-        "plw": 129,
-        "uscf": 1178,
-        "group": "Super King 2",
-        "pokemonId": 646,
-        "pokemonName": "Kyurem",
+        "id": "brian-silverman",
+        "name": "Brian Silverman",
+        "puzzles": 87,
+        "plw": 174,
+        "uscf": 818,
+        "group": "Super King 47",
+        "pokemonId": 801,
+        "pokemonName": "Magearna",
         "tier": "legendary",
-        "delta": 1
+        "delta": 2
+    },
+    {
+        "id": "isha-varma",
+        "name": "Isha Varma",
+        "puzzles": 72,
+        "plw": 216,
+        "uscf": 1176,
+        "group": "King 20",
+        "pokemonId": 492,
+        "pokemonName": "Shaymin",
+        "tier": "legendary",
+        "delta": 3
+    },
+    {
+        "id": "jaxson-vanderpoole",
+        "name": "Jaxson Vanderpoole",
+        "puzzles": 55,
+        "plw": 215,
+        "uscf": 794,
+        "group": "King 16",
+        "pokemonId": 1003,
+        "pokemonName": "Ting-Lu",
+        "tier": "legendary",
+        "delta": 5
+    },
+    {
+        "id": "drew-murphy",
+        "name": "Drew Murphy",
+        "puzzles": 50,
+        "plw": 150,
+        "uscf": 744,
+        "group": "King 21",
+        "pokemonId": 801,
+        "pokemonName": "Magearna",
+        "tier": "legendary",
+        "delta": 5
     },
     {
         "id": "myla-walavalkar",
@@ -141,7 +165,19 @@
         "pokemonId": 510,
         "pokemonName": "Liepard",
         "tier": "final",
-        "delta": 5
+        "delta": 0
+    },
+    {
+        "id": "chloe-yip",
+        "name": "Chloe Yip",
+        "puzzles": 36,
+        "plw": 108,
+        "uscf": 908,
+        "group": "King 11",
+        "pokemonId": 251,
+        "pokemonName": "Celebi",
+        "tier": "legendary",
+        "delta": 4
     },
     {
         "id": "abby-noy",
@@ -153,43 +189,7 @@
         "pokemonId": 676,
         "pokemonName": "Furfrou",
         "tier": "evolved",
-        "delta": 2
-    },
-    {
-        "id": "chloe-yip",
-        "name": "Chloe Yip",
-        "puzzles": 33,
-        "plw": 99,
-        "uscf": 908,
-        "group": "King 11",
-        "pokemonId": 979,
-        "pokemonName": "Annihilape",
-        "tier": "final",
-        "delta": 0
-    },
-    {
-        "id": "adam-atwa",
-        "name": "Adam Atwa",
-        "puzzles": 32,
-        "plw": 106,
-        "uscf": 823,
-        "group": "King 53",
-        "pokemonId": 642,
-        "pokemonName": "Thundurus",
-        "tier": "legendary",
         "delta": 3
-    },
-    {
-        "id": "drew-murphy",
-        "name": "Drew Murphy",
-        "puzzles": 32,
-        "plw": 96,
-        "uscf": 744,
-        "group": "King 21",
-        "pokemonId": 352,
-        "pokemonName": "Kecleon",
-        "tier": "final",
-        "delta": 4
     },
     {
         "id": "parker-downing",
@@ -201,7 +201,7 @@
         "pokemonId": 541,
         "pokemonName": "Swadloon",
         "tier": "evolved",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "rishiv-doshi",
@@ -213,7 +213,19 @@
         "pokemonId": 199,
         "pokemonName": "Slowking",
         "tier": "evolved",
-        "delta": 3
+        "delta": 1
+    },
+    {
+        "id": "adam-atwa",
+        "name": "Adam Atwa",
+        "puzzles": 28,
+        "plw": 104,
+        "uscf": 823,
+        "group": "King 53",
+        "pokemonId": 642,
+        "pokemonName": "Thundurus",
+        "tier": "legendary",
+        "delta": 0
     },
     {
         "id": "jakob-latour",
@@ -225,43 +237,55 @@
         "pokemonId": 884,
         "pokemonName": "Duraludon",
         "tier": "basic",
-        "delta": 3
-    },
-    {
-        "id": "rami-padukone-mitter",
-        "name": "Rami Padukone-Mitter",
-        "puzzles": 26,
-        "plw": 78,
-        "uscf": 1060,
-        "group": "King 11",
-        "pokemonId": 598,
-        "pokemonName": "Ferrothorn",
-        "tier": "final",
-        "delta": 2
-    },
-    {
-        "id": "wyatt-lawson",
-        "name": "Wyatt Lawson",
-        "puzzles": 24,
-        "plw": 72,
-        "uscf": 707,
-        "group": "King 15",
-        "pokemonId": 264,
-        "pokemonName": "Linoone",
-        "tier": "evolved",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "jeremy-chow",
         "name": "Jeremy Chow",
-        "puzzles": 23,
-        "plw": 56,
+        "puzzles": 26,
+        "plw": 62,
         "uscf": 327,
         "group": "King 6",
         "pokemonId": 359,
         "pokemonName": "Absol",
         "tier": "evolved",
+        "delta": 2
+    },
+    {
+        "id": "walter-gooch-raushenbush",
+        "name": "Walter Gooch-Raushenbush",
+        "puzzles": 26,
+        "plw": 78,
+        "uscf": 1178,
+        "group": "Super King 2",
+        "pokemonId": 38,
+        "pokemonName": "Ninetales",
+        "tier": "final",
         "delta": 4
+    },
+    {
+        "id": "wyatt-lawson",
+        "name": "Wyatt Lawson",
+        "puzzles": 22,
+        "plw": 66,
+        "uscf": 707,
+        "group": "King 15",
+        "pokemonId": 264,
+        "pokemonName": "Linoone",
+        "tier": "evolved",
+        "delta": 1
+    },
+    {
+        "id": "rami-padukone-mitter",
+        "name": "Rami Padukone-Mitter",
+        "puzzles": 20,
+        "plw": 60,
+        "uscf": 1060,
+        "group": "King 11",
+        "pokemonId": 598,
+        "pokemonName": "Ferrothorn",
+        "tier": "evolved",
+        "delta": 5
     },
     {
         "id": "lyra-mattis",
@@ -273,7 +297,7 @@
         "pokemonId": 290,
         "pokemonName": "Nincada",
         "tier": "basic",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "kai-tang",
@@ -285,7 +309,7 @@
         "pokemonId": 715,
         "pokemonName": "Noivern",
         "tier": "evolved",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "sofia-gambardella",
@@ -297,43 +321,31 @@
         "pokemonId": 838,
         "pokemonName": "Carkol",
         "tier": "evolved",
-        "delta": 4
-    },
-    {
-        "id": "liliah-fettner",
-        "name": "LILIAH FETTNER",
-        "puzzles": 17,
-        "plw": 51,
-        "uscf": 555,
-        "group": "King 17",
-        "pokemonId": 166,
-        "pokemonName": "Ledian",
-        "tier": "evolved",
-        "delta": 1
+        "delta": 2
     },
     {
         "id": "theodore-lewis",
         "name": "Theodore Lewis",
-        "puzzles": 16,
-        "plw": 58,
+        "puzzles": 15,
+        "plw": 65,
         "uscf": 1378,
-        "group": "King 42",
+        "group": "King 43",
         "pokemonId": 575,
         "pokemonName": "Gothorita",
         "tier": "evolved",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "theodore-meng",
         "name": "Theodore Meng",
-        "puzzles": 11,
-        "plw": 33,
+        "puzzles": 14,
+        "plw": 42,
         "uscf": 1410,
         "group": "Super King 33",
         "pokemonId": 79,
         "pokemonName": "Slowpoke",
         "tier": "basic",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "dylan-yip",
@@ -345,19 +357,31 @@
         "pokemonId": 422,
         "pokemonName": "Shellos",
         "tier": "basic",
-        "delta": 3
+        "delta": 4
     },
     {
-        "id": "jules-jaindl",
-        "name": "Jules Jaindl",
-        "puzzles": 5,
-        "plw": 100,
-        "uscf": 0,
-        "group": "King 2",
-        "pokemonId": 789,
-        "pokemonName": "Cosmog",
-        "tier": "legendary",
-        "delta": 4
+        "id": "jacob-saleh",
+        "name": "Jacob Saleh",
+        "puzzles": 10,
+        "plw": 20,
+        "uscf": 385,
+        "group": "Queen 9",
+        "pokemonId": 446,
+        "pokemonName": "Munchlax",
+        "tier": "basic",
+        "delta": 1
+    },
+    {
+        "id": "liliah-fettner",
+        "name": "LILIAH FETTNER",
+        "puzzles": 8,
+        "plw": 24,
+        "uscf": 555,
+        "group": "King 17",
+        "pokemonId": 165,
+        "pokemonName": "Ledyba",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "sammy-fialkovskiy",
@@ -369,7 +393,7 @@
         "pokemonId": 624,
         "pokemonName": "Pawniard",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "alejandro-sheikh",
@@ -381,7 +405,7 @@
         "pokemonId": 706,
         "pokemonName": "Goodra",
         "tier": "final",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "george-parker",
@@ -393,19 +417,31 @@
         "pokemonId": 806,
         "pokemonName": "Blacephalon",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     },
     {
-        "id": "yoomi-yoon-winawer",
-        "name": "Yoomi Yoon-Winawer",
-        "puzzles": 3,
-        "plw": 31,
-        "uscf": 225,
-        "group": "Bishop 2",
-        "pokemonId": 626,
-        "pokemonName": "Bouffalant",
+        "id": "sloane-murphy",
+        "name": "Sloane Murphy",
+        "puzzles": 2,
+        "plw": 21,
+        "uscf": 1390,
+        "group": "King 72",
+        "pokemonId": 919,
+        "pokemonName": "Nymble",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
+    },
+    {
+        "id": "jules-jaindl",
+        "name": "Jules Jaindl",
+        "puzzles": 1,
+        "plw": 82,
+        "uscf": 0,
+        "group": "King 2",
+        "pokemonId": 357,
+        "pokemonName": "Tropius",
+        "tier": "final",
+        "delta": 5
     },
     {
         "id": "chase-grant",
@@ -417,7 +453,7 @@
         "pokemonId": 139,
         "pokemonName": "Omastar",
         "tier": "final",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "zachary-berger",
@@ -429,19 +465,19 @@
         "pokemonId": 751,
         "pokemonName": "Dewpider",
         "tier": "basic",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "arin-dhami",
         "name": "Arin Dhami",
         "puzzles": 0,
-        "plw": 20,
+        "plw": 30,
         "uscf": 0,
         "group": "Rook 1",
         "pokemonId": 10,
         "pokemonName": "Caterpie",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "kira-dadarkar",
@@ -453,6 +489,6 @@
         "pokemonId": 1019,
         "pokemonName": "Hydrapple",
         "tier": "final",
-        "delta": 0
+        "delta": 1
     }
 ]
