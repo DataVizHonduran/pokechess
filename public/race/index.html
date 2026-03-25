@@ -322,7 +322,7 @@ function updateRacers(dt) {
       }
     }
   });
-  if (racerState.every(r => r.finished)) {
+  if (finishCount >= 10 && !raceOver) {
     raceOver = true;
     setTimeout(showOverlay, 2000);
   }
@@ -631,6 +631,43 @@ function draw(ts) {
   racerState.forEach(r => {
     if (r.celebrating) drawCelebration(r, ts);
   });
+
+  if (raceOver) drawFlashingSign(ts);
+}
+
+function drawFlashingSign(ts) {
+  if (Math.floor(ts / 500) % 2 === 0) return;
+  const text     = 'Great Job on those PLWs!';
+  const fontSize = Math.max(12, Math.floor(canvas.width / 30));
+  ctx.save();
+  ctx.font        = `bold ${fontSize}px 'Press Start 2P', monospace`;
+  ctx.textAlign   = 'center';
+  ctx.textBaseline = 'middle';
+  const x       = canvas.width  / 2;
+  const y       = canvas.height * 0.82;
+  const tw      = ctx.measureText(text).width;
+  const pad     = fontSize * 0.9;
+  const boxX    = x - tw / 2 - pad;
+  const boxY    = y - fontSize / 2 - pad * 0.75;
+  const boxW    = tw + pad * 2;
+  const boxH    = fontSize + pad * 1.5;
+  // Background
+  ctx.fillStyle = 'rgba(10,0,30,0.88)';
+  ctx.fillRect(boxX, boxY, boxW, boxH);
+  // Border
+  ctx.strokeStyle = '#f9a11b';
+  ctx.lineWidth   = 4;
+  ctx.strokeRect(boxX, boxY, boxW, boxH);
+  // Inner border accent
+  ctx.strokeStyle = '#e6001a';
+  ctx.lineWidth   = 2;
+  ctx.strokeRect(boxX + 4, boxY + 4, boxW - 8, boxH - 8);
+  // Text
+  ctx.fillStyle  = '#f9a11b';
+  ctx.shadowColor = '#e6001a';
+  ctx.shadowBlur  = 14;
+  ctx.fillText(text, x, y);
+  ctx.restore();
 }
 
 // ── Scoreboard ────────────────────────────────────────────────────────────
