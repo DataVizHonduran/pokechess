@@ -73,28 +73,6 @@ canvas{
   border-radius:4px;
   image-rendering:pixelated;
 }
-#scoreboard{
-  max-width:960px;
-  margin:8px auto 20px;
-  padding:0 8px;
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
-  gap:3px;
-}
-.score-row{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  background:rgba(255,255,255,0.07);
-  padding:4px 8px;
-  border-left:4px solid var(--kc);
-  font-size:clamp(5px,1vw,8px);
-  white-space:nowrap;
-  overflow:hidden;
-}
-.score-pos{color:#f9a11b;min-width:18px}
-.score-name{flex:1;overflow:hidden;text-overflow:ellipsis}
-.score-plw{color:#aaa;min-width:30px;text-align:right}
 #overlay{
   display:none;
   position:fixed;inset:0;
@@ -135,7 +113,7 @@ canvas{
 </div>
 <div id="race-header">
   <h1>PS11 Chess Club: The Weekly Sprint</h1>
-  <div class="subtitle">Data as of 2026-03-25 15:13 &nbsp;|&nbsp; PLW = Points Last Week</div>
+  <div class="subtitle">Data as of 2026-03-25 15:15 &nbsp;|&nbsp; PLW = Points Last Week</div>
   <div class="controls">
     <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
     <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
@@ -146,7 +124,6 @@ canvas{
   <canvas id="track"></canvas>
 </div>
 
-<div id="scoreboard"></div>
 
 <div id="overlay">
   <h2>&#127942; RACE COMPLETE! &#127942;</h2>
@@ -616,23 +593,6 @@ function draw(ts) {
 }
 
 // ── Scoreboard ────────────────────────────────────────────────────────────
-let lastScoreboardUpdate = 0;
-function updateScoreboard(ts) {
-  if (ts - lastScoreboardUpdate < 500) return;
-  lastScoreboardUpdate = ts;
-
-  const sorted = [...racerState].sort((a, b) => b.arcPos - a.arcPos);
-  const sb = document.getElementById('scoreboard');
-  sb.innerHTML = sorted.map((r, i) => {
-    const pos = i + 1;
-    const lap = Math.min(TARGET_LAPS, Math.max(0, Math.floor(r.arcPos)));
-    return `<div class="score-row" style="--kc:${r.color}">
-      <span class="score-pos">${pos}</span>
-      <span class="score-name">${r.name}</span>
-      <span class="score-plw">PLW ${r.plw}</span>
-    </div>`;
-  }).join('');
-}
 
 // ── Overlay ────────────────────────────────────────────────────────────────
 function showOverlay() {
@@ -660,7 +620,6 @@ function tick(ts) {
   updateVariances(ts);
   updateRacers(dt);
   draw(ts);
-  updateScoreboard(ts);
 
   requestAnimationFrame(tick);
 }
