@@ -44,6 +44,18 @@ export default function Home() {
 
   return (
     <div className="bg-slate-950 text-slate-200 font-sans min-h-screen p-8">
+      {/* Tab nav */}
+      <div className="max-w-5xl mx-auto mb-6 flex gap-1 border-b border-slate-800">
+        <span className="px-5 py-2 text-sm font-semibold text-indigo-400 border-b-2 border-indigo-500 -mb-px">
+          PokeChess
+        </span>
+        <a
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/race/`}
+          className="px-5 py-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+        >
+          🏎 Weekly Sprint
+        </a>
+      </div>
       {/* Header */}
       <motion.header
         className="max-w-5xl mx-auto mb-8 flex justify-between items-end"

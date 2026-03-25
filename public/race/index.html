@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PS11 Chess Club: The Weekly Sprint</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+#tab-nav{
+  display:flex;gap:0;background:#0f0720;border-bottom:2px solid #2d1a5e;
+  font-family:'Press Start 2P','Courier New',monospace;
+  font-size:clamp(6px,1.2vw,9px);
+}
+#tab-nav a, #tab-nav span{
+  padding:10px 18px;text-decoration:none;cursor:pointer;
+  white-space:nowrap;
+}
+#tab-pokechess{color:#94a3b8}
+#tab-pokechess:hover{color:#fff;background:rgba(255,255,255,0.05)}
+#tab-race{color:#f9a11b;border-bottom:3px solid #f9a11b;margin-bottom:-2px}
+body{
+  background:#1a0a2e;
+  color:#fff;
+  font-family:'Press Start 2P','Courier New',monospace;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+#race-header{
+  text-align:center;
+  padding:14px 16px 10px;
+  background:linear-gradient(180deg,#2d0a5e 0%,#1a0a2e 100%);
+  border-bottom:4px solid #f9a11b;
+}
+h1{
+  font-size:clamp(9px,2.2vw,18px);
+  color:#f9a11b;
+  text-shadow:3px 3px 0 #e6001a,-1px -1px 0 #000;
+  letter-spacing:2px;
+  margin-bottom:6px;
+}
+.subtitle{
+  font-size:clamp(6px,1.3vw,10px);
+  color:#aaa;
+  margin-bottom:10px;
+}
+.controls{
+  display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+}
+.btn{
+  font-family:inherit;
+  font-size:clamp(6px,1.3vw,9px);
+  padding:7px 14px;
+  border:3px solid #fff;
+  cursor:pointer;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  transition:filter 0.1s,transform 0.1s;
+}
+.btn:hover{filter:brightness(1.3);transform:translateY(-2px)}
+.btn-red  {background:#e6001a;color:#fff}
+.btn-green{background:#00a651;color:#fff}
+#canvas-wrapper{
+  width:100%;
+  max-width:960px;
+  margin:10px auto 0;
+  padding:0 8px;
+}
+canvas{
+  width:100%;
+  display:block;
+  border:4px solid #f9a11b;
+  border-radius:4px;
+  image-rendering:pixelated;
+}
+#scoreboard{
+  max-width:960px;
+  margin:8px auto 20px;
+  padding:0 8px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+  gap:3px;
+}
+.score-row{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  background:rgba(255,255,255,0.07);
+  padding:4px 8px;
+  border-left:4px solid var(--kc);
+  font-size:clamp(5px,1vw,8px);
+  white-space:nowrap;
+  overflow:hidden;
+}
+.score-pos{color:#f9a11b;min-width:18px}
+.score-name{flex:1;overflow:hidden;text-overflow:ellipsis}
+.score-plw{color:#aaa;min-width:30px;text-align:right}
+#overlay{
+  display:none;
+  position:fixed;inset:0;
+  background:rgba(10,0,30,0.88);
+  z-index:100;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+}
+#overlay.show{display:flex}
+#overlay h2{
+  font-size:clamp(12px,3vw,26px);
+  color:#f9a11b;
+  text-shadow:4px 4px 0 #e6001a;
+  text-align:center;
+}
+#podium{
+  display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap;justify-content:center;
+}
+.podium-slot{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  background:rgba(255,255,255,0.08);
+  border:3px solid;padding:10px 16px;
+  font-size:clamp(6px,1.3vw,10px);
+}
+.podium-slot.p1{border-color:#f9a11b}
+.podium-slot.p2{border-color:#aaa}
+.podium-slot.p3{border-color:#c87137}
+.podium-pos{font-size:1.6em}
+</style>
+</head>
+<body>
+
+<div id="tab-nav">
+  <a href="/pokechess/" id="tab-pokechess">PokeChess</a>
+  <span id="tab-race">🏎 Weekly Sprint</span>
+</div>
+<div id="race-header">
+  <h1>PS11 Chess Club: The Weekly Sprint</h1>
+  <div class="subtitle">Data as of 2026-03-25 15:08 &nbsp;|&nbsp; PLW = Points Last Week</div>
+  <div class="controls">
+    <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
+    <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
+  </div>
+</div>
+
+<div id="canvas-wrapper">
+  <canvas id="track"></canvas>
+</div>
+
+<div id="scoreboard"></div>
+
+<div id="overlay">
+  <h2>&#127942; RACE COMPLETE! &#127942;</h2>
+  <div id="podium"></div>
+  <button class="btn btn-green" id="btn-overlay-restart" style="margin-top:10px">&#9654; Race Again</button>
+</div>
+
+<script>
+// ── Injected data ─────────────────────────────────────────────────────────
+const RACERS = [{"name": "Ethan Metzer", "plw": 1260, "rank": 1}, {"name": "Anastassi Xenos", "plw": 1033, "rank": 2}, {"name": "Jaxson Vanderpoole", "plw": 888, "rank": 3}, {"name": "Nicholas Leung", "plw": 543, "rank": 4}, {"name": "Benjamin Burke", "plw": 472, "rank": 5}, {"name": "Sammy Fialkovskiy", "plw": 335, "rank": 6}, {"name": "Chloe Yip", "plw": 314, "rank": 7}, {"name": "Jayden Duke", "plw": 304, "rank": 8}, {"name": "Adam Atwa", "plw": 294, "rank": 9}, {"name": "Jules Jaindl", "plw": 266, "rank": 10}, {"name": "Dylen Duke", "plw": 264, "rank": 11}, {"name": "Matilda Buckmaster", "plw": 246, "rank": 12}, {"name": "Chase grant", "plw": 246, "rank": 13}, {"name": "Sloane Murphy", "plw": 204, "rank": 14}, {"name": "Dylan Wu", "plw": 198, "rank": 15}, {"name": "Drew Murphy", "plw": 192, "rank": 16}, {"name": "Yoomi Yoon-Winawer", "plw": 191, "rank": 17}, {"name": "Jeremy Chow", "plw": 170, "rank": 18}, {"name": "Isha Varma", "plw": 153, "rank": 19}, {"name": "PARKER DOWNING", "plw": 148, "rank": 20}];
+
+// ── Constants ─────────────────────────────────────────────────────────────
+const TARGET_LAPS   = 2;
+const MIN_SPEED     = 0.008;   // arc-frac / sec
+const MAX_SPEED     = 0.075;   // arc-frac / sec
+const VARIANCE_MAX  = 0.018;   // ± perturbation
+const VAR_INTERVAL_MIN = 3000; // ms
+const VAR_INTERVAL_RNG = 2000; // ms extra random
+const ARC_SAMPLES   = 1200;
+const KART_W_BASE   = 20;
+const KART_H_BASE   = 13;
+const ARC_GAP       = 0.018;   // stagger between karts at start
+
+const KART_COLORS = [
+  '#e6001a','#007dc5','#00a651','#f9a11b','#9b59b6',
+  '#e67e22','#1abc9c','#e91e8c','#3498db','#c0392b',
+  '#27ae60','#f1c40f','#8e44ad','#16a085','#d35400',
+  '#2c3e50','#a29bfe','#fd79a8','#55efc4','#fdcb6e',
+];
+
+// ── Canvas setup ──────────────────────────────────────────────────────────
+const canvas  = document.getElementById('track');
+const ctx     = canvas.getContext('2d');
+let cx, cy, rx, ry, roadWidth, kartW, kartH;
+let arcTable = null; // { lengths[], angles[], totalLen }
+
+function buildArcTable(rx, ry) {
+  const N = ARC_SAMPLES;
+  const lengths = new Float64Array(N + 1);
+  lengths[0] = 0;
+  for (let i = 1; i <= N; i++) {
+    const tmid = (2 * Math.PI * (i - 0.5)) / N;
+    const dxdt = -rx * Math.sin(tmid);
+    const dydt =  ry * Math.cos(tmid);
+    const ds   = Math.sqrt(dxdt * dxdt + dydt * dydt) * (2 * Math.PI / N);
+    lengths[i] = lengths[i - 1] + ds;
+  }
+  const angles = new Float64Array(N + 1);
+  for (let i = 0; i <= N; i++) angles[i] = (2 * Math.PI * i) / N;
+  return { lengths, angles, totalLen: lengths[N] };
+}
+
+function arcFracToTheta(frac) {
+  // frac in [0,1) → theta
+  const target = ((frac % 1) + 1) % 1 * arcTable.totalLen;
+  const L = arcTable.lengths;
+  let lo = 0, hi = ARC_SAMPLES;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (L[mid] < target) lo = mid + 1; else hi = mid;
+  }
+  // linear interpolation
+  const i0 = Math.max(0, lo - 1);
+  const L0 = L[i0], L1 = L[lo] ?? L[ARC_SAMPLES];
+  const t  = L1 > L0 ? (target - L0) / (L1 - L0) : 0;
+  const a0 = arcTable.angles[i0];
+  const a1 = arcTable.angles[lo] ?? 2 * Math.PI;
+  return a0 + t * (a1 - a0);
+}
+
+function thetaToXY(theta) {
+  return { x: cx + rx * Math.cos(theta), y: cy + ry * Math.sin(theta) };
+}
+
+function thetaToHeading(theta) {
+  return Math.atan2(ry * Math.cos(theta), -rx * Math.sin(theta));
+}
+
+function resizeCanvas() {
+  const wrapper = document.getElementById('canvas-wrapper');
+  const w = wrapper.offsetWidth - 16;
+  canvas.width  = w;
+  canvas.height = Math.round(w * 0.56);
+  cx = canvas.width  / 2;
+  cy = canvas.height / 2;
+  rx = canvas.width  * 0.41;
+  ry = canvas.height * 0.37;
+  roadWidth = Math.min(canvas.width, canvas.height) * 0.13;
+  kartW = Math.max(10, canvas.width  * 0.021);
+  kartH = Math.max(7,  canvas.height * 0.040);
+  arcTable = buildArcTable(rx, ry);
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+// ── Grass tile pattern ────────────────────────────────────────────────────
+function makeGrassTile() {
+  const oc = document.createElement('canvas');
+  oc.width = oc.height = 8;
+  const ox = oc.getContext('2d');
+  ox.fillStyle = '#2d6e3a'; ox.fillRect(0,0,8,8);
+  ox.fillStyle = '#3a7d44'; ox.fillRect(0,0,4,4); ox.fillRect(4,4,4,4);
+  return oc;
+}
+const grassTile = makeGrassTile();
+
+// ── Racer state ───────────────────────────────────────────────────────────
+const MAX_PLW = Math.max(...RACERS.map(r => r.plw), 1);
+let racerState = [];
+
+function computeBaseSpeed(plw) {
+  return MIN_SPEED + (plw / MAX_PLW) * (MAX_SPEED - MIN_SPEED);
+}
+
+function initRacerState() {
+  racerState = RACERS.map((r, i) => ({
+    name:        r.name,
+    plw:         r.plw,
+    arcPos:      -(i * ARC_GAP),
+    baseSpeed:   computeBaseSpeed(r.plw),
+    currentSpeed: computeBaseSpeed(r.plw),
+    variance:    0,
+    nextVarAt:   performance.now() + Math.random() * VAR_INTERVAL_RNG,
+    laps:        0,
+    finished:    false,
+    finishOrder: null,
+    celebrating: false,
+    celebEnd:    0,
+    color:       KART_COLORS[i % KART_COLORS.length],
+  }));
+  raceOver = false;
+  finishCount = 0;
+  document.getElementById('overlay').classList.remove('show');
+}
+
+let raceOver    = false;
+let finishCount = 0;
+initRacerState();
+
+// ── Update logic ──────────────────────────────────────────────────────────
+function updateRacers(dt) {
+  if (raceOver) return;
+  racerState.forEach(r => {
+    if (r.finished) return;
+    r.arcPos += r.currentSpeed * dt;
+    const newLaps = Math.floor(r.arcPos);
+    if (newLaps > r.laps) {
+      r.laps = newLaps;
+      if (r.laps >= TARGET_LAPS) {
+        r.finished    = true;
+        r.celebrating = true;
+        r.celebEnd    = performance.now() + 3500;
+        finishCount++;
+        r.finishOrder = finishCount;
+      }
+    }
+  });
+  if (racerState.every(r => r.finished)) {
+    raceOver = true;
+    setTimeout(showOverlay, 2000);
+  }
+}
+
+function updateVariances(ts) {
+  racerState.forEach(r => {
+    if (r.finished) return;
+    if (ts >= r.nextVarAt) {
+      r.variance     = (Math.random() * 2 - 1) * VARIANCE_MAX;
+      r.currentSpeed = Math.max(MIN_SPEED * 0.5, r.baseSpeed + r.variance);
+      r.nextVarAt    = ts + VAR_INTERVAL_MIN + Math.random() * VAR_INTERVAL_RNG;
+    }
+  });
+}
+
+// ── Draw helpers ──────────────────────────────────────────────────────────
+function drawBackground() {
+  // Sky
+  const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+  grad.addColorStop(0, '#1a0a2e');
+  grad.addColorStop(1, '#2d0a5e');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Checkerboard border (8-bit style) — 8px squares around edge
+  const sq = 8;
+  ctx.save();
+  for (let x = 0; x < canvas.width; x += sq) {
+    for (let y = 0; y < canvas.height; y += sq) {
+      const onEdge = x < sq*2 || x >= canvas.width-sq*2 || y < sq*2 || y >= canvas.height-sq*2;
+      if (onEdge) {
+        ctx.fillStyle = ((x/sq + y/sq) % 2 === 0) ? '#fff' : '#111';
+        ctx.fillRect(x, y, sq, sq);
+      }
+    }
+  }
+  ctx.restore();
+}
+
+function drawTrack() {
+  // Grass fill inside oval using pattern
+  const pat = ctx.createPattern(grassTile, 'repeat');
+  ctx.save();
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx - roadWidth / 2, ry - roadWidth / 2, 0, 0, 2 * Math.PI);
+  ctx.fillStyle = pat;
+  ctx.fill();
+  ctx.restore();
+
+  // Road ring (thick ellipse stroke)
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx, ry, 0, 0, 2 * Math.PI);
+  ctx.strokeStyle = '#2e2e2e';
+  ctx.lineWidth   = roadWidth;
+  ctx.stroke();
+
+  // Road edge (outer white line)
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx + roadWidth / 2 - 2, ry + roadWidth / 2 - 2, 0, 0, 2 * Math.PI);
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth   = 3;
+  ctx.stroke();
+
+  // Road edge (inner white line)
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx - roadWidth / 2 + 2, ry - roadWidth / 2 + 2, 0, 0, 2 * Math.PI);
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth   = 3;
+  ctx.stroke();
+
+  // Center dashed line
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, rx, ry, 0, 0, 2 * Math.PI);
+  ctx.strokeStyle = '#ffff00';
+  ctx.lineWidth   = 2;
+  ctx.setLineDash([14, 18]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+function drawStartFinish() {
+  // Start/finish stripe at theta = 0 (right side)
+  const theta = 0;
+  const pos   = thetaToXY(theta);
+  const hdg   = thetaToHeading(theta);
+  const perp  = hdg + Math.PI / 2;
+  const len   = roadWidth * 0.55;
+  const sq    = 5;
+  const steps = Math.ceil(len / sq);
+  for (let i = -steps; i <= steps; i++) {
+    const ox = pos.x + Math.cos(perp) * i * sq;
+    const oy = pos.y + Math.sin(perp) * i * sq;
+    for (let j = -2; j <= 2; j++) {
+      ctx.fillStyle = ((i + j) % 2 === 0) ? '#fff' : '#111';
+      ctx.fillRect(
+        ox + Math.cos(hdg) * j * sq,
+        oy + Math.sin(hdg) * j * sq,
+        sq, sq
+      );
+    }
+  }
+
+  // "S/F" label
+  ctx.save();
+  ctx.font      = `bold ${Math.max(7, kartH * 0.8)}px 'Press Start 2P', monospace`;
+  ctx.fillStyle = '#f9a11b';
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth   = 3;
+  ctx.textAlign   = 'center';
+  ctx.textBaseline = 'middle';
+  const labelPos = thetaToXY(theta);
+  ctx.strokeText('S/F', labelPos.x, labelPos.y - ry * 0.18);
+  ctx.fillText('S/F', labelPos.x, labelPos.y - ry * 0.18);
+  ctx.restore();
+}
+
+function drawKart(r, ts) {
+  const theta   = arcFracToTheta(r.arcPos);
+  const pos     = thetaToXY(theta);
+  const heading = thetaToHeading(theta);
+  const W = kartW, H = kartH;
+
+  ctx.save();
+  ctx.translate(pos.x, pos.y);
+  ctx.rotate(heading);
+
+  // Shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.35)';
+  ctx.beginPath();
+  ctx.ellipse(2, 3, W * 0.55, H * 0.35, 0, 0, 2 * Math.PI);
+  ctx.fill();
+
+  // Body
+  ctx.fillStyle = r.color;
+  ctx.beginPath();
+  if (ctx.roundRect) {
+    ctx.roundRect(-W/2, -H/2, W, H, 3);
+  } else {
+    ctx.rect(-W/2, -H/2, W, H);
+  }
+  ctx.fill();
+
+  // Windshield
+  ctx.fillStyle = 'rgba(180,230,255,0.85)';
+  ctx.fillRect(-W * 0.15, -H * 0.38, W * 0.3, H * 0.55);
+
+  // Wheels
+  ctx.fillStyle = '#111';
+  const wx = W * 0.36, wy = H * 0.42;
+  [[-wx,-wy],[wx,-wy],[-wx,wy],[wx,wy]].forEach(([bx, by]) => {
+    ctx.beginPath();
+    ctx.ellipse(bx, by, W * 0.12, H * 0.18, 0, 0, 2 * Math.PI);
+    ctx.fill();
+  });
+
+  // Celebration sparkle aura
+  if (r.celebrating && performance.now() < r.celebEnd) {
+    ctx.globalAlpha = 0.5 + 0.3 * Math.sin(ts * 0.015);
+    ctx.strokeStyle = '#f9a11b';
+    ctx.lineWidth   = 2;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, W * 0.75, H * 0.75, ts * 0.003, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  ctx.restore();
+
+  // Name label (always upright, above kart)
+  const firstName = r.name.split(' ')[0];
+  const fontSize  = Math.max(6, Math.min(10, kartW * 0.55));
+  ctx.save();
+  ctx.font        = `bold ${fontSize}px 'Press Start 2P', monospace`;
+  ctx.textAlign   = 'center';
+  ctx.textBaseline = 'bottom';
+  const labelY = pos.y - H * 0.9 - 4;
+
+  // Background pill
+  const tw = ctx.measureText(firstName).width;
+  ctx.fillStyle = 'rgba(0,0,0,0.65)';
+  ctx.beginPath();
+  if (ctx.roundRect) {
+    ctx.roundRect(pos.x - tw/2 - 3, labelY - fontSize - 1, tw + 6, fontSize + 4, 3);
+  } else {
+    ctx.rect(pos.x - tw/2 - 3, labelY - fontSize - 1, tw + 6, fontSize + 4);
+  }
+  ctx.fill();
+
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth   = 2.5;
+  ctx.strokeText(firstName, pos.x, labelY);
+  ctx.fillStyle   = '#fff';
+  ctx.fillText(firstName,   pos.x, labelY);
+  ctx.restore();
+}
+
+function drawCelebration(r, ts) {
+  if (!r.celebrating || performance.now() >= r.celebEnd) {
+    r.celebrating = false;
+    return;
+  }
+  const theta = arcFracToTheta(r.arcPos);
+  const pos   = thetaToXY(theta);
+  const age   = performance.now() - (r.celebEnd - 3500);
+  const rays  = 8;
+  const len   = 20 + 8 * Math.sin(ts * 0.01);
+
+  ctx.save();
+  ctx.translate(pos.x, pos.y);
+  ctx.rotate(ts * 0.003);
+  for (let i = 0; i < rays; i++) {
+    const a = (i / rays) * 2 * Math.PI;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(Math.cos(a) * len, Math.sin(a) * len);
+    ctx.strokeStyle = i % 2 === 0 ? '#f9a11b' : '#fff';
+    ctx.lineWidth   = 2;
+    ctx.stroke();
+  }
+  ctx.restore();
+
+  // "WINNER!" badge for the first finisher
+  if (r.finishOrder === 1) {
+    const alpha = 0.7 + 0.3 * Math.sin(ts * 0.01);
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.font = `bold ${Math.max(10, kartW * 0.9)}px 'Press Start 2P', monospace`;
+    ctx.textAlign   = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth   = 4;
+    ctx.strokeText('WINNER!', pos.x, pos.y - kartH * 2.5);
+    ctx.fillStyle   = '#f9a11b';
+    ctx.fillText('WINNER!', pos.x, pos.y - kartH * 2.5);
+    ctx.restore();
+  }
+}
+
+function drawHUD() {
+  // Lap counter - top center
+  ctx.save();
+  ctx.font = `bold ${Math.max(8, kartW * 0.7)}px 'Press Start 2P', monospace`;
+  ctx.textAlign   = 'center';
+  ctx.textBaseline = 'top';
+  ctx.fillStyle   = 'rgba(0,0,0,0.55)';
+  ctx.fillRect(canvas.width/2 - 70, 6, 140, Math.max(14, kartW * 0.8) + 6);
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth   = 2;
+  const lapTxt = `LAP ${Math.min(TARGET_LAPS, Math.max(1, Math.floor(racerState[0]?.arcPos ?? 0) + 1))} / ${TARGET_LAPS}`;
+  ctx.strokeText(lapTxt, canvas.width / 2, 10);
+  ctx.fillStyle = '#f9a11b';
+  ctx.fillText(lapTxt, canvas.width / 2, 10);
+  ctx.restore();
+
+  // Leader tag
+  const sorted = [...racerState].sort((a, b) => b.arcPos - a.arcPos);
+  const leader = sorted[0];
+  if (leader) {
+    const firstName = leader.name.split(' ')[0];
+    const tag = `1st: ${firstName}`;
+    ctx.save();
+    ctx.font = `bold ${Math.max(7, kartW * 0.55)}px 'Press Start 2P', monospace`;
+    ctx.textAlign   = 'left';
+    ctx.textBaseline = 'top';
+    const tw = ctx.measureText(tag).width;
+    ctx.fillStyle = 'rgba(0,0,0,0.55)';
+    ctx.fillRect(10, 6, tw + 12, Math.max(12, kartW * 0.65) + 6);
+    ctx.strokeStyle = '#000'; ctx.lineWidth = 2;
+    ctx.strokeText(tag, 16, 10);
+    ctx.fillStyle = leader.color;
+    ctx.fillText(tag, 16, 10);
+    ctx.restore();
+  }
+}
+
+function draw(ts) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawBackground();
+  drawTrack();
+  drawStartFinish();
+  drawHUD();
+
+  // Draw karts in reverse arcPos order (leader on top)
+  const order = [...racerState].sort((a, b) => a.arcPos - b.arcPos);
+  order.forEach(r => drawKart(r, ts));
+
+  // Celebrations on top
+  racerState.forEach(r => {
+    if (r.celebrating) drawCelebration(r, ts);
+  });
+}
+
+// ── Scoreboard ────────────────────────────────────────────────────────────
+let lastScoreboardUpdate = 0;
+function updateScoreboard(ts) {
+  if (ts - lastScoreboardUpdate < 500) return;
+  lastScoreboardUpdate = ts;
+
+  const sorted = [...racerState].sort((a, b) => b.arcPos - a.arcPos);
+  const sb = document.getElementById('scoreboard');
+  sb.innerHTML = sorted.map((r, i) => {
+    const pos = i + 1;
+    const lap = Math.min(TARGET_LAPS, Math.max(0, Math.floor(r.arcPos)));
+    return `<div class="score-row" style="--kc:${r.color}">
+      <span class="score-pos">${pos}</span>
+      <span class="score-name">${r.name}</span>
+      <span class="score-plw">PLW ${r.plw}</span>
+    </div>`;
+  }).join('');
+}
+
+// ── Overlay ────────────────────────────────────────────────────────────────
+function showOverlay() {
+  const sorted = [...racerState].sort((a, b) => (a.finishOrder ?? 999) - (b.finishOrder ?? 999));
+  const top3   = sorted.slice(0, 3);
+  const medals = ['🥇','🥈','🥉'];
+  const classes = ['p1','p2','p3'];
+  document.getElementById('podium').innerHTML = top3.map((r, i) =>
+    `<div class="podium-slot ${classes[i]}" style="border-color:${r.color}">
+       <span class="podium-pos">${medals[i]}</span>
+       <span>${r.name}</span>
+       <span style="color:#aaa;font-size:0.85em">PLW ${r.plw}</span>
+     </div>`
+  ).join('');
+  document.getElementById('overlay').classList.add('show');
+}
+
+// ── Game loop ─────────────────────────────────────────────────────────────
+let lastTs = null;
+function tick(ts) {
+  if (!lastTs) lastTs = ts;
+  const dt = Math.min((ts - lastTs) / 1000, 0.05);
+  lastTs = ts;
+
+  updateVariances(ts);
+  updateRacers(dt);
+  draw(ts);
+  updateScoreboard(ts);
+
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+// ── Controls ───────────────────────────────────────────────────────────────
+document.getElementById('btn-restart').addEventListener('click', () => {
+  initRacerState();
+  lastTs = null;
+});
+document.getElementById('btn-refresh').addEventListener('click', () => {
+  window.location.reload();
+});
+document.getElementById('btn-overlay-restart').addEventListener('click', () => {
+  initRacerState();
+  lastTs = null;
+});
+</script>
+</body>
+</html>
