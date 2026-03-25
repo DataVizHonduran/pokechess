@@ -135,7 +135,7 @@ canvas{
 </div>
 <div id="race-header">
   <h1>PS11 Chess Club: The Weekly Sprint</h1>
-  <div class="subtitle">Data as of 2026-03-25 15:08 &nbsp;|&nbsp; PLW = Points Last Week</div>
+  <div class="subtitle">Data as of 2026-03-25 15:13 &nbsp;|&nbsp; PLW = Points Last Week</div>
   <div class="controls">
     <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
     <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
@@ -560,23 +560,40 @@ function drawHUD() {
   ctx.fillText(lapTxt, canvas.width / 2, 10);
   ctx.restore();
 
-  // Leader tag
-  const sorted = [...racerState].sort((a, b) => b.arcPos - a.arcPos);
-  const leader = sorted[0];
-  if (leader) {
-    const firstName = leader.name.split(' ')[0];
-    const tag = `1st: ${firstName}`;
+  // Finishers list (top-left) — grows as players cross the line
+  const finishers = [...racerState]
+    .filter(r => r.finishOrder !== null)
+    .sort((a, b) => a.finishOrder - b.finishOrder);
+  if (finishers.length > 0) {
+    const fontSize = Math.max(6, kartW * 0.52);
+    const lineH    = fontSize + 5;
+    const padX     = 10, padY = 6;
+    const medals   = ['🥇','🥈','🥉'];
     ctx.save();
-    ctx.font = `bold ${Math.max(7, kartW * 0.55)}px 'Press Start 2P', monospace`;
-    ctx.textAlign   = 'left';
+    ctx.font = `bold ${fontSize}px 'Press Start 2P', monospace`;
+    ctx.textAlign    = 'left';
     ctx.textBaseline = 'top';
-    const tw = ctx.measureText(tag).width;
-    ctx.fillStyle = 'rgba(0,0,0,0.55)';
-    ctx.fillRect(10, 6, tw + 12, Math.max(12, kartW * 0.65) + 6);
-    ctx.strokeStyle = '#000'; ctx.lineWidth = 2;
-    ctx.strokeText(tag, 16, 10);
-    ctx.fillStyle = leader.color;
-    ctx.fillText(tag, 16, 10);
+    // Background panel
+    const panelW = finishers.reduce((mx, r) => {
+      const lbl = `${r.finishOrder <= 3 ? medals[r.finishOrder-1]+' ' : r.finishOrder+'. '}${r.name.split(' ')[0]}`;
+      return Math.max(mx, ctx.measureText(lbl).width);
+    }, 0) + padX * 2 + 4;
+    const panelH = finishers.length * lineH + padY * 2;
+    ctx.fillStyle = 'rgba(0,0,0,0.62)';
+    ctx.beginPath();
+    if (ctx.roundRect) ctx.roundRect(padX, padY, panelW, panelH, 4);
+    else ctx.rect(padX, padY, panelW, panelH);
+    ctx.fill();
+    // Rows
+    finishers.forEach((r, i) => {
+      const prefix = r.finishOrder <= 3 ? medals[r.finishOrder-1] + ' ' : `${r.finishOrder}. `;
+      const label  = prefix + r.name.split(' ')[0];
+      const y      = padY + padY * 0.5 + i * lineH;
+      ctx.strokeStyle = '#000'; ctx.lineWidth = 2.5;
+      ctx.strokeText(label, padX + 6, y);
+      ctx.fillStyle = r.color;
+      ctx.fillText(label, padX + 6, y);
+    });
     ctx.restore();
   }
 }
