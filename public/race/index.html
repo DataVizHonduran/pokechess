@@ -10,14 +10,11 @@
 #tab-nav{
   display:flex;gap:0;background:#0f0720;border-bottom:2px solid #2d1a5e;
   font-family:'Press Start 2P','Courier New',monospace;
-  font-size:clamp(9px,1.8vw,11px);
+  font-size:clamp(6px,1.2vw,9px);
 }
 #tab-nav a, #tab-nav span{
   padding:10px 18px;text-decoration:none;cursor:pointer;
   white-space:nowrap;
-}
-@media(max-width:480px){
-  #tab-nav a, #tab-nav span{padding:9px 12px}
 }
 #tab-pokechess{color:#94a3b8}
 #tab-pokechess:hover{color:#fff;background:rgba(255,255,255,0.05)}
@@ -136,7 +133,7 @@ canvas{
 </div>
 <div id="race-header">
   <h1>PS11 Chess Club: The Weekly Sprint</h1>
-  <div class="subtitle">Data as of 2026-03-25 15:17 &nbsp;|&nbsp; PLW = Points Last Week</div>
+  <div class="subtitle">Data as of 2026-03-25 20:11 &nbsp;|&nbsp; PLW = Points Last Week</div>
   <div class="controls">
     <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
     <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
@@ -181,9 +178,9 @@ const RACERS = [{"name": "Ethan Metzer", "plw": 1260, "rank": 1}, {"name": "Anas
 
 // ── Constants ─────────────────────────────────────────────────────────────
 const TARGET_LAPS   = 2;
-const MIN_SPEED     = 0.013;   // arc-frac / sec
-const MAX_SPEED     = 0.118;   // arc-frac / sec
-const VARIANCE_MAX  = 0.023;   // ± perturbation
+const MIN_SPEED     = 0.008;   // arc-frac / sec
+const MAX_SPEED     = 0.075;   // arc-frac / sec
+const VARIANCE_MAX  = 0.018;   // ± perturbation
 const VAR_INTERVAL_MIN = 3000; // ms
 const VAR_INTERVAL_RNG = 2000; // ms extra random
 const ARC_SAMPLES   = 1200;
@@ -325,7 +322,7 @@ function updateRacers(dt) {
       }
     }
   });
-  if (finishCount >= 10 && !raceOver) {
+  if (finishCount >= 8) {
     raceOver = true;
     setTimeout(showOverlay, 2000);
   }
@@ -634,43 +631,6 @@ function draw(ts) {
   racerState.forEach(r => {
     if (r.celebrating) drawCelebration(r, ts);
   });
-
-  if (raceOver) drawFlashingSign(ts);
-}
-
-function drawFlashingSign(ts) {
-  if (Math.floor(ts / 500) % 2 === 0) return;
-  const text     = 'Great Job on those PLWs!';
-  const fontSize = Math.max(12, Math.floor(canvas.width / 30));
-  ctx.save();
-  ctx.font        = `bold ${fontSize}px 'Press Start 2P', monospace`;
-  ctx.textAlign   = 'center';
-  ctx.textBaseline = 'middle';
-  const x       = canvas.width  / 2;
-  const y       = canvas.height * 0.82;
-  const tw      = ctx.measureText(text).width;
-  const pad     = fontSize * 0.9;
-  const boxX    = x - tw / 2 - pad;
-  const boxY    = y - fontSize / 2 - pad * 0.75;
-  const boxW    = tw + pad * 2;
-  const boxH    = fontSize + pad * 1.5;
-  // Background
-  ctx.fillStyle = 'rgba(10,0,30,0.88)';
-  ctx.fillRect(boxX, boxY, boxW, boxH);
-  // Border
-  ctx.strokeStyle = '#f9a11b';
-  ctx.lineWidth   = 4;
-  ctx.strokeRect(boxX, boxY, boxW, boxH);
-  // Inner border accent
-  ctx.strokeStyle = '#e6001a';
-  ctx.lineWidth   = 2;
-  ctx.strokeRect(boxX + 4, boxY + 4, boxW - 8, boxH - 8);
-  // Text
-  ctx.fillStyle  = '#f9a11b';
-  ctx.shadowColor = '#e6001a';
-  ctx.shadowBlur  = 14;
-  ctx.fillText(text, x, y);
-  ctx.restore();
 }
 
 // ── Scoreboard ────────────────────────────────────────────────────────────
