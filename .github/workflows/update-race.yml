@@ -46,3 +46,9 @@ jobs:
           git commit -m "Update Weekly Sprint race — $(date +'%Y-%m-%d')"
           git pull --rebase origin main
           git push
+
+      - name: Trigger deploy
+        if: steps.changes.outputs.changed == 'true'
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
