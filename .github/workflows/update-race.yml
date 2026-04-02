@@ -1,0 +1,48 @@
+name: Update Weekly Sprint Race
+
+on:
+  schedule:
+    # 7 AM EST = 12:00 UTC daily
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-race:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright pandas lxml html5lib
+
+      - name: Install Playwright browsers
+        run: playwright install chromium --with-deps
+
+      - name: Generate race leaderboard
+        run: |
+          python scripts/mario_kart_leaderboard.py \
+            --output public/race/index.html \
+            --base-path /pokechess \
+            --no-open
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet public/race/index.html || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add public/race/index.html
+          git commit -m "Update Weekly Sprint race — $(date +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
