@@ -261,7 +261,6 @@ canvas{
   <div class="subtitle">Data as of __GENERATED_DATE__ &nbsp;|&nbsp; PLW = Points Last Week</div>
   <div class="controls">
     <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
-    <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
   </div>
 </div>
 
@@ -776,9 +775,6 @@ requestAnimationFrame(tick);
 document.getElementById('btn-restart').addEventListener('click', () => {
   initRacerState();
   lastTs = null;
-});
-document.getElementById('btn-refresh').addEventListener('click', () => {
-  window.location.reload();
 });
 document.getElementById('btn-overlay-restart').addEventListener('click', () => {
   initRacerState();
