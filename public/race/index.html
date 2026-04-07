@@ -133,10 +133,9 @@ canvas{
 </div>
 <div id="race-header">
   <h1>PS11 Chess Club: The Weekly Sprint</h1>
-  <div class="subtitle">Data as of 2026-04-07 12:04 &nbsp;|&nbsp; PLW = Points Last Week</div>
+  <div class="subtitle">Data as of 2026-04-07 08:21 &nbsp;|&nbsp; PLW = Points Last Week</div>
   <div class="controls">
     <button class="btn btn-green" id="btn-restart">&#9654; Restart Race</button>
-    <button class="btn btn-red"   id="btn-refresh">&#8635; Refresh Data</button>
   </div>
 </div>
 
@@ -165,8 +164,8 @@ canvas{
 <div class="p-row" style="--kc:#f1c40f"><span class="p-rank">#12</span><span class="p-name">Sloane Murphy</span><span class="p-plw">PLW 120</span></div>
 <div class="p-row" style="--kc:#8e44ad"><span class="p-rank">#13</span><span class="p-name">Adam Atwa</span><span class="p-plw">PLW 99</span></div>
 <div class="p-row" style="--kc:#16a085"><span class="p-rank">#14</span><span class="p-name">Isha Varma</span><span class="p-plw">PLW 75</span></div>
-<div class="p-row" style="--kc:#d35400"><span class="p-rank">#15</span><span class="p-name">Abby Noy</span><span class="p-plw">PLW 72</span></div>
-<div class="p-row" style="--kc:#2c3e50"><span class="p-rank">#16</span><span class="p-name">Arin Dhami</span><span class="p-plw">PLW 72</span></div>
+<div class="p-row" style="--kc:#d35400"><span class="p-rank">#15</span><span class="p-name">Arin Dhami</span><span class="p-plw">PLW 72</span></div>
+<div class="p-row" style="--kc:#2c3e50"><span class="p-rank">#16</span><span class="p-name">Abby Noy</span><span class="p-plw">PLW 72</span></div>
 <div class="p-row" style="--kc:#a29bfe"><span class="p-rank">#17</span><span class="p-name">Dylen Duke</span><span class="p-plw">PLW 70</span></div>
 <div class="p-row" style="--kc:#fd79a8"><span class="p-rank">#18</span><span class="p-name">Jayden Duke</span><span class="p-plw">PLW 70</span></div>
 <div class="p-row" style="--kc:#55efc4"><span class="p-rank">#19</span><span class="p-name">Elliot Koehler</span><span class="p-plw">PLW 63</span></div>
@@ -174,7 +173,7 @@ canvas{
 
 <script>
 // ── Injected data ─────────────────────────────────────────────────────────
-const RACERS = [{"name": "Ethan Metzer", "plw": 474, "rank": 1}, {"name": "Anastassi Xenos", "plw": 463, "rank": 2}, {"name": "Karitas Farrell", "plw": 370, "rank": 3}, {"name": "Benjamin Burke", "plw": 307, "rank": 4}, {"name": "Chloe Yip", "plw": 205, "rank": 5}, {"name": "Drew Murphy", "plw": 180, "rank": 6}, {"name": "Dylan Wu", "plw": 172, "rank": 7}, {"name": "Jaxson Vanderpoole", "plw": 166, "rank": 8}, {"name": "Sammy Fialkovskiy", "plw": 163, "rank": 9}, {"name": "Rafael Boquin", "plw": 158, "rank": 10}, {"name": "Rami Padukone-Mitter", "plw": 135, "rank": 11}, {"name": "Sloane Murphy", "plw": 120, "rank": 12}, {"name": "Adam Atwa", "plw": 99, "rank": 13}, {"name": "Isha Varma", "plw": 75, "rank": 14}, {"name": "Abby Noy", "plw": 72, "rank": 15}, {"name": "Arin Dhami", "plw": 72, "rank": 16}, {"name": "Dylen Duke", "plw": 70, "rank": 17}, {"name": "Jayden Duke", "plw": 70, "rank": 18}, {"name": "Elliot Koehler", "plw": 63, "rank": 19}, {"name": "Jeremy Chow", "plw": 62, "rank": 20}];
+const RACERS = [{"name": "Ethan Metzer", "plw": 474, "rank": 1}, {"name": "Anastassi Xenos", "plw": 463, "rank": 2}, {"name": "Karitas Farrell", "plw": 370, "rank": 3}, {"name": "Benjamin Burke", "plw": 307, "rank": 4}, {"name": "Chloe Yip", "plw": 205, "rank": 5}, {"name": "Drew Murphy", "plw": 180, "rank": 6}, {"name": "Dylan Wu", "plw": 172, "rank": 7}, {"name": "Jaxson Vanderpoole", "plw": 166, "rank": 8}, {"name": "Sammy Fialkovskiy", "plw": 163, "rank": 9}, {"name": "Rafael Boquin", "plw": 158, "rank": 10}, {"name": "Rami Padukone-Mitter", "plw": 135, "rank": 11}, {"name": "Sloane Murphy", "plw": 120, "rank": 12}, {"name": "Adam Atwa", "plw": 99, "rank": 13}, {"name": "Isha Varma", "plw": 75, "rank": 14}, {"name": "Arin Dhami", "plw": 72, "rank": 15}, {"name": "Abby Noy", "plw": 72, "rank": 16}, {"name": "Dylen Duke", "plw": 70, "rank": 17}, {"name": "Jayden Duke", "plw": 70, "rank": 18}, {"name": "Elliot Koehler", "plw": 63, "rank": 19}, {"name": "Jeremy Chow", "plw": 62, "rank": 20}];
 
 // ── Constants ─────────────────────────────────────────────────────────────
 const TARGET_LAPS   = 2;
@@ -670,9 +669,6 @@ requestAnimationFrame(tick);
 document.getElementById('btn-restart').addEventListener('click', () => {
   initRacerState();
   lastTs = null;
-});
-document.getElementById('btn-refresh').addEventListener('click', () => {
-  window.location.reload();
 });
 document.getElementById('btn-overlay-restart').addEventListener('click', () => {
   initRacerState();
