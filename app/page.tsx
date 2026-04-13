@@ -55,6 +55,12 @@ export default function Home() {
         >
           🏎 Weekly Sprint
         </a>
+        <a
+          href="https://datavizhonduran.github.io/plw-chess-city/"
+          className="px-5 py-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+        >
+          🏙 PLW City
+        </a>
       </div>
       {/* Header */}
       <motion.header
