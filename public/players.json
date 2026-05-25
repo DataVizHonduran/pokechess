@@ -9,7 +9,7 @@
         "pokemonId": 800,
         "pokemonName": "Necrozma",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "jules-jaindl",
@@ -21,7 +21,7 @@
         "pokemonId": 895,
         "pokemonName": "Regidrago",
         "tier": "legendary",
-        "delta": 3
+        "delta": 2
     },
     {
         "id": "drew-murphy",
@@ -33,7 +33,7 @@
         "pokemonId": 896,
         "pokemonName": "Glastrier",
         "tier": "legendary",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "chase-grant",
@@ -57,7 +57,7 @@
         "pokemonId": 791,
         "pokemonName": "Solgaleo",
         "tier": "legendary",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "wyatt-lawson",
@@ -69,7 +69,7 @@
         "pokemonId": 792,
         "pokemonName": "Lunala",
         "tier": "legendary",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "abby-noy",
@@ -81,7 +81,7 @@
         "pokemonId": 1002,
         "pokemonName": "Chien-Pao",
         "tier": "legendary",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "isha-varma",
@@ -105,7 +105,7 @@
         "pokemonId": 85,
         "pokemonName": "Dodrio",
         "tier": "final",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "jeremy-chow",
@@ -117,7 +117,7 @@
         "pokemonId": 432,
         "pokemonName": "Purugly",
         "tier": "final",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "benjamin-burke",
@@ -129,7 +129,7 @@
         "pokemonId": 489,
         "pokemonName": "Phione",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "jacob-saleh",
@@ -141,7 +141,7 @@
         "pokemonId": 232,
         "pokemonName": "Donphan",
         "tier": "final",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "sammy-fialkovskiy",
@@ -153,7 +153,7 @@
         "pokemonId": 488,
         "pokemonName": "Cresselia",
         "tier": "legendary",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "adam-atwa",
@@ -165,7 +165,7 @@
         "pokemonId": 490,
         "pokemonName": "Manaphy",
         "tier": "legendary",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "chloe-yip",
@@ -177,7 +177,7 @@
         "pokemonId": 243,
         "pokemonName": "Raikou",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "ethan-metzer",
@@ -201,7 +201,7 @@
         "pokemonId": 676,
         "pokemonName": "Furfrou",
         "tier": "evolved",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "jaxson-vanderpoole",
@@ -213,7 +213,7 @@
         "pokemonId": 348,
         "pokemonName": "Armaldo",
         "tier": "evolved",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "kai-tang",
@@ -225,7 +225,7 @@
         "pokemonId": 1003,
         "pokemonName": "Ting-Lu",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "arin-dhami",
@@ -249,7 +249,7 @@
         "pokemonId": 457,
         "pokemonName": "Lumineon",
         "tier": "evolved",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "rami-padukone-mitter",
@@ -261,7 +261,7 @@
         "pokemonId": 874,
         "pokemonName": "Stonjourner",
         "tier": "basic",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "dylan-wu",
@@ -285,7 +285,7 @@
         "pokemonId": 597,
         "pokemonName": "Ferroseed",
         "tier": "basic",
-        "delta": 5
+        "delta": 1
     },
     {
         "id": "brian-silverman",
@@ -297,7 +297,7 @@
         "pokemonId": 917,
         "pokemonName": "Tarountula",
         "tier": "basic",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "theodore-lewis",
@@ -333,7 +333,7 @@
         "pokemonId": 938,
         "pokemonName": "Tadbulb",
         "tier": "basic",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -345,7 +345,7 @@
         "pokemonId": 588,
         "pokemonName": "Karrablast",
         "tier": "basic",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "elliot-koehler",
