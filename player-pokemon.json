@@ -2,27 +2,27 @@
   "karitas farrell": {
     "chain_index": 157,
     "elite_index": 15,
-    "last_plw": 312
+    "last_plw": 230
   },
   "jules jaindl": {
     "chain_index": 38,
     "elite_index": 73,
-    "last_plw": 271
+    "last_plw": 293
   },
   "chase grant": {
     "chain_index": 101,
     "elite_index": 49,
-    "last_plw": 192
+    "last_plw": 184
   },
   "drew murphy": {
     "chain_index": 78,
     "elite_index": 22,
-    "last_plw": 273
+    "last_plw": 132
   },
   "wyatt lawson": {
     "chain_index": 7,
     "elite_index": 66,
-    "last_plw": 273
+    "last_plw": 249
   },
   "isha varma": {
     "chain_index": 377,
@@ -32,7 +32,7 @@
   "abby noy": {
     "chain_index": 347,
     "elite_index": 3,
-    "last_plw": 112
+    "last_plw": 200
   },
   "anastassi xenos": {
     "chain_index": 396,
@@ -47,37 +47,37 @@
   "benjamin burke": {
     "chain_index": 109,
     "elite_index": 66,
-    "last_plw": 151
+    "last_plw": 129
   },
   "sammy fialkovskiy": {
     "chain_index": 70,
     "elite_index": 40,
-    "last_plw": 111
+    "last_plw": 108
   },
   "jacob saleh": {
     "chain_index": 475,
     "elite_index": 29,
-    "last_plw": 56
+    "last_plw": 50
   },
   "helena belfort": {
     "chain_index": 345,
     "elite_index": 53,
-    "last_plw": 76
+    "last_plw": 36
   },
   "chloe yip": {
     "chain_index": 447,
     "elite_index": 87,
-    "last_plw": 87
+    "last_plw": 70
   },
   "ethan metzer": {
     "chain_index": 319,
     "elite_index": 26,
-    "last_plw": 57
+    "last_plw": 70
   },
   "jaxson vanderpoole": {
     "chain_index": 324,
     "elite_index": 52,
-    "last_plw": 57
+    "last_plw": 48
   },
   "arin dhami": {
     "chain_index": 84,
@@ -97,22 +97,22 @@
   "jeremy chow": {
     "chain_index": 35,
     "elite_index": 54,
-    "last_plw": 38
+    "last_plw": 20
   },
   "una farrell": {
     "chain_index": 354,
     "elite_index": 38,
-    "last_plw": 18
+    "last_plw": 0
   },
   "brian silverman": {
     "chain_index": 371,
     "elite_index": 80,
-    "last_plw": 21
+    "last_plw": 3
   },
   "dylan wu": {
     "chain_index": 62,
     "elite_index": 43,
-    "last_plw": 139
+    "last_plw": 129
   },
   "sara pui": {
     "chain_index": 162,
@@ -127,7 +127,7 @@
   "theodore lewis": {
     "chain_index": 108,
     "elite_index": 26,
-    "last_plw": 48
+    "last_plw": 25
   },
   "liliah fettner": {
     "chain_index": 276,
@@ -142,12 +142,12 @@
   "rami padukone-mitter": {
     "chain_index": 466,
     "elite_index": 56,
-    "last_plw": 9
+    "last_plw": 54
   },
   "glenn gooch-raushenbush": {
     "chain_index": 201,
     "elite_index": 24,
-    "last_plw": 43
+    "last_plw": 55
   },
   "jax kim": {
     "chain_index": 37,
@@ -182,7 +182,7 @@
   "dylan yip": {
     "chain_index": 394,
     "elite_index": 71,
-    "last_plw": 10
+    "last_plw": 42
   },
   "dylen duke": {
     "chain_index": 62,
@@ -202,7 +202,7 @@
   "george parker": {
     "chain_index": 98,
     "elite_index": 48,
-    "last_plw": 10
+    "last_plw": 0
   },
   "huxson miller": {
     "chain_index": 303,
@@ -217,7 +217,7 @@
   "jakob latour": {
     "chain_index": 141,
     "elite_index": 89,
-    "last_plw": 0
+    "last_plw": 58
   },
   "james labarbera": {
     "chain_index": 94,
@@ -348,5 +348,10 @@
     "chain_index": 443,
     "elite_index": 88,
     "last_plw": 0
+  },
+  "calvin kuchar": {
+    "chain_index": 69,
+    "elite_index": 6,
+    "last_plw": 175
   }
 }
