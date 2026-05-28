@@ -9,7 +9,7 @@
         "pokemonId": 891,
         "pokemonName": "Kubfu",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "abby-noy",
@@ -21,7 +21,7 @@
         "pokemonId": 150,
         "pokemonName": "Mewtwo",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "chase-grant",
@@ -33,7 +33,7 @@
         "pokemonId": 717,
         "pokemonName": "Yveltal",
         "tier": "legendary",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "karitas-farrell",
@@ -45,7 +45,7 @@
         "pokemonId": 381,
         "pokemonName": "Latios",
         "tier": "legendary",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "wyatt-lawson",
@@ -57,7 +57,7 @@
         "pokemonId": 802,
         "pokemonName": "Marshadow",
         "tier": "legendary",
-        "delta": 0
+        "delta": 3
     },
     {
         "id": "isha-varma",
@@ -81,7 +81,7 @@
         "pokemonId": 1016,
         "pokemonName": "Fezandipiti",
         "tier": "legendary",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "drew-murphy",
@@ -93,7 +93,7 @@
         "pokemonId": 481,
         "pokemonName": "Mesprit",
         "tier": "legendary",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "kai-tang",
@@ -105,7 +105,7 @@
         "pokemonId": 808,
         "pokemonName": "Meltan",
         "tier": "legendary",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "sammy-fialkovskiy",
@@ -117,7 +117,7 @@
         "pokemonId": 642,
         "pokemonName": "Thundurus",
         "tier": "legendary",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "jakob-latour",
@@ -129,7 +129,7 @@
         "pokemonId": 271,
         "pokemonName": "Lombre",
         "tier": "evolved",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "benjamin-burke",
@@ -141,7 +141,7 @@
         "pokemonId": 802,
         "pokemonName": "Marshadow",
         "tier": "legendary",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "jacob-saleh",
@@ -153,7 +153,7 @@
         "pokemonId": 1020,
         "pokemonName": "Gouging Fire",
         "tier": "evolved",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "chloe-yip",
@@ -165,7 +165,7 @@
         "pokemonId": 967,
         "pokemonName": "Cyclizar",
         "tier": "evolved",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "ethan-metzer",
@@ -177,7 +177,7 @@
         "pokemonId": 687,
         "pokemonName": "Malamar",
         "tier": "evolved",
-        "delta": 1
+        "delta": 2
     },
     {
         "id": "arin-dhami",
@@ -189,7 +189,7 @@
         "pokemonId": 142,
         "pokemonName": "Aerodactyl",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "rami-padukone-mitter",
@@ -201,7 +201,7 @@
         "pokemonId": 994,
         "pokemonName": "Iron Moth",
         "tier": "evolved",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "jaxson-vanderpoole",
@@ -213,7 +213,7 @@
         "pokemonId": 696,
         "pokemonName": "Tyrunt",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "rafael-boquin",
@@ -225,7 +225,7 @@
         "pokemonId": 102,
         "pokemonName": "Exeggcute",
         "tier": "basic",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "parker-downing",
@@ -237,7 +237,7 @@
         "pokemonId": 74,
         "pokemonName": "Geodude",
         "tier": "basic",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "dylan-yip",
@@ -261,7 +261,7 @@
         "pokemonId": 746,
         "pokemonName": "Wishiwashi",
         "tier": "basic",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "dylan-wu",
@@ -273,7 +273,7 @@
         "pokemonId": 645,
         "pokemonName": "Landorus",
         "tier": "legendary",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "glenn-gooch-raushenbush",
@@ -285,7 +285,7 @@
         "pokemonId": 375,
         "pokemonName": "Metang",
         "tier": "evolved",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "jeremy-chow",
@@ -297,7 +297,7 @@
         "pokemonId": 79,
         "pokemonName": "Slowpoke",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "liliah-fettner",
@@ -321,7 +321,7 @@
         "pokemonId": 201,
         "pokemonName": "Unown",
         "tier": "basic",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "calvin-kuchar",
@@ -333,7 +333,7 @@
         "pokemonId": 244,
         "pokemonName": "Entei",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "matilda-buckmaster",
@@ -345,7 +345,7 @@
         "pokemonId": 137,
         "pokemonName": "Porygon",
         "tier": "basic",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "elliot-koehler",
@@ -357,6 +357,6 @@
         "pokemonId": 211,
         "pokemonName": "Qwilfish",
         "tier": "basic",
-        "delta": 2
+        "delta": 5
     }
 ]
