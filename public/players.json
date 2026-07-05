@@ -2,14 +2,14 @@
     {
         "id": "drew-murphy",
         "name": "Drew Murphy",
-        "puzzles": 100,
-        "plw": 300,
+        "puzzles": 102,
+        "plw": 306,
         "uscf": 928,
         "group": "King 23",
         "pokemonId": 894,
         "pokemonName": "Regieleki",
         "tier": "legendary",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "dylan-yip",
@@ -21,19 +21,19 @@
         "pokemonId": 1004,
         "pokemonName": "Chi-Yu",
         "tier": "legendary",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 48,
-        "plw": 144,
-        "uscf": 1033,
-        "group": "King 21",
+        "puzzles": 52,
+        "plw": 166,
+        "uscf": 1060,
+        "group": "King 22",
         "pokemonId": 716,
         "pokemonName": "Xerneas",
         "tier": "legendary",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "anastassi-xenos",
@@ -45,31 +45,19 @@
         "pokemonId": 800,
         "pokemonName": "Necrozma",
         "tier": "legendary",
-        "delta": 5
-    },
-    {
-        "id": "liliah-fettner",
-        "name": "LILIAH FETTNER",
-        "puzzles": 27,
-        "plw": 91,
-        "uscf": 606,
-        "group": "King 17",
-        "pokemonId": 571,
-        "pokemonName": "Zoroark",
-        "tier": "final",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
-        "puzzles": 21,
-        "plw": 63,
+        "puzzles": 22,
+        "plw": 66,
         "uscf": 973,
         "group": "King 17",
         "pokemonId": 105,
         "pokemonName": "Marowak",
         "tier": "evolved",
-        "delta": 5
+        "delta": 0
     },
     {
         "id": "jeremy-chow",
@@ -81,7 +69,7 @@
         "pokemonId": 831,
         "pokemonName": "Wooloo",
         "tier": "basic",
-        "delta": 3
+        "delta": 5
     },
     {
         "id": "jaxson-vanderpoole",
@@ -93,7 +81,7 @@
         "pokemonId": 132,
         "pokemonName": "Ditto",
         "tier": "basic",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "arin-dhami",
@@ -105,18 +93,6 @@
         "pokemonId": 761,
         "pokemonName": "Bounsweet",
         "tier": "basic",
-        "delta": 1
-    },
-    {
-        "id": "benjamin-burke",
-        "name": "Benjamin Burke",
-        "puzzles": 5,
-        "plw": 25,
-        "uscf": 0,
-        "group": "King 7",
-        "pokemonId": 932,
-        "pokemonName": "Nacli",
-        "tier": "basic",
-        "delta": 4
+        "delta": 0
     }
 ]
