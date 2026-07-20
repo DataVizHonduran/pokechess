@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-20",
+  "players": [
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 83,
+      "plw": 259,
+      "uscf": 1055,
+      "group": "King 22",
+      "pokemonId": 641,
+      "pokemonName": "Tornadus",
+      "tier": "legendary",
+      "delta": 5
+    },
+    {
+      "id": "liliah-fettner",
+      "name": "LILIAH FETTNER",
+      "puzzles": 72,
+      "plw": 216,
+      "uscf": 645,
+      "group": "King 18",
+      "pokemonId": 800,
+      "pokemonName": "Necrozma",
+      "tier": "legendary",
+      "delta": 2
+    },
+    {
+      "id": "anastassi-xenos",
+      "name": "Anastassi Xenos",
+      "puzzles": 61,
+      "plw": 193,
+      "uscf": 793,
+      "group": "King 27",
+      "pokemonId": 891,
+      "pokemonName": "Kubfu",
+      "tier": "legendary",
+      "delta": 4
+    },
+    {
+      "id": "chase-grant",
+      "name": "Chase grant",
+      "puzzles": 44,
+      "plw": 88,
+      "uscf": 546,
+      "group": "King 1",
+      "pokemonId": 448,
+      "pokemonName": "Lucario",
+      "tier": "final",
+      "delta": 2
+    },
+    {
+      "id": "isha-varma",
+      "name": "Isha Varma",
+      "puzzles": 31,
+      "plw": 93,
+      "uscf": 1291,
+      "group": "King 22",
+      "pokemonId": 53,
+      "pokemonName": "Persian",
+      "tier": "final",
+      "delta": 2
+    },
+    {
+      "id": "benjamin-burke",
+      "name": "Benjamin Burke",
+      "puzzles": 24,
+      "plw": 68,
+      "uscf": 0,
+      "group": "King 7",
+      "pokemonId": 977,
+      "pokemonName": "Dondozo",
+      "tier": "evolved",
+      "delta": 2
+    },
+    {
+      "id": "adam-atwa",
+      "name": "Adam Atwa",
+      "puzzles": 21,
+      "plw": 73,
+      "uscf": 854,
+      "group": "King 70",
+      "pokemonId": 569,
+      "pokemonName": "Garbodor",
+      "tier": "evolved",
+      "delta": 2
+    },
+    {
+      "id": "dylan-yip",
+      "name": "Dylan Yip",
+      "puzzles": 20,
+      "plw": 40,
+      "uscf": 285,
+      "group": "King 6",
+      "pokemonId": 704,
+      "pokemonName": "Goomy",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "chloe-yip",
+      "name": "Chloe Yip",
+      "puzzles": 18,
+      "plw": 84,
+      "uscf": 1205,
+      "group": "King 17",
+      "pokemonId": 302,
+      "pokemonName": "Sableye",
+      "tier": "final",
+      "delta": 0
+    },
+    {
+      "id": "theodore-meng",
+      "name": "Theodore Meng",
+      "puzzles": 17,
+      "plw": 71,
+      "uscf": 1340,
+      "group": "Super King 36",
+      "pokemonId": 956,
+      "pokemonName": "Espathra",
+      "tier": "evolved",
+      "delta": 5
+    },
+    {
+      "id": "rami-padukone-mitter",
+      "name": "Rami Padukone-Mitter",
+      "puzzles": 9,
+      "plw": 27,
+      "uscf": 1167,
+      "group": "King 12",
+      "pokemonId": 766,
+      "pokemonName": "Passimian",
+      "tier": "basic",
+      "delta": 3
+    }
+  ]
+}
