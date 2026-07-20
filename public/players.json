@@ -1,39 +1,39 @@
 [
     {
-        "id": "wyatt-lawson",
-        "name": "Wyatt Lawson",
-        "puzzles": 83,
-        "plw": 259,
-        "uscf": 1055,
-        "group": "King 22",
-        "pokemonId": 641,
-        "pokemonName": "Tornadus",
-        "tier": "legendary",
-        "delta": 5
-    },
-    {
-        "id": "liliah-fettner",
-        "name": "LILIAH FETTNER",
-        "puzzles": 72,
-        "plw": 216,
-        "uscf": 645,
-        "group": "King 18",
-        "pokemonId": 800,
-        "pokemonName": "Necrozma",
-        "tier": "legendary",
-        "delta": 2
-    },
-    {
         "id": "anastassi-xenos",
         "name": "Anastassi Xenos",
-        "puzzles": 61,
-        "plw": 193,
+        "puzzles": 112,
+        "plw": 346,
         "uscf": 793,
         "group": "King 27",
         "pokemonId": 891,
         "pokemonName": "Kubfu",
         "tier": "legendary",
+        "delta": 0
+    },
+    {
+        "id": "wyatt-lawson",
+        "name": "Wyatt Lawson",
+        "puzzles": 98,
+        "plw": 304,
+        "uscf": 1055,
+        "group": "King 22",
+        "pokemonId": 641,
+        "pokemonName": "Tornadus",
+        "tier": "legendary",
         "delta": 4
+    },
+    {
+        "id": "liliah-fettner",
+        "name": "LILIAH FETTNER",
+        "puzzles": 76,
+        "plw": 228,
+        "uscf": 645,
+        "group": "King 18",
+        "pokemonId": 800,
+        "pokemonName": "Necrozma",
+        "tier": "legendary",
+        "delta": 3
     },
     {
         "id": "chase-grant",
@@ -45,7 +45,7 @@
         "pokemonId": 448,
         "pokemonName": "Lucario",
         "tier": "final",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "isha-varma",
@@ -57,19 +57,7 @@
         "pokemonId": 53,
         "pokemonName": "Persian",
         "tier": "final",
-        "delta": 2
-    },
-    {
-        "id": "benjamin-burke",
-        "name": "Benjamin Burke",
-        "puzzles": 24,
-        "plw": 68,
-        "uscf": 0,
-        "group": "King 7",
-        "pokemonId": 977,
-        "pokemonName": "Dondozo",
-        "tier": "evolved",
-        "delta": 2
+        "delta": 1
     },
     {
         "id": "adam-atwa",
@@ -81,7 +69,7 @@
         "pokemonId": 569,
         "pokemonName": "Garbodor",
         "tier": "evolved",
-        "delta": 2
+        "delta": 1
     },
     {
         "id": "dylan-yip",
@@ -93,42 +81,54 @@
         "pokemonId": 704,
         "pokemonName": "Goomy",
         "tier": "basic",
-        "delta": 4
-    },
-    {
-        "id": "chloe-yip",
-        "name": "Chloe Yip",
-        "puzzles": 18,
-        "plw": 84,
-        "uscf": 1205,
-        "group": "King 17",
-        "pokemonId": 302,
-        "pokemonName": "Sableye",
-        "tier": "final",
         "delta": 0
     },
     {
         "id": "theodore-meng",
         "name": "Theodore Meng",
         "puzzles": 17,
-        "plw": 71,
+        "plw": 81,
         "uscf": 1340,
-        "group": "Super King 36",
+        "group": "Super King 37",
         "pokemonId": 956,
         "pokemonName": "Espathra",
+        "tier": "final",
+        "delta": 1
+    },
+    {
+        "id": "benjamin-burke",
+        "name": "Benjamin Burke",
+        "puzzles": 15,
+        "plw": 50,
+        "uscf": 0,
+        "group": "King 7",
+        "pokemonId": 977,
+        "pokemonName": "Dondozo",
         "tier": "evolved",
+        "delta": 2
+    },
+    {
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 10,
+        "plw": 20,
+        "uscf": 598,
+        "group": "Queen 8",
+        "pokemonId": 238,
+        "pokemonName": "Smoochum",
+        "tier": "basic",
         "delta": 5
     },
     {
-        "id": "rami-padukone-mitter",
-        "name": "Rami Padukone-Mitter",
-        "puzzles": 9,
-        "plw": 27,
-        "uscf": 1167,
-        "group": "King 12",
-        "pokemonId": 766,
-        "pokemonName": "Passimian",
+        "id": "chloe-yip",
+        "name": "Chloe Yip",
+        "puzzles": 8,
+        "plw": 34,
+        "uscf": 1205,
+        "group": "King 17",
+        "pokemonId": 302,
+        "pokemonName": "Sableye",
         "tier": "basic",
-        "delta": 3
+        "delta": 0
     }
 ]
