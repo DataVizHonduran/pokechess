@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-27",
+  "players": [
+    {
+      "id": "anastassi-xenos",
+      "name": "Anastassi Xenos",
+      "puzzles": 167,
+      "plw": 501,
+      "uscf": 793,
+      "group": "King 27",
+      "pokemonId": 1004,
+      "pokemonName": "Chi-Yu",
+      "tier": "legendary",
+      "delta": 1
+    },
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 95,
+      "plw": 285,
+      "uscf": 1055,
+      "group": "King 22",
+      "pokemonId": 1001,
+      "pokemonName": "Wo-Chien",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "liliah-fettner",
+      "name": "LILIAH FETTNER",
+      "puzzles": 67,
+      "plw": 221,
+      "uscf": 701,
+      "group": "King 20",
+      "pokemonId": 808,
+      "pokemonName": "Meltan",
+      "tier": "legendary",
+      "delta": 4
+    },
+    {
+      "id": "jaxson-vanderpoole",
+      "name": "Jaxson Vanderpoole",
+      "puzzles": 14,
+      "plw": 42,
+      "uscf": 1064,
+      "group": "King 16",
+      "pokemonId": 341,
+      "pokemonName": "Corphish",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "parker-downing",
+      "name": "PARKER DOWNING",
+      "puzzles": 13,
+      "plw": 26,
+      "uscf": 204,
+      "group": "King 34",
+      "pokemonId": 56,
+      "pokemonName": "Mankey",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "ethan-metzer",
+      "name": "Ethan Metzer",
+      "puzzles": 10,
+      "plw": 40,
+      "uscf": 1162,
+      "group": "King 43",
+      "pokemonId": 29,
+      "pokemonName": "Nidoran♀",
+      "tier": "basic",
+      "delta": 0
+    },
+    {
+      "id": "chloe-yip",
+      "name": "Chloe Yip",
+      "puzzles": 8,
+      "plw": 24,
+      "uscf": 1205,
+      "group": "King 17",
+      "pokemonId": 559,
+      "pokemonName": "Scraggy",
+      "tier": "basic",
+      "delta": 0
+    },
+    {
+      "id": "drew-murphy",
+      "name": "Drew Murphy",
+      "puzzles": 7,
+      "plw": 21,
+      "uscf": 1090,
+      "group": "King 23",
+      "pokemonId": 204,
+      "pokemonName": "Pineco",
+      "tier": "basic",
+      "delta": 1
+    },
+    {
+      "id": "theodore-meng",
+      "name": "Theodore Meng",
+      "puzzles": 7,
+      "plw": 41,
+      "uscf": 1340,
+      "group": "Super King 38",
+      "pokemonId": 246,
+      "pokemonName": "Larvitar",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "dylan-wu",
+      "name": "Dylan Wu",
+      "puzzles": 2,
+      "plw": 29,
+      "uscf": 598,
+      "group": "Queen 8",
+      "pokemonId": 479,
+      "pokemonName": "Rotom",
+      "tier": "basic",
+      "delta": 0
+    }
+  ]
+}
