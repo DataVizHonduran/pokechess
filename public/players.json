@@ -2,14 +2,14 @@
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 89,
-        "plw": 267,
+        "puzzles": 84,
+        "plw": 252,
         "uscf": 1055,
         "group": "King 22",
         "pokemonId": 251,
         "pokemonName": "Celebi",
         "tier": "legendary",
-        "delta": 5
+        "delta": 1
     },
     {
         "id": "liliah-fettner",
@@ -21,7 +21,7 @@
         "pokemonId": 890,
         "pokemonName": "Eternatus",
         "tier": "legendary",
-        "delta": 2
+        "delta": 5
     },
     {
         "id": "chase-grant",
@@ -33,19 +33,7 @@
         "pokemonId": 171,
         "pokemonName": "Lanturn",
         "tier": "evolved",
-        "delta": 5
-    },
-    {
-        "id": "chloe-yip",
-        "name": "Chloe Yip",
-        "puzzles": 17,
-        "plw": 61,
-        "uscf": 1205,
-        "group": "King 18",
-        "pokemonId": 247,
-        "pokemonName": "Pupitar",
-        "tier": "evolved",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "jaxson-vanderpoole",
@@ -57,7 +45,7 @@
         "pokemonId": 103,
         "pokemonName": "Exeggutor",
         "tier": "evolved",
-        "delta": 0
+        "delta": 4
     },
     {
         "id": "anastassi-xenos",
@@ -69,6 +57,18 @@
         "pokemonId": 558,
         "pokemonName": "Crustle",
         "tier": "evolved",
+        "delta": 2
+    },
+    {
+        "id": "chloe-yip",
+        "name": "Chloe Yip",
+        "puzzles": 13,
+        "plw": 49,
+        "uscf": 1205,
+        "group": "King 18",
+        "pokemonId": 246,
+        "pokemonName": "Larvitar",
+        "tier": "basic",
         "delta": 3
     },
     {
@@ -81,7 +81,19 @@
         "pokemonId": 265,
         "pokemonName": "Wurmple",
         "tier": "basic",
-        "delta": 4
+        "delta": 0
+    },
+    {
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 4,
+        "plw": 28,
+        "uscf": 616,
+        "group": "Queen 8",
+        "pokemonId": 539,
+        "pokemonName": "Sawk",
+        "tier": "basic",
+        "delta": 0
     },
     {
         "id": "abby-noy",
@@ -94,17 +106,5 @@
         "pokemonName": "Barboach",
         "tier": "basic",
         "delta": 4
-    },
-    {
-        "id": "dylan-wu",
-        "name": "Dylan Wu",
-        "puzzles": 0,
-        "plw": 45,
-        "uscf": 616,
-        "group": "Queen 8",
-        "pokemonId": 539,
-        "pokemonName": "Sawk",
-        "tier": "basic",
-        "delta": 1
     }
 ]
