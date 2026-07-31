@@ -2,8 +2,8 @@
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 84,
-        "plw": 252,
+        "puzzles": 74,
+        "plw": 222,
         "uscf": 1055,
         "group": "King 22",
         "pokemonId": 251,
@@ -24,40 +24,52 @@
         "delta": 5
     },
     {
+        "id": "sammy-fialkovskiy",
+        "name": "Sammy Fialkovskiy",
+        "puzzles": 52,
+        "plw": 176,
+        "uscf": 928,
+        "group": "King 100",
+        "pokemonId": 481,
+        "pokemonName": "Mesprit",
+        "tier": "legendary",
+        "delta": 4
+    },
+    {
+        "id": "isha-varma",
+        "name": "Isha Varma",
+        "puzzles": 25,
+        "plw": 75,
+        "uscf": 1291,
+        "group": "King 22",
+        "pokemonId": 303,
+        "pokemonName": "Mawile",
+        "tier": "final",
+        "delta": 1
+    },
+    {
         "id": "chase-grant",
         "name": "Chase grant",
-        "puzzles": 25,
-        "plw": 60,
+        "puzzles": 23,
+        "plw": 56,
         "uscf": 546,
         "group": "King 1",
         "pokemonId": 171,
         "pokemonName": "Lanturn",
         "tier": "evolved",
-        "delta": 3
-    },
-    {
-        "id": "jaxson-vanderpoole",
-        "name": "Jaxson Vanderpoole",
-        "puzzles": 17,
-        "plw": 51,
-        "uscf": 1064,
-        "group": "King 16",
-        "pokemonId": 103,
-        "pokemonName": "Exeggutor",
-        "tier": "evolved",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "anastassi-xenos",
         "name": "Anastassi Xenos",
-        "puzzles": 13,
-        "plw": 59,
+        "puzzles": 15,
+        "plw": 65,
         "uscf": 793,
         "group": "King 27",
         "pokemonId": 558,
         "pokemonName": "Crustle",
         "tier": "evolved",
-        "delta": 2
+        "delta": 4
     },
     {
         "id": "chloe-yip",
@@ -69,7 +81,19 @@
         "pokemonId": 246,
         "pokemonName": "Larvitar",
         "tier": "basic",
-        "delta": 3
+        "delta": 0
+    },
+    {
+        "id": "jaxson-vanderpoole",
+        "name": "Jaxson Vanderpoole",
+        "puzzles": 12,
+        "plw": 36,
+        "uscf": 1064,
+        "group": "King 16",
+        "pokemonId": 102,
+        "pokemonName": "Exeggcute",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "ethan-metzer",
@@ -81,7 +105,7 @@
         "pokemonId": 265,
         "pokemonName": "Wurmple",
         "tier": "basic",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "dylan-wu",
@@ -93,7 +117,7 @@
         "pokemonId": 539,
         "pokemonName": "Sawk",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "abby-noy",
@@ -105,6 +129,6 @@
         "pokemonId": 339,
         "pokemonName": "Barboach",
         "tier": "basic",
-        "delta": 4
+        "delta": 1
     }
 ]
