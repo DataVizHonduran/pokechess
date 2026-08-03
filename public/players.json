@@ -4,72 +4,72 @@
         "name": "Sammy Fialkovskiy",
         "puzzles": 80,
         "plw": 260,
-        "uscf": 928,
+        "uscf": 1002,
         "group": "King 100",
         "pokemonId": 481,
         "pokemonName": "Mesprit",
         "tier": "legendary",
-        "delta": 5
-    },
-    {
-        "id": "liliah-fettner",
-        "name": "LILIAH FETTNER",
-        "puzzles": 70,
-        "plw": 210,
-        "uscf": 667,
-        "group": "King 20",
-        "pokemonId": 890,
-        "pokemonName": "Eternatus",
-        "tier": "legendary",
-        "delta": 0
+        "delta": 4
     },
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 66,
-        "plw": 198,
+        "puzzles": 58,
+        "plw": 174,
         "uscf": 1128,
         "group": "King 22",
         "pokemonId": 251,
         "pokemonName": "Celebi",
         "tier": "legendary",
-        "delta": 0
+        "delta": 2
+    },
+    {
+        "id": "liliah-fettner",
+        "name": "LILIAH FETTNER",
+        "puzzles": 51,
+        "plw": 153,
+        "uscf": 667,
+        "group": "King 20",
+        "pokemonId": 890,
+        "pokemonName": "Eternatus",
+        "tier": "legendary",
+        "delta": 4
     },
     {
         "id": "isha-varma",
         "name": "Isha Varma",
-        "puzzles": 25,
-        "plw": 75,
+        "puzzles": 29,
+        "plw": 87,
         "uscf": 1291,
         "group": "King 22",
         "pokemonId": 303,
         "pokemonName": "Mawile",
         "tier": "final",
-        "delta": 0
+        "delta": 3
     },
     {
-        "id": "chase-grant",
-        "name": "Chase grant",
-        "puzzles": 21,
-        "plw": 52,
-        "uscf": 546,
-        "group": "King 1",
-        "pokemonId": 171,
-        "pokemonName": "Lanturn",
+        "id": "anastassi-xenos",
+        "name": "Anastassi Xenos",
+        "puzzles": 13,
+        "plw": 69,
+        "uscf": 854,
+        "group": "King 27",
+        "pokemonId": 558,
+        "pokemonName": "Crustle",
         "tier": "evolved",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
-        "puzzles": 12,
-        "plw": 46,
+        "puzzles": 9,
+        "plw": 27,
         "uscf": 1205,
         "group": "King 18",
         "pokemonId": 246,
         "pokemonName": "Larvitar",
         "tier": "basic",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "ethan-metzer",
@@ -84,6 +84,18 @@
         "delta": 1
     },
     {
+        "id": "kai-tang",
+        "name": "Kai Tang",
+        "puzzles": 8,
+        "plw": 26,
+        "uscf": 678,
+        "group": "King 8",
+        "pokemonId": 622,
+        "pokemonName": "Golett",
+        "tier": "basic",
+        "delta": 2
+    },
+    {
         "id": "dylan-wu",
         "name": "Dylan Wu",
         "puzzles": 8,
@@ -93,31 +105,31 @@
         "pokemonId": 539,
         "pokemonName": "Sawk",
         "tier": "basic",
-        "delta": 4
+        "delta": 2
+    },
+    {
+        "id": "elliot-koehler",
+        "name": "Elliot Koehler",
+        "puzzles": 8,
+        "plw": 26,
+        "uscf": 0,
+        "group": "Bishop 2",
+        "pokemonId": 314,
+        "pokemonName": "Illumise",
+        "tier": "basic",
+        "delta": 2
     },
     {
         "id": "adam-atwa",
         "name": "Adam Atwa",
         "puzzles": 7,
         "plw": 21,
-        "uscf": 854,
+        "uscf": 835,
         "group": "King 70",
         "pokemonId": 921,
         "pokemonName": "Pawmi",
         "tier": "basic",
         "delta": 0
-    },
-    {
-        "id": "anastassi-xenos",
-        "name": "Anastassi Xenos",
-        "puzzles": 4,
-        "plw": 32,
-        "uscf": 854,
-        "group": "King 27",
-        "pokemonId": 557,
-        "pokemonName": "Dwebble",
-        "tier": "basic",
-        "delta": 1
     },
     {
         "id": "abby-noy",
@@ -129,6 +141,6 @@
         "pokemonId": 339,
         "pokemonName": "Barboach",
         "tier": "basic",
-        "delta": 1
+        "delta": 4
     }
 ]
