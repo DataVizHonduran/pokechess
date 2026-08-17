@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-17",
+  "players": [
+    {
+      "id": "anastassi-xenos",
+      "name": "Anastassi Xenos",
+      "puzzles": 102,
+      "plw": 306,
+      "uscf": 879,
+      "group": "King 27",
+      "pokemonId": 488,
+      "pokemonName": "Cresselia",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 46,
+      "plw": 163,
+      "uscf": 1097,
+      "group": "King 22",
+      "pokemonId": 892,
+      "pokemonName": "Urshifu",
+      "tier": "legendary",
+      "delta": 5
+    },
+    {
+      "id": "drew-murphy",
+      "name": "Drew Murphy",
+      "puzzles": 27,
+      "plw": 81,
+      "uscf": 1024,
+      "group": "King 23",
+      "pokemonId": 367,
+      "pokemonName": "Huntail",
+      "tier": "final",
+      "delta": 4
+    },
+    {
+      "id": "sammy-fialkovskiy",
+      "name": "Sammy Fialkovskiy",
+      "puzzles": 21,
+      "plw": 63,
+      "uscf": 1102,
+      "group": "Super King 1",
+      "pokemonId": 24,
+      "pokemonName": "Arbok",
+      "tier": "evolved",
+      "delta": 3
+    },
+    {
+      "id": "dylen-duke",
+      "name": "Dylen Duke",
+      "puzzles": 16,
+      "plw": 42,
+      "uscf": 376,
+      "group": "Queen 5",
+      "pokemonId": 757,
+      "pokemonName": "Salandit",
+      "tier": "basic",
+      "delta": 5
+    },
+    {
+      "id": "jayden-duke",
+      "name": "Jayden Duke",
+      "puzzles": 14,
+      "plw": 48,
+      "uscf": 453,
+      "group": "King 6",
+      "pokemonId": 370,
+      "pokemonName": "Luvdisc",
+      "tier": "basic",
+      "delta": 1
+    },
+    {
+      "id": "ethan-metzer",
+      "name": "Ethan Metzer",
+      "puzzles": 13,
+      "plw": 39,
+      "uscf": 1191,
+      "group": "King 43",
+      "pokemonId": 431,
+      "pokemonName": "Glameow",
+      "tier": "basic",
+      "delta": 1
+    },
+    {
+      "id": "benjamin-burke",
+      "name": "Benjamin Burke",
+      "puzzles": 11,
+      "plw": 22,
+      "uscf": 0,
+      "group": "King 7",
+      "pokemonId": 52,
+      "pokemonName": "Meowth",
+      "tier": "basic",
+      "delta": 1
+    },
+    {
+      "id": "liliah-fettner",
+      "name": "LILIAH FETTNER",
+      "puzzles": 11,
+      "plw": 33,
+      "uscf": 696,
+      "group": "King 20",
+      "pokemonId": 451,
+      "pokemonName": "Skorupi",
+      "tier": "basic",
+      "delta": 0
+    },
+    {
+      "id": "chloe-yip",
+      "name": "Chloe Yip",
+      "puzzles": 7,
+      "plw": 91,
+      "uscf": 1205,
+      "group": "King 20",
+      "pokemonId": 561,
+      "pokemonName": "Sigilyph",
+      "tier": "final",
+      "delta": 0
+    },
+    {
+      "id": "theodore-lewis",
+      "name": "Theodore Lewis",
+      "puzzles": 7,
+      "plw": 31,
+      "uscf": 1283,
+      "group": "King 51",
+      "pokemonId": 535,
+      "pokemonName": "Tympole",
+      "tier": "basic",
+      "delta": 0
+    }
+  ]
+}
