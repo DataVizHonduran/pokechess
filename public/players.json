@@ -2,62 +2,50 @@
     {
         "id": "anastassi-xenos",
         "name": "Anastassi Xenos",
-        "puzzles": 91,
-        "plw": 273,
+        "puzzles": 63,
+        "plw": 189,
         "uscf": 879,
         "group": "King 27",
-        "pokemonId": 488,
-        "pokemonName": "Cresselia",
+        "pokemonId": 894,
+        "pokemonName": "Regieleki",
         "tier": "legendary",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 54,
-        "plw": 187,
+        "puzzles": 51,
+        "plw": 153,
         "uscf": 1097,
         "group": "King 22",
-        "pokemonId": 892,
-        "pokemonName": "Urshifu",
+        "pokemonId": 146,
+        "pokemonName": "Moltres",
         "tier": "legendary",
-        "delta": 3
-    },
-    {
-        "id": "drew-murphy",
-        "name": "Drew Murphy",
-        "puzzles": 27,
-        "plw": 81,
-        "uscf": 1024,
-        "group": "King 23",
-        "pokemonId": 367,
-        "pokemonName": "Huntail",
-        "tier": "final",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 24,
-        "plw": 48,
+        "puzzles": 38,
+        "plw": 76,
         "uscf": 623,
         "group": "King 8",
-        "pokemonId": 357,
-        "pokemonName": "Tropius",
-        "tier": "basic",
-        "delta": 2
+        "pokemonId": 205,
+        "pokemonName": "Forretress",
+        "tier": "final",
+        "delta": 0
     },
     {
-        "id": "sammy-fialkovskiy",
-        "name": "Sammy Fialkovskiy",
+        "id": "drew-murphy",
+        "name": "Drew Murphy",
         "puzzles": 21,
         "plw": 63,
-        "uscf": 1102,
-        "group": "Super King 1",
-        "pokemonId": 24,
-        "pokemonName": "Arbok",
+        "uscf": 1024,
+        "group": "King 23",
+        "pokemonId": 210,
+        "pokemonName": "Granbull",
         "tier": "evolved",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "theodore-lewis",
@@ -66,10 +54,10 @@
         "plw": 61,
         "uscf": 1283,
         "group": "King 51",
-        "pokemonId": 536,
-        "pokemonName": "Palpitoad",
+        "pokemonId": 745,
+        "pokemonName": "Lycanroc",
         "tier": "evolved",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "dylen-duke",
@@ -78,10 +66,10 @@
         "plw": 42,
         "uscf": 376,
         "group": "Queen 5",
-        "pokemonId": 757,
-        "pokemonName": "Salandit",
+        "pokemonId": 629,
+        "pokemonName": "Vullaby",
         "tier": "basic",
-        "delta": 5
+        "delta": 2
     },
     {
         "id": "jayden-duke",
@@ -90,8 +78,8 @@
         "plw": 48,
         "uscf": 453,
         "group": "King 6",
-        "pokemonId": 370,
-        "pokemonName": "Luvdisc",
+        "pokemonId": 77,
+        "pokemonName": "Ponyta",
         "tier": "basic",
         "delta": 0
     },
@@ -102,10 +90,10 @@
         "plw": 33,
         "uscf": 696,
         "group": "King 20",
-        "pokemonId": 451,
-        "pokemonName": "Skorupi",
+        "pokemonId": 677,
+        "pokemonName": "Espurr",
         "tier": "basic",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "ethan-metzer",
@@ -114,21 +102,33 @@
         "plw": 21,
         "uscf": 1191,
         "group": "King 43",
-        "pokemonId": 431,
-        "pokemonName": "Glameow",
+        "pokemonId": 990,
+        "pokemonName": "Iron Treads",
         "tier": "basic",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
         "puzzles": 6,
-        "plw": 128,
+        "plw": 138,
         "uscf": 1205,
-        "group": "King 27",
-        "pokemonId": 894,
-        "pokemonName": "Regieleki",
+        "group": "King 30",
+        "pokemonId": 896,
+        "pokemonName": "Glastrier",
         "tier": "legendary",
-        "delta": 5
+        "delta": 3
+    },
+    {
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 0,
+        "plw": 25,
+        "uscf": 589,
+        "group": "King 1",
+        "pokemonId": 974,
+        "pokemonName": "Cetoddle",
+        "tier": "basic",
+        "delta": 2
     }
 ]
