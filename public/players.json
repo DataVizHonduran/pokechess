@@ -2,50 +2,62 @@
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 71,
-        "plw": 142,
+        "puzzles": 81,
+        "plw": 162,
         "uscf": 623,
         "group": "King 8",
-        "pokemonId": 493,
-        "pokemonName": "Arceus",
-        "tier": "legendary",
-        "delta": 2
-    },
-    {
-        "id": "wyatt-lawson",
-        "name": "Wyatt Lawson",
-        "puzzles": 52,
-        "plw": 156,
-        "uscf": 1097,
-        "group": "King 22",
-        "pokemonId": 647,
-        "pokemonName": "Keldeo",
-        "tier": "legendary",
-        "delta": 1
-    },
-    {
-        "id": "anastassi-xenos",
-        "name": "Anastassi Xenos",
-        "puzzles": 35,
-        "plw": 105,
-        "uscf": 879,
-        "group": "King 27",
-        "pokemonId": 648,
-        "pokemonName": "Meloetta",
+        "pokemonId": 890,
+        "pokemonName": "Eternatus",
         "tier": "legendary",
         "delta": 0
     },
     {
+        "id": "anastassi-xenos",
+        "name": "Anastassi Xenos",
+        "puzzles": 71,
+        "plw": 213,
+        "uscf": 879,
+        "group": "King 27",
+        "pokemonId": 385,
+        "pokemonName": "Jirachi",
+        "tier": "legendary",
+        "delta": 0
+    },
+    {
+        "id": "wyatt-lawson",
+        "name": "Wyatt Lawson",
+        "puzzles": 47,
+        "plw": 141,
+        "uscf": 1097,
+        "group": "King 22",
+        "pokemonId": 1017,
+        "pokemonName": "Ogerpon",
+        "tier": "legendary",
+        "delta": 4
+    },
+    {
         "id": "adam-atwa",
         "name": "Adam Atwa",
-        "puzzles": 26,
-        "plw": 88,
+        "puzzles": 46,
+        "plw": 148,
         "uscf": 835,
         "group": "King 70",
-        "pokemonId": 530,
-        "pokemonName": "Excadrill",
-        "tier": "final",
-        "delta": 1
+        "pokemonId": 1015,
+        "pokemonName": "Munkidori",
+        "tier": "legendary",
+        "delta": 4
+    },
+    {
+        "id": "drew-murphy",
+        "name": "Drew Murphy",
+        "puzzles": 46,
+        "plw": 138,
+        "uscf": 1024,
+        "group": "King 23",
+        "pokemonId": 808,
+        "pokemonName": "Meltan",
+        "tier": "legendary",
+        "delta": 2
     },
     {
         "id": "andrew-li",
@@ -54,46 +66,10 @@
         "plw": 69,
         "uscf": 1300,
         "group": "King 55",
-        "pokemonId": 103,
-        "pokemonName": "Exeggutor",
+        "pokemonId": 364,
+        "pokemonName": "Sealeo",
         "tier": "evolved",
-        "delta": 0
-    },
-    {
-        "id": "dylen-duke",
-        "name": "Dylen Duke",
-        "puzzles": 16,
-        "plw": 42,
-        "uscf": 376,
-        "group": "Queen 5",
-        "pokemonId": 924,
-        "pokemonName": "Tandemaus",
-        "tier": "basic",
-        "delta": 1
-    },
-    {
-        "id": "drew-murphy",
-        "name": "Drew Murphy",
-        "puzzles": 16,
-        "plw": 48,
-        "uscf": 1024,
-        "group": "King 23",
-        "pokemonId": 140,
-        "pokemonName": "Kabuto",
-        "tier": "basic",
-        "delta": 0
-    },
-    {
-        "id": "jayden-duke",
-        "name": "Jayden Duke",
-        "puzzles": 14,
-        "plw": 48,
-        "uscf": 453,
-        "group": "King 6",
-        "pokemonId": 336,
-        "pokemonName": "Seviper",
-        "tier": "basic",
-        "delta": 4
+        "delta": 3
     },
     {
         "id": "jaxson-vanderpoole",
@@ -102,22 +78,22 @@
         "plw": 36,
         "uscf": 1064,
         "group": "King 16",
-        "pokemonId": 990,
-        "pokemonName": "Iron Treads",
+        "pokemonId": 1006,
+        "pokemonName": "Iron Valiant",
         "tier": "basic",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "theodore-lewis",
         "name": "Theodore Lewis",
-        "puzzles": 10,
-        "plw": 30,
+        "puzzles": 11,
+        "plw": 33,
         "uscf": 1283,
         "group": "King 51",
-        "pokemonId": 632,
-        "pokemonName": "Durant",
+        "pokemonId": 447,
+        "pokemonName": "Riolu",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "chloe-yip",
@@ -126,10 +102,10 @@
         "plw": 214,
         "uscf": 1205,
         "group": "King 35",
-        "pokemonId": 150,
-        "pokemonName": "Mewtwo",
+        "pokemonId": 809,
+        "pokemonName": "Melmetal",
         "tier": "legendary",
-        "delta": 0
+        "delta": 3
     },
     {
         "id": "dylan-wu",
@@ -138,9 +114,9 @@
         "plw": 55,
         "uscf": 589,
         "group": "King 1",
-        "pokemonId": 8,
-        "pokemonName": "Wartortle",
+        "pokemonId": 321,
+        "pokemonName": "Wailord",
         "tier": "evolved",
-        "delta": 1
+        "delta": 3
     }
 ]
