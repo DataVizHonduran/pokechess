@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-24",
+  "players": [
+    {
+      "id": "anastassi-xenos",
+      "name": "Anastassi Xenos",
+      "puzzles": 139,
+      "plw": 417,
+      "uscf": 879,
+      "group": "King 27",
+      "pokemonId": 385,
+      "pokemonName": "Jirachi",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "kai-tang",
+      "name": "Kai Tang",
+      "puzzles": 81,
+      "plw": 162,
+      "uscf": 680,
+      "group": "King 8",
+      "pokemonId": 890,
+      "pokemonName": "Eternatus",
+      "tier": "legendary",
+      "delta": 1
+    },
+    {
+      "id": "drew-murphy",
+      "name": "Drew Murphy",
+      "puzzles": 68,
+      "plw": 204,
+      "uscf": 934,
+      "group": "King 23",
+      "pokemonId": 808,
+      "pokemonName": "Meltan",
+      "tier": "legendary",
+      "delta": 2
+    },
+    {
+      "id": "adam-atwa",
+      "name": "Adam Atwa",
+      "puzzles": 46,
+      "plw": 148,
+      "uscf": 999,
+      "group": "King 70",
+      "pokemonId": 1015,
+      "pokemonName": "Munkidori",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 38,
+      "plw": 114,
+      "uscf": 1097,
+      "group": "King 22",
+      "pokemonId": 1017,
+      "pokemonName": "Ogerpon",
+      "tier": "legendary",
+      "delta": 1
+    },
+    {
+      "id": "andrew-li",
+      "name": "Andrew Li",
+      "puzzles": 23,
+      "plw": 69,
+      "uscf": 1300,
+      "group": "King 55",
+      "pokemonId": 364,
+      "pokemonName": "Sealeo",
+      "tier": "evolved",
+      "delta": 1
+    },
+    {
+      "id": "jaxson-vanderpoole",
+      "name": "Jaxson Vanderpoole",
+      "puzzles": 12,
+      "plw": 36,
+      "uscf": 936,
+      "group": "King 16",
+      "pokemonId": 1006,
+      "pokemonName": "Iron Valiant",
+      "tier": "basic",
+      "delta": 0
+    },
+    {
+      "id": "theodore-lewis",
+      "name": "Theodore Lewis",
+      "puzzles": 11,
+      "plw": 33,
+      "uscf": 1272,
+      "group": "King 51",
+      "pokemonId": 447,
+      "pokemonName": "Riolu",
+      "tier": "basic",
+      "delta": 1
+    },
+    {
+      "id": "dylan-wu",
+      "name": "Dylan Wu",
+      "puzzles": 5,
+      "plw": 55,
+      "uscf": 589,
+      "group": "King 1",
+      "pokemonId": 321,
+      "pokemonName": "Wailord",
+      "tier": "evolved",
+      "delta": 4
+    },
+    {
+      "id": "chloe-yip",
+      "name": "Chloe Yip",
+      "puzzles": 3,
+      "plw": 189,
+      "uscf": 1205,
+      "group": "King 35",
+      "pokemonId": 809,
+      "pokemonName": "Melmetal",
+      "tier": "legendary",
+      "delta": 4
+    }
+  ]
+}
