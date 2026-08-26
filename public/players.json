@@ -2,14 +2,14 @@
     {
         "id": "anastassi-xenos",
         "name": "Anastassi Xenos",
-        "puzzles": 189,
-        "plw": 567,
+        "puzzles": 192,
+        "plw": 576,
         "uscf": 879,
         "group": "King 27",
         "pokemonId": 385,
         "pokemonName": "Jirachi",
         "tier": "legendary",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "drew-murphy",
@@ -21,7 +21,7 @@
         "pokemonId": 808,
         "pokemonName": "Meltan",
         "tier": "legendary",
-        "delta": 5
+        "delta": 4
     },
     {
         "id": "adam-atwa",
@@ -33,19 +33,19 @@
         "pokemonId": 1015,
         "pokemonName": "Munkidori",
         "tier": "legendary",
-        "delta": 0
+        "delta": 2
     },
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 58,
-        "plw": 116,
+        "puzzles": 50,
+        "plw": 100,
         "uscf": 680,
         "group": "King 8",
         "pokemonId": 890,
         "pokemonName": "Eternatus",
         "tier": "legendary",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "wyatt-lawson",
@@ -57,30 +57,30 @@
         "pokemonId": 405,
         "pokemonName": "Luxray",
         "tier": "final",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "andrew-li",
         "name": "Andrew Li",
-        "puzzles": 25,
-        "plw": 75,
+        "puzzles": 31,
+        "plw": 93,
         "uscf": 1300,
         "group": "King 55",
         "pokemonId": 365,
         "pokemonName": "Walrein",
         "tier": "final",
-        "delta": 1
+        "delta": 0
     },
     {
         "id": "jaxson-vanderpoole",
         "name": "Jaxson Vanderpoole",
-        "puzzles": 23,
-        "plw": 69,
+        "puzzles": 25,
+        "plw": 75,
         "uscf": 936,
         "group": "King 16",
         "pokemonId": 1006,
         "pokemonName": "Iron Valiant",
-        "tier": "evolved",
+        "tier": "final",
         "delta": 0
     },
     {
@@ -93,30 +93,30 @@
         "pokemonId": 430,
         "pokemonName": "Honchkrow",
         "tier": "evolved",
-        "delta": 4
+        "delta": 0
     },
     {
         "id": "dylan-wu",
         "name": "Dylan Wu",
-        "puzzles": 8,
-        "plw": 61,
+        "puzzles": 9,
+        "plw": 58,
         "uscf": 539,
         "group": "King 1",
         "pokemonId": 321,
         "pokemonName": "Wailord",
         "tier": "evolved",
-        "delta": 3
+        "delta": 1
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
-        "puzzles": 2,
-        "plw": 116,
+        "puzzles": 3,
+        "plw": 89,
         "uscf": 1205,
         "group": "King 35",
-        "pokemonId": 809,
-        "pokemonName": "Melmetal",
-        "tier": "legendary",
+        "pokemonId": 306,
+        "pokemonName": "Aggron",
+        "tier": "final",
         "delta": 2
     }
 ]
