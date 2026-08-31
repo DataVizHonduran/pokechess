@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-31",
+  "players": [
+    {
+      "id": "anastassi-xenos",
+      "name": "Anastassi Xenos",
+      "puzzles": 66,
+      "plw": 198,
+      "uscf": 879,
+      "group": "King 27",
+      "pokemonId": 716,
+      "pokemonName": "Xerneas",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "kai-tang",
+      "name": "Kai Tang",
+      "puzzles": 47,
+      "plw": 94,
+      "uscf": 680,
+      "group": "King 8",
+      "pokemonId": 185,
+      "pokemonName": "Sudowoodo",
+      "tier": "final",
+      "delta": 5
+    },
+    {
+      "id": "ethan-metzer",
+      "name": "Ethan Metzer",
+      "puzzles": 32,
+      "plw": 96,
+      "uscf": 1218,
+      "group": "King 43",
+      "pokemonId": 883,
+      "pokemonName": "Arctovish",
+      "tier": "final",
+      "delta": 3
+    },
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 28,
+      "plw": 84,
+      "uscf": 1117,
+      "group": "King 22",
+      "pokemonId": 584,
+      "pokemonName": "Vanilluxe",
+      "tier": "final",
+      "delta": 2
+    },
+    {
+      "id": "adam-atwa",
+      "name": "Adam Atwa",
+      "puzzles": 26,
+      "plw": 108,
+      "uscf": 975,
+      "group": "King 71",
+      "pokemonId": 791,
+      "pokemonName": "Solgaleo",
+      "tier": "legendary",
+      "delta": 3
+    },
+    {
+      "id": "jaxson-vanderpoole",
+      "name": "Jaxson Vanderpoole",
+      "puzzles": 13,
+      "plw": 49,
+      "uscf": 929,
+      "group": "King 17",
+      "pokemonId": 926,
+      "pokemonName": "Fidough",
+      "tier": "basic",
+      "delta": 3
+    },
+    {
+      "id": "andrew-li",
+      "name": "Andrew Li",
+      "puzzles": 13,
+      "plw": 39,
+      "uscf": 1311,
+      "group": "King 55",
+      "pokemonId": 712,
+      "pokemonName": "Bergmite",
+      "tier": "basic",
+      "delta": 2
+    },
+    {
+      "id": "dylan-wu",
+      "name": "Dylan Wu",
+      "puzzles": 4,
+      "plw": 28,
+      "uscf": 718,
+      "group": "King 1",
+      "pokemonId": 870,
+      "pokemonName": "Falinks",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "dylan-yip",
+      "name": "Dylan Yip",
+      "puzzles": 1,
+      "plw": 22,
+      "uscf": 285,
+      "group": "King 7",
+      "pokemonId": 953,
+      "pokemonName": "Rellor",
+      "tier": "basic",
+      "delta": 0
+    }
+  ]
+}
