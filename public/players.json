@@ -2,74 +2,74 @@
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 46,
-        "plw": 92,
+        "puzzles": 50,
+        "plw": 100,
         "uscf": 680,
         "group": "King 8",
-        "pokemonId": 185,
-        "pokemonName": "Sudowoodo",
-        "tier": "final",
-        "delta": 1
-    },
-    {
-        "id": "anastassi-xenos",
-        "name": "Anastassi Xenos",
-        "puzzles": 40,
-        "plw": 120,
-        "uscf": 879,
-        "group": "King 27",
-        "pokemonId": 716,
-        "pokemonName": "Xerneas",
+        "pokemonId": 786,
+        "pokemonName": "Tapu Lele",
         "tier": "legendary",
-        "delta": 0
-    },
-    {
-        "id": "wyatt-lawson",
-        "name": "Wyatt Lawson",
-        "puzzles": 36,
-        "plw": 108,
-        "uscf": 1117,
-        "group": "King 22",
-        "pokemonId": 892,
-        "pokemonName": "Urshifu",
-        "tier": "legendary",
-        "delta": 1
+        "delta": 3
     },
     {
         "id": "ethan-metzer",
         "name": "Ethan Metzer",
-        "puzzles": 29,
-        "plw": 87,
+        "puzzles": 34,
+        "plw": 102,
         "uscf": 1218,
         "group": "King 43",
-        "pokemonId": 883,
-        "pokemonName": "Arctovish",
-        "tier": "final",
-        "delta": 2
+        "pokemonId": 645,
+        "pokemonName": "Landorus",
+        "tier": "legendary",
+        "delta": 5
     },
     {
-        "id": "jaxson-vanderpoole",
-        "name": "Jaxson Vanderpoole",
-        "puzzles": 13,
-        "plw": 49,
-        "uscf": 929,
-        "group": "King 17",
-        "pokemonId": 926,
-        "pokemonName": "Fidough",
+        "id": "wyatt-lawson",
+        "name": "Wyatt Lawson",
+        "puzzles": 33,
+        "plw": 99,
+        "uscf": 1117,
+        "group": "King 22",
+        "pokemonId": 584,
+        "pokemonName": "Vanilluxe",
+        "tier": "final",
+        "delta": 3
+    },
+    {
+        "id": "sammy-fialkovskiy",
+        "name": "Sammy Fialkovskiy",
+        "puzzles": 32,
+        "plw": 106,
+        "uscf": 1102,
+        "group": "Super King 1",
+        "pokemonId": 490,
+        "pokemonName": "Manaphy",
+        "tier": "legendary",
+        "delta": 0
+    },
+    {
+        "id": "anastassi-xenos",
+        "name": "Anastassi Xenos",
+        "puzzles": 16,
+        "plw": 48,
+        "uscf": 879,
+        "group": "King 27",
+        "pokemonId": 438,
+        "pokemonName": "Bonsly",
         "tier": "basic",
-        "delta": 1
+        "delta": 4
     },
     {
         "id": "andrew-li",
         "name": "Andrew Li",
-        "puzzles": 13,
-        "plw": 39,
+        "puzzles": 11,
+        "plw": 33,
         "uscf": 1311,
         "group": "King 55",
         "pokemonId": 712,
         "pokemonName": "Bergmite",
         "tier": "basic",
-        "delta": 4
+        "delta": 2
     },
     {
         "id": "adam-atwa",
@@ -81,19 +81,7 @@
         "pokemonId": 816,
         "pokemonName": "Sobble",
         "tier": "basic",
-        "delta": 0
-    },
-    {
-        "id": "dylan-wu",
-        "name": "Dylan Wu",
-        "puzzles": 4,
-        "plw": 28,
-        "uscf": 760,
-        "group": "King 1",
-        "pokemonId": 870,
-        "pokemonName": "Falinks",
-        "tier": "basic",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "chloe-yip",
@@ -105,7 +93,7 @@
         "pokemonId": 252,
         "pokemonName": "Treecko",
         "tier": "basic",
-        "delta": 5
+        "delta": 3
     },
     {
         "id": "dylan-yip",
@@ -117,6 +105,18 @@
         "pokemonId": 953,
         "pokemonName": "Rellor",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
+    },
+    {
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 1,
+        "plw": 22,
+        "uscf": 760,
+        "group": "King 1",
+        "pokemonId": 870,
+        "pokemonName": "Falinks",
+        "tier": "basic",
+        "delta": 2
     }
 ]

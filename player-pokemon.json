@@ -2,22 +2,22 @@
   "anastassi xenos": {
     "chain_index": 99,
     "elite_index": 48,
-    "last_plw": 120
+    "last_plw": 48
   },
   "kai tang": {
     "chain_index": 99,
     "elite_index": 57,
-    "last_plw": 92
+    "last_plw": 100
   },
   "ethan metzer": {
     "chain_index": 415,
     "elite_index": 43,
-    "last_plw": 87
+    "last_plw": 102
   },
   "wyatt lawson": {
     "chain_index": 275,
     "elite_index": 74,
-    "last_plw": 108
+    "last_plw": 99
   },
   "adam atwa": {
     "chain_index": 381,
@@ -27,12 +27,12 @@
   "jaxson vanderpoole": {
     "chain_index": 426,
     "elite_index": 20,
-    "last_plw": 49
+    "last_plw": 16
   },
   "andrew li": {
     "chain_index": 333,
     "elite_index": 46,
-    "last_plw": 39
+    "last_plw": 33
   },
   "abby noy": {
     "chain_index": 92,
@@ -47,7 +47,7 @@
   "dylan wu": {
     "chain_index": 404,
     "elite_index": 70,
-    "last_plw": 28
+    "last_plw": 22
   },
   "rafael boquin": {
     "chain_index": 410,
@@ -257,7 +257,7 @@
   "sammy fialkovskiy": {
     "chain_index": 235,
     "elite_index": 31,
-    "last_plw": 0
+    "last_plw": 106
   },
   "theodore meng": {
     "chain_index": 176,
