@@ -2,24 +2,24 @@
     {
         "id": "sammy-fialkovskiy",
         "name": "Sammy Fialkovskiy",
-        "puzzles": 143,
-        "plw": 429,
+        "puzzles": 159,
+        "plw": 477,
         "uscf": 1102,
         "group": "Super King 1",
-        "pokemonId": 648,
-        "pokemonName": "Meloetta",
+        "pokemonId": 1016,
+        "pokemonName": "Fezandipiti",
         "tier": "legendary",
-        "delta": 4
+        "delta": 5
     },
     {
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
-        "puzzles": 53,
-        "plw": 159,
-        "uscf": 1225,
+        "puzzles": 44,
+        "plw": 132,
+        "uscf": 1161,
         "group": "King 22",
-        "pokemonId": 251,
-        "pokemonName": "Celebi",
+        "pokemonId": 895,
+        "pokemonName": "Regidrago",
         "tier": "legendary",
         "delta": 5
     },
@@ -30,10 +30,10 @@
         "plw": 129,
         "uscf": 975,
         "group": "King 71",
-        "pokemonId": 491,
-        "pokemonName": "Darkrai",
+        "pokemonId": 493,
+        "pokemonName": "Arceus",
         "tier": "legendary",
-        "delta": 2
+        "delta": 1
     },
     {
         "id": "anastassi-xenos",
@@ -42,34 +42,34 @@
         "plw": 111,
         "uscf": 879,
         "group": "King 27",
-        "pokemonId": 889,
-        "pokemonName": "Zamazenta",
+        "pokemonId": 1017,
+        "pokemonName": "Ogerpon",
         "tier": "legendary",
         "delta": 4
     },
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 30,
-        "plw": 60,
+        "puzzles": 33,
+        "plw": 66,
         "uscf": 680,
         "group": "King 8",
-        "pokemonId": 264,
-        "pokemonName": "Linoone",
+        "pokemonId": 419,
+        "pokemonName": "Floatzel",
         "tier": "evolved",
-        "delta": 4
+        "delta": 1
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
-        "puzzles": 20,
-        "plw": 70,
+        "puzzles": 19,
+        "plw": 67,
         "uscf": 1205,
         "group": "King 35",
-        "pokemonId": 701,
-        "pokemonName": "Hawlucha",
+        "pokemonId": 266,
+        "pokemonName": "Silcoon",
         "tier": "evolved",
-        "delta": 0
+        "delta": 5
     },
     {
         "id": "ethan-metzer",
@@ -78,22 +78,10 @@
         "plw": 36,
         "uscf": 1218,
         "group": "King 43",
-        "pokemonId": 345,
-        "pokemonName": "Lileep",
+        "pokemonId": 708,
+        "pokemonName": "Phantump",
         "tier": "basic",
-        "delta": 2
-    },
-    {
-        "id": "dylan-wu",
-        "name": "Dylan Wu",
-        "puzzles": 11,
-        "plw": 32,
-        "uscf": 695,
-        "group": "King 3",
-        "pokemonId": 265,
-        "pokemonName": "Wurmple",
-        "tier": "basic",
-        "delta": 0
+        "delta": 1
     },
     {
         "id": "caroline-jeffreys",
@@ -102,33 +90,45 @@
         "plw": 20,
         "uscf": 134,
         "group": "Knight 1",
-        "pokemonId": 418,
-        "pokemonName": "Buizel",
+        "pokemonId": 179,
+        "pokemonName": "Mareep",
         "tier": "basic",
-        "delta": 3
+        "delta": 4
     },
     {
         "id": "drew-murphy",
         "name": "Drew Murphy",
         "puzzles": 10,
         "plw": 30,
-        "uscf": 1059,
+        "uscf": 1075,
         "group": "King 23",
-        "pokemonId": 194,
-        "pokemonName": "Wooper",
+        "pokemonId": 479,
+        "pokemonName": "Rotom",
         "tier": "basic",
-        "delta": 0
+        "delta": 5
     },
     {
-        "id": "theodore-lewis",
-        "name": "Theodore Lewis",
-        "puzzles": 5,
-        "plw": 30,
-        "uscf": 1200,
-        "group": "King 51",
-        "pokemonId": 371,
-        "pokemonName": "Bagon",
+        "id": "dylan-wu",
+        "name": "Dylan Wu",
+        "puzzles": 7,
+        "plw": 24,
+        "uscf": 695,
+        "group": "King 3",
+        "pokemonId": 374,
+        "pokemonName": "Beldum",
         "tier": "basic",
         "delta": 1
+    },
+    {
+        "id": "una-farrell",
+        "name": "Una Farrell",
+        "puzzles": 6,
+        "plw": 22,
+        "uscf": 0,
+        "group": "Rook 4",
+        "pokemonId": 989,
+        "pokemonName": "Sandy Shocks",
+        "tier": "basic",
+        "delta": 0
     }
 ]
