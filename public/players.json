@@ -2,74 +2,74 @@
     {
         "id": "sammy-fialkovskiy",
         "name": "Sammy Fialkovskiy",
-        "puzzles": 73,
-        "plw": 219,
+        "puzzles": 98,
+        "plw": 294,
         "uscf": 1102,
         "group": "Super King 1",
-        "pokemonId": 786,
-        "pokemonName": "Tapu Lele",
+        "pokemonId": 893,
+        "pokemonName": "Zarude",
         "tier": "legendary",
-        "delta": 4
-    },
-    {
-        "id": "wyatt-lawson",
-        "name": "Wyatt Lawson",
-        "puzzles": 54,
-        "plw": 172,
-        "uscf": 1161,
-        "group": "King 22",
-        "pokemonId": 1016,
-        "pokemonName": "Fezandipiti",
-        "tier": "legendary",
-        "delta": 3
+        "delta": 0
     },
     {
         "id": "sebastian-polizzi",
         "name": "Sebastian Polizzi",
-        "puzzles": 46,
-        "plw": 92,
+        "puzzles": 53,
+        "plw": 106,
         "uscf": 654,
         "group": "King 1",
-        "pokemonId": 941,
-        "pokemonName": "Kilowattrel",
-        "tier": "final",
+        "pokemonId": 641,
+        "pokemonName": "Tornadus",
+        "tier": "legendary",
         "delta": 1
+    },
+    {
+        "id": "wyatt-lawson",
+        "name": "Wyatt Lawson",
+        "puzzles": 51,
+        "plw": 163,
+        "uscf": 1161,
+        "group": "King 22",
+        "pokemonId": 809,
+        "pokemonName": "Melmetal",
+        "tier": "legendary",
+        "delta": 4
     },
     {
         "id": "theodore-lewis",
         "name": "Theodore Lewis",
-        "puzzles": 26,
-        "plw": 88,
+        "puzzles": 35,
+        "plw": 115,
         "uscf": 1200,
         "group": "King 51",
-        "pokemonId": 85,
-        "pokemonName": "Dodrio",
-        "tier": "final",
-        "delta": 4
+        "pokemonId": 718,
+        "pokemonName": "Zygarde",
+        "tier": "legendary",
+        "delta": 3
     },
     {
         "id": "chloe-yip",
         "name": "Chloe Yip",
-        "puzzles": 22,
-        "plw": 76,
+        "puzzles": 24,
+        "plw": 72,
         "uscf": 1205,
         "group": "King 35",
-        "pokemonId": 943,
-        "pokemonName": "Mabosstiff",
-        "tier": "final",
-        "delta": 4
+        "pokemonId": 323,
+        "pokemonName": "Camerupt",
+        "tier": "evolved",
+        "delta": 0
     },
     {
         "id": "kai-tang",
         "name": "Kai Tang",
-        "puzzles": 18,
-        "plw": 46,
+        "puzzles": 17,
+        "plw": 44,
         "uscf": 680,
         "group": "King 8",
-        "pokemonId": 782,
-        "pokemonName": "Jangmo-o",
+        "pokemonId": 632,
+        "pokemonName": "Durant",
         "tier": "basic",
-        "delta": 0
+        "delta": 3
     },
     {
         "id": "una-farrell",
@@ -78,34 +78,10 @@
         "plw": 32,
         "uscf": 0,
         "group": "Rook 4",
-        "pokemonId": 870,
-        "pokemonName": "Falinks",
+        "pokemonId": 622,
+        "pokemonName": "Golett",
         "tier": "basic",
-        "delta": 2
-    },
-    {
-        "id": "caroline-jeffreys",
-        "name": "Caroline Jeffreys",
-        "puzzles": 10,
-        "plw": 20,
-        "uscf": 134,
-        "group": "Knight 1",
-        "pokemonId": 501,
-        "pokemonName": "Oshawott",
-        "tier": "basic",
-        "delta": 0
-    },
-    {
-        "id": "drew-murphy",
-        "name": "Drew Murphy",
-        "puzzles": 10,
-        "plw": 30,
-        "uscf": 1075,
-        "group": "King 23",
-        "pokemonId": 522,
-        "pokemonName": "Blitzle",
-        "tier": "basic",
-        "delta": 0
+        "delta": 4
     },
     {
         "id": "ethan-metzer",
@@ -114,22 +90,10 @@
         "plw": 21,
         "uscf": 1218,
         "group": "King 43",
-        "pokemonId": 621,
-        "pokemonName": "Druddigon",
+        "pokemonId": 669,
+        "pokemonName": "Flab\u00e9b\u00e9",
         "tier": "basic",
-        "delta": 0
-    },
-    {
-        "id": "dylan-wu",
-        "name": "Dylan Wu",
-        "puzzles": 5,
-        "plw": 20,
-        "uscf": 695,
-        "group": "King 3",
-        "pokemonId": 234,
-        "pokemonName": "Stantler",
-        "tier": "basic",
-        "delta": 2
+        "delta": 3
     },
     {
         "id": "arin-dhami",
@@ -138,9 +102,9 @@
         "plw": 20,
         "uscf": 325,
         "group": "Queen 8",
-        "pokemonId": 498,
-        "pokemonName": "Tepig",
+        "pokemonId": 971,
+        "pokemonName": "Greavard",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     }
 ]
