@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-21",
+  "players": [
+    {
+      "id": "sammy-fialkovskiy",
+      "name": "Sammy Fialkovskiy",
+      "puzzles": 98,
+      "plw": 294,
+      "uscf": 1102,
+      "group": "Super King 1",
+      "pokemonId": 893,
+      "pokemonName": "Zarude",
+      "tier": "legendary",
+      "delta": 0
+    },
+    {
+      "id": "sebastian-polizzi",
+      "name": "Sebastian Polizzi",
+      "puzzles": 53,
+      "plw": 106,
+      "uscf": 654,
+      "group": "King 1",
+      "pokemonId": 641,
+      "pokemonName": "Tornadus",
+      "tier": "legendary",
+      "delta": 1
+    },
+    {
+      "id": "wyatt-lawson",
+      "name": "Wyatt Lawson",
+      "puzzles": 51,
+      "plw": 163,
+      "uscf": 1161,
+      "group": "King 22",
+      "pokemonId": 809,
+      "pokemonName": "Melmetal",
+      "tier": "legendary",
+      "delta": 4
+    },
+    {
+      "id": "theodore-lewis",
+      "name": "Theodore Lewis",
+      "puzzles": 35,
+      "plw": 115,
+      "uscf": 1200,
+      "group": "King 51",
+      "pokemonId": 718,
+      "pokemonName": "Zygarde",
+      "tier": "legendary",
+      "delta": 3
+    },
+    {
+      "id": "chloe-yip",
+      "name": "Chloe Yip",
+      "puzzles": 24,
+      "plw": 72,
+      "uscf": 1205,
+      "group": "King 35",
+      "pokemonId": 323,
+      "pokemonName": "Camerupt",
+      "tier": "evolved",
+      "delta": 0
+    },
+    {
+      "id": "kai-tang",
+      "name": "Kai Tang",
+      "puzzles": 17,
+      "plw": 44,
+      "uscf": 680,
+      "group": "King 8",
+      "pokemonId": 632,
+      "pokemonName": "Durant",
+      "tier": "basic",
+      "delta": 3
+    },
+    {
+      "id": "una-farrell",
+      "name": "Una Farrell",
+      "puzzles": 11,
+      "plw": 32,
+      "uscf": 0,
+      "group": "Rook 4",
+      "pokemonId": 622,
+      "pokemonName": "Golett",
+      "tier": "basic",
+      "delta": 4
+    },
+    {
+      "id": "ethan-metzer",
+      "name": "Ethan Metzer",
+      "puzzles": 7,
+      "plw": 21,
+      "uscf": 1218,
+      "group": "King 43",
+      "pokemonId": 669,
+      "pokemonName": "Flabébé",
+      "tier": "basic",
+      "delta": 3
+    },
+    {
+      "id": "arin-dhami",
+      "name": "Arin Dhami",
+      "puzzles": 0,
+      "plw": 20,
+      "uscf": 325,
+      "group": "Queen 8",
+      "pokemonId": 971,
+      "pokemonName": "Greavard",
+      "tier": "basic",
+      "delta": 5
+    }
+  ]
+}
