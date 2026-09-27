@@ -15,49 +15,37 @@
         "id": "wyatt-lawson",
         "name": "Wyatt Lawson",
         "puzzles": 2024,
-        "plw": 82,
-        "uscf": 135,
+        "plw": 87,
+        "uscf": 148,
         "group": "King 22",
-        "pokemonId": 149,
-        "pokemonName": "Dragonite",
+        "pokemonId": 49,
+        "pokemonName": "Venomoth",
         "tier": "final",
-        "delta": 3
-    },
-    {
-        "id": "julian-berger",
-        "name": "Julian Berger",
-        "puzzles": 1250,
-        "plw": 64,
-        "uscf": 82,
-        "group": "Bishop 3",
-        "pokemonId": 178,
-        "pokemonName": "Xatu",
-        "tier": "evolved",
-        "delta": 2
+        "delta": 0
     },
     {
         "id": "theodore-lewis",
         "name": "Theodore Lewis",
-        "puzzles": 2237,
-        "plw": 49,
-        "uscf": 82,
+        "puzzles": 2279,
+        "plw": 56,
+        "uscf": 103,
         "group": "King 51",
-        "pokemonId": 656,
-        "pokemonName": "Froakie",
-        "tier": "basic",
-        "delta": 5
+        "pokemonId": 166,
+        "pokemonName": "Ledian",
+        "tier": "evolved",
+        "delta": 3
     },
     {
         "id": "ethan-metzer",
         "name": "Ethan Metzer",
-        "puzzles": 1733,
+        "puzzles": 1738,
         "plw": 30,
         "uscf": 57,
         "group": "King 43",
-        "pokemonId": 935,
-        "pokemonName": "Charcadet",
+        "pokemonId": 116,
+        "pokemonName": "Horsea",
         "tier": "basic",
-        "delta": 1
+        "delta": 5
     },
     {
         "id": "kai-tang",
@@ -66,10 +54,22 @@
         "plw": 25,
         "uscf": 38,
         "group": "King 8",
-        "pokemonId": 285,
-        "pokemonName": "Shroomish",
+        "pokemonId": 967,
+        "pokemonName": "Cyclizar",
         "tier": "basic",
-        "delta": 5
+        "delta": 3
+    },
+    {
+        "id": "arin-dhami",
+        "name": "Arin Dhami",
+        "puzzles": 1319,
+        "plw": 29,
+        "uscf": 66,
+        "group": "Queen 8",
+        "pokemonId": 587,
+        "pokemonName": "Emolga",
+        "tier": "basic",
+        "delta": 0
     },
     {
         "id": "reznor-kaczmarek",
@@ -78,21 +78,9 @@
         "plw": 20,
         "uscf": 27,
         "group": "Queen 7",
-        "pokemonId": 54,
-        "pokemonName": "Psyduck",
+        "pokemonId": 133,
+        "pokemonName": "Eevee",
         "tier": "basic",
-        "delta": 4
-    },
-    {
-        "id": "arin-dhami",
-        "name": "Arin Dhami",
-        "puzzles": 1342,
-        "plw": 22,
-        "uscf": 60,
-        "group": "Queen 8",
-        "pokemonId": 835,
-        "pokemonName": "Yamper",
-        "tier": "basic",
-        "delta": 4
+        "delta": 3
     }
 ]
