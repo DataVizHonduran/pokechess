@@ -126,7 +126,7 @@ def scrape_ps11_stats():
 
                     # Extract PLW for weekly reset detection
                     try:
-                        plw_text = cols[5].text if len(cols) > 5 else "0"
+                        plw_text = cols[6].text if len(cols) > 6 else "0"
                         plw = int(''.join(c for c in plw_text if c.isdigit()) or '0')
                     except:
                         plw = 0
@@ -223,9 +223,9 @@ def extract_player_data(cols, name):
         except:
             return 0
 
-    plw = safe_int(cols[5].text) if len(cols) > 5 else 0
-    puzzles = safe_int(cols[3].text) if len(cols) > 3 else 0
-    uscf = safe_int(cols[6].text) if len(cols) > 6 else 0
+    plw = safe_int(cols[6].text) if len(cols) > 6 else 0
+    puzzles = safe_int(cols[5].text) if len(cols) > 5 else 0
+    uscf = safe_int(cols[2].text) if len(cols) > 2 else 0
     group = cols[7].text.strip() if len(cols) > 7 else ""
 
     pokemon_id = get_pokemon_by_plw(plw, name)
